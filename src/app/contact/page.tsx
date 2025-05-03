@@ -1,8 +1,18 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
+import { useTranslate } from "@/store/translateStore";
+import { translate } from "@/utilities/translate";
 import Image from "next/image";
 import AboutImage from "../../../public/about_image.jpg";
 
 export default function Home() {
+  const { lang } = useTranslate();
+
+  const { title, sub_title, call_us, email_us, visit_us } = translate(
+    "contact",
+    lang
+  );
   return (
     <section className="relative flex flex-col h-dvh w-full pb-10">
       <Image
@@ -16,11 +26,11 @@ export default function Home() {
 
       <div className="relative flex flex-col max-w-7xl mx-auto mt-10  w-full">
         <div className="p-10 w-full flex flex-col items-center justify-start rounded-xl bg-black/50 border border-white/20">
-          <h1 className="text-4xl text-shadow-sm text-shadow-[#00FF80]/50 font-bold text-white text-center">
-            CONTACT BIOTECHNICS
+          <h1 className="text-4xl uppercase text-shadow-sm text-shadow-[#00FF80]/50 font-bold text-white text-center">
+            {title}
           </h1>
-          <p className="text-xl text-white mt-2 text-center">
-            REACH OUT TO OUR DEDICATED TEAM OF ONCOLOGY SPECIALISTS
+          <p className="text-xl uppercase text-white mt-2 text-center">
+            {sub_title}
           </p>
 
           <div className="w-24 mt-2 h-2 rounded-full bg-black/80"></div>
@@ -41,14 +51,14 @@ export default function Home() {
               </div>
 
               <h2 className="mt-5 uppercase text-xl text-white font-medium">
-                Call us
+                {call_us.title}
               </h2>
 
               <p className="text-base text-white mt-2 text-center">
-                SPEAK WITH OUR ONCOLOGY SPECIALISTS
+                {call_us.description}
               </p>
 
-              <p className="text-lg text-[#00FF80] mt-2">1 (800) 555-CURE</p>
+              <p className="text-lg text-[#00FF80] mt-2">{call_us.number}</p>
             </div>
 
             <div className="w-full bg-black/20 border border-white/20 rounded-xl p-10 flex flex-col items-center justify-start">
@@ -66,14 +76,14 @@ export default function Home() {
               </div>
 
               <h2 className="mt-5 uppercase text-xl text-white font-medium">
-                EMAIL US
+                {email_us.title}
               </h2>
 
               <p className="text-base text-white mt-2 text-center">
-                SEND US A MESSAGE ANYTIME
+                {email_us.description}
               </p>
 
-              <p className="text-lg text-[#00FF80] mt-2">Cancer.gmail.com</p>
+              <p className="text-lg text-[#00FF80] mt-2">{email_us.email}</p>
             </div>
 
             <div className="w-full bg-black/20 border border-white/20 rounded-xl p-10 flex flex-col items-center justify-start">
@@ -99,15 +109,15 @@ export default function Home() {
               </div>
 
               <h2 className="mt-5 uppercase text-xl text-white font-medium">
-                VISIT US
+                {visit_us.title}
               </h2>
 
               <p className="text-base text-white mt-2 text-center">
-                SCHEDULE AN IN-PERSON CONSULTATION 2550 INNOVATION BLVD. SAN
+                {visit_us.description}
               </p>
 
               <p className="text-lg text-[#00FF80] mt-2 text-center">
-                2550 INNOVATION BLVD. SAN FRANCISCO, CA
+                {visit_us.address}
               </p>
             </div>
           </div>
