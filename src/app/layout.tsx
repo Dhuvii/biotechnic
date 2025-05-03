@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const customFont = localFont({
   src: [
     {
-      path: "./fonts/BITSUMIS.ttf",
+      path: "../../public/BITSUMIS.ttf",
       weight: "400",
       style: "normal",
     },
