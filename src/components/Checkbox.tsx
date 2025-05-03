@@ -22,7 +22,7 @@ const Checkbox = forwardRef(
       if (value) {
         controls.start("checked");
       }
-    }, [value]);
+    }, [value, controls]);
 
     return (
       <div className="group flex items-center justify-start">

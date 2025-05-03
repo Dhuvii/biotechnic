@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,6 +18,18 @@ export const metadata: Metadata = {
   description: "Immunotherapy for Cancer",
 };
 
+const customFont = localFont({
+  src: [
+    {
+      path: "./fonts/BITSUMIS.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-custom",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,7 +39,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${customFont.variable} antialiased font-custom`}
       >
         {children}
       </body>
