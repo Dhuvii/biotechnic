@@ -29,10 +29,15 @@ export default function About() {
 
       <Navbar />
 
-      <div className="relative flex flex-col max-w-7xl mx-auto mt-10  w-full">
+      <div className="relative flex flex-col px-20 mt-10  w-full">
         <div className="p-5 w-full grid grid-cols-5 rounded-xl bg-black/50 border border-white/20">
           <div className="col-span-3 max-w-xl">
-            <h1 className="text-4xl uppercase font-bold text-white">{title}</h1>
+            <div className="relative w-max flex items-center justify-center">
+              <div className="absolute inset-2 inset-y-4 blur-md bg-white"></div>
+              <h1 className="text-4xl relative uppercase font-bold text-white">
+                {title}
+              </h1>
+            </div>
 
             <h3 className="mt-2 text-xl uppercase font-bold text-white">
               {sub_title}

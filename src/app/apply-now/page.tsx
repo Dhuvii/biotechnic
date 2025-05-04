@@ -6,19 +6,18 @@ import Select from "@/components/Select";
 import { useTranslate } from "@/store/translateStore";
 import { translate } from "@/utilities/translate";
 import Image from "next/image";
-import AboutImage from "../../../public/about_image.jpg";
+import ApplyNowImage from "../../../public/apply_now_image.jpg";
+import Link from "next/link";
 
 export default function ApplyNow() {
   const { lang } = useTranslate();
 
-  const { title, sub_title, application_process, form, cta } = translate(
-    "apply_now",
-    lang
-  );
+  const { title, sub_title, application_process, form, cta, back_cta } =
+    translate("apply_now", lang);
   return (
     <section className="relative flex flex-col h-dvh w-full pb-10 overflow-hidden">
       <Image
-        src={AboutImage}
+        src={ApplyNowImage}
         alt="about image"
         fill
         className="absolute inset-0 size-full object-cover"
@@ -26,7 +25,7 @@ export default function ApplyNow() {
 
       <Navbar />
 
-      <div className="relative flex flex-col max-w-7xl mx-auto mt-10 w-full overflow-hidden">
+      <div className="relative flex flex-col px-20 -mt-5 w-full overflow-hidden">
         <div className="p-5 w-full grid grid-cols-1 md:grid-cols-4 overflow-y-auto lg:grid-cols-5 gap-5 rounded-xl bg-black/70 border border-white/20">
           <div className="w-full md:col-span-2 md:max-w-xl flex flex-col">
             <h1 className="text-4xl uppercase font-bold text-white">{title}</h1>
@@ -192,9 +191,34 @@ export default function ApplyNow() {
               </div>
             </div>
 
-            <button className="mt-10 uppercase bg-radial border border-white from-[#03FF81]/60 hover:from-red-700/60 from-10% to-[#03FF81]/60 text-base px-5 py-2 font-bold text-white">
-              {cta}
-            </button>
+            <div className="mt-10 relative group flex items-center justify-center">
+              <div className="absolute -inset-1 blur-lg bg-[#03FF81]/50 group-hover:bg-[#03FF81]/10"></div>
+              <button className=" w-full relative uppercase bg-radial border border-white from-[#03FF81]/60 hover:from-red-700/60 from-10% to-[#03FF81]/60 text-xl px-5 py-2 font-bold text-white">
+                {cta}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 flex items-center justify-center w-full gap-5">
+          <div className="relative group flex items-center justify-center">
+            <div className="absolute -inset-1 blur-lg bg-white/50 group-hover:bg-white/20"></div>
+            <Link
+              href="/"
+              className="relative flex items-center justify-center gap-2 uppercase bg-radial border border-white from-black/20 from-50% to-white/60 group-hover:from-black/10 text-lg px-10 py-2 font-bold text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="size-7"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12t.063-.375.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"
+                />
+              </svg>
+              {back_cta}
+            </Link>
           </div>
         </div>
       </div>

@@ -16,62 +16,77 @@ const Navbar = () => {
 
   const [isLangOpen, setIsLangOpen] = useState(false);
   return (
-    <nav className="relative w-full max-w-7xl mx-auto flex items-center justify-between">
+    <nav className="relative w-full -mt-10 px-14 flex items-center justify-between">
       <Link href="/">
-        <img src="logo.png" alt="logo" className="size-32 object-cover" />
+        <img src="logo.png" alt="logo" className="size-60 object-cover" />
       </Link>
 
       <div className="flex items-center justify-end gap-5 ">
-        <Link
-          href="/about"
-          className="bg-radial uppercase from-black/80 from-40% to-black/80 hover:from-white/10 transition-all duration-200 border border-white shadow-xl shadow-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white "
-        >
-          {links.about}
-        </Link>
+        <div className="relative group flex items-center justify-center">
+          <div className="absolute -inset-1 blur-lg bg-white/70 group-hover:bg-white/20"></div>
+          <Link
+            href="/about"
+            className="relative bg-radial uppercase from-black/80 from-40% to-black/80 group-hover:from-white/10 transition-all duration-200 border border-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white "
+          >
+            {links.about}
+          </Link>
+        </div>
 
-        <Link
-          href="/faq"
-          className="bg-radial uppercase from-black/80 from-40% to-black/80 hover:from-white/10 transition-all duration-200 border border-white shadow-xl shadow-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white "
-        >
-          {links.faq}
-        </Link>
+        <div className="relative group flex items-center justify-center">
+          <div className="absolute -inset-1 blur-lg bg-white/70 group-hover:bg-white/20"></div>
+          <Link
+            href="/faq"
+            className="relative bg-radial uppercase from-black/80 from-40% to-black/80 group-hover:from-white/10 transition-all duration-200 border border-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white "
+          >
+            {links.faq}
+          </Link>
+        </div>
 
-        <Link
-          href="/contact"
-          className="bg-radial uppercase from-black/80 from-40% to-black/80 hover:from-white/10 transition-all duration-200 border border-white shadow-xl shadow-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white "
-        >
-          {links.contact}
-        </Link>
+        <div className="relative group flex items-center justify-center">
+          <div className="absolute -inset-1 blur-lg bg-white/70 group-hover:bg-white/20"></div>
+          <Link
+            href="/contact"
+            className="relative bg-radial uppercase from-black/80 from-40% to-black/80 group-hover:from-white/10 transition-all duration-200 border border-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white "
+          >
+            {links.contact}
+          </Link>
+        </div>
 
-        <Link
-          href="./apply-now"
-          className="bg-radial uppercase from-[#00FF80] from-40% to-[#00FF80] hover:from-white/10 transition-all duration-200 border border-black shadow-xl shadow-white/60 px-5 py-2.5 text-sm font-semibold rounded-full text-black "
-        >
-          {links.applyNow}
-        </Link>
+        <div className="relative group flex items-center justify-center">
+          <div className="absolute -inset-1 blur-lg bg-white/70 group-hover:bg-white/20"></div>
+          <Link
+            href="./apply-now"
+            className="bg-radial relative uppercase from-[#00FF80] from-10% to-[#00FF80] group-hover:from-white transition-all duration-200 border border-black px-5 py-2.5 text-sm font-semibold rounded-full text-black "
+          >
+            {links.applyNow}
+          </Link>
+        </div>
 
         <Dropdown open={isLangOpen} onOpenChange={setIsLangOpen}>
-          <Dropdown.Button
-            className={cn(
-              "cursor-pointer flex items-center justify-start gap-2 p-2 bg-black text-white"
-            )}
-          >
-            <span className="text-sm">{lang}</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-5"
-              viewBox="0 0 24 24"
+          <div className="relative group flex items-center justify-center">
+            <div className="absolute -inset-1 blur-lg bg-white/70 group-hover:bg-white/20"></div>
+            <Dropdown.Button
+              className={cn(
+                "relative bg-radial uppercase flex items-center justify-center gap-2 from-black/80 from-40% to-black/80 group-hover:from-white/10 transition-all duration-200 border border-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white "
+              )}
             >
-              <path
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M21.25 12A9.25 9.25 0 0012 2.75M21.25 12H2.75m18.5 0A9.25 9.25 0 0112 21.25m0-18.5A9.25 9.25 0 002.75 12M12 2.75c-.5 0-4 4.141-4 9.25s3.5 9.25 4 9.25m0-18.5c.5 0 4 4.141 4 9.25s-3.5 9.25-4 9.25M2.75 12A9.25 9.25 0 0012 21.25"
-              />
-            </svg>
-          </Dropdown.Button>
+              <span className="text-sm">{lang}</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="size-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M21.25 12A9.25 9.25 0 0012 2.75M21.25 12H2.75m18.5 0A9.25 9.25 0 0112 21.25m0-18.5A9.25 9.25 0 002.75 12M12 2.75c-.5 0-4 4.141-4 9.25s3.5 9.25 4 9.25m0-18.5c.5 0 4 4.141 4 9.25s-3.5 9.25-4 9.25M2.75 12A9.25 9.25 0 0012 21.25"
+                />
+              </svg>
+            </Dropdown.Button>
+          </div>
 
           <Dropdown.Menu
             align="start"

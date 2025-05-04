@@ -23,16 +23,22 @@ export default function Faq() {
 
       <Navbar />
 
-      <div className="relative flex flex-col max-w-7xl mx-auto mt-10 w-full overflow-y-auto">
+      <div className="relative flex flex-col px-20 mt-10 w-full overflow-y-auto">
         <div className="p-10 w-full flex flex-col items-center justify-start rounded-xl bg-black/50 border border-white/20">
-          <h1 className="text-4xl uppercase text-shadow-sm text-shadow-[#00FF80]/50 font-bold text-white text-center">
-            {title}
-          </h1>
+          <div className="relative w-max flex items-center justify-center">
+            <div className="absolute inset-2 inset-y-3 blur-md bg-[#00FF80]/70"></div>
+            <h1 className="text-4xl relative uppercase text-shadow-sm font-bold text-white text-center">
+              {title}
+            </h1>
+          </div>
           <p className="text-xl uppercase text-white mt-2 text-center">
             {sub_title}
           </p>
 
-          <div className="w-24 mt-2 h-2 rounded-full bg-black/80"></div>
+          <div className="relative flex items-center justify-center">
+            <div className="absolute -inset-1 blur-md bg-[#00FF80]/20"></div>
+            <div className="relative w-24 mt-2 h-2 rounded-full bg-black/80"></div>
+          </div>
 
           <div className="mt-10 w-full max-w-4xl mx-auto">
             <div className="w-full bg-black/40 border border-white/20 rounded-xl p-10 flex flex-col items-center justify-start">
