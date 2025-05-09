@@ -15,6 +15,7 @@ export default function Home() {
   );
   return (
     <section className="relative flex flex-col h-dvh w-full pb-10">
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/30 to-transparent z-10"></div>
       <Image
         src={ContactImage}
         alt="contact image"
@@ -25,7 +26,7 @@ export default function Home() {
 
       <Navbar />
 
-      <div className="relative flex flex-col px-20 mt-10  w-full">
+      <div className="relative flex flex-col z-50 px-20 mt-10  w-full">
         <div className="p-10 w-full flex flex-col items-center justify-start rounded-xl bg-black/50 border border-white/20">
           <div className="relative w-max flex items-center justify-center">
             <div className="absolute inset-2 inset-y-3 blur-md bg-[#00FF80]/70"></div>

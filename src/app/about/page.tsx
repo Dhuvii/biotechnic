@@ -21,6 +21,7 @@ export default function About() {
 
   return (
     <section className="relative flex flex-col h-dvh w-full pb-10">
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/30 to-transparent z-10"></div>
       <Image
         src={AboutImage}
         alt="about image"
@@ -31,7 +32,7 @@ export default function About() {
 
       <Navbar />
 
-      <div className="relative flex flex-col px-20 mt-10  w-full">
+      <div className="relative z-50 flex flex-col px-20 mt-10  w-full">
         <div className="p-5 w-full grid grid-cols-5 rounded-xl bg-black/50 border border-white/20">
           <div className="col-span-3 max-w-xl">
             <div className="relative w-max flex items-center justify-center">
