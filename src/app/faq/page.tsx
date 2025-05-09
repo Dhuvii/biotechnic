@@ -5,7 +5,7 @@ import { useTranslate } from "@/store/translateStore";
 import { translate } from "@/utilities/translate";
 import * as Accordion from "@radix-ui/react-accordion";
 import Image from "next/image";
-import FaqImage from "../../../public/faq_image.jpg";
+import FaqImage from "../../../public/about_image.webp";
 
 export default function Faq() {
   const { lang } = useTranslate();
@@ -18,6 +18,7 @@ export default function Faq() {
         src={FaqImage}
         alt="hero image"
         fill
+        placeholder="blur"
         className="absolute inset-0 size-full object-cover"
       />
 

@@ -6,7 +6,7 @@ import Select from "@/components/Select";
 import { useTranslate } from "@/store/translateStore";
 import { translate } from "@/utilities/translate";
 import Image from "next/image";
-import ApplyNowImage from "../../../public/apply_now_image.jpg";
+import ApplyNowImage from "../../../public/apply_now_image.webp";
 import Link from "next/link";
 
 export default function ApplyNow() {
@@ -20,6 +20,7 @@ export default function ApplyNow() {
         src={ApplyNowImage}
         alt="about image"
         fill
+        placeholder="blur"
         className="absolute inset-0 size-full object-cover"
       />
 

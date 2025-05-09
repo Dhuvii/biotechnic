@@ -4,7 +4,8 @@ import Navbar from "@/components/Navbar";
 import { useTranslate } from "@/store/translateStore";
 import { translate } from "@/utilities/translate";
 import Image from "next/image";
-import AboutImage from "../../../public/about_image.jpg";
+import AboutImage from "../../../public/about_image.webp";
+import AboutContentImage from "../../../public/about_content.webp";
 
 export default function About() {
   const { lang } = useTranslate();
@@ -24,6 +25,7 @@ export default function About() {
         src={AboutImage}
         alt="about image"
         fill
+        placeholder="blur"
         className="absolute inset-0 size-full object-cover"
       />
 
@@ -76,9 +78,10 @@ export default function About() {
           <div className="col-span-2 w-full rounded-xl bg-black/50 p-5 flex flex-col">
             <div className="relative flex-1 w-full aspect-video rounded-xl overflow-hidden">
               <Image
-                src={AboutImage}
+                src={AboutContentImage}
                 alt="about image"
                 fill
+                placeholder="blur"
                 className="absolute inset-0 size-full object-cover"
               />
             </div>

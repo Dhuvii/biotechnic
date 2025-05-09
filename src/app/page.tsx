@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { useTranslate } from "@/store/translateStore";
 import { translate } from "@/utilities/translate";
 import Image from "next/image";
-import HeroImage from "../../public/hero_image.jpg";
+import HeroImage from "../../public/hero_image.webp";
 
 export default function Home() {
   const { lang } = useTranslate();
@@ -16,6 +16,7 @@ export default function Home() {
         src={HeroImage}
         alt="hero image"
         fill
+        placeholder="blur"
         className="absolute inset-0 size-full object-cover"
       />
 

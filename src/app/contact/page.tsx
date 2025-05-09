@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { useTranslate } from "@/store/translateStore";
 import { translate } from "@/utilities/translate";
 import Image from "next/image";
-import AboutImage from "../../../public/about_image.jpg";
+import ContactImage from "../../../public/about_image.webp";
 
 export default function Home() {
   const { lang } = useTranslate();
@@ -16,9 +16,10 @@ export default function Home() {
   return (
     <section className="relative flex flex-col h-dvh w-full pb-10">
       <Image
-        src={AboutImage}
+        src={ContactImage}
         alt="contact image"
         fill
+        placeholder="blur"
         className="absolute inset-0 size-full object-cover"
       />
 
