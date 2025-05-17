@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DeepModel Agent Website Starter Kit
 
-## Getting Started
+This starter kit powers landing pages for DeepModel AI, built with Next.js, React, TailwindCSS, and Sanity for content management. It provides a pre-configured foundation to showcase AI-driven features and offerings, enabling users to quickly deploy sleek, customizable pages for product promotions or demos.
 
-First, run the development server:
+## Table of Contents
+
+- [Installation](#installation)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Environment Variables](#environment-variables)
+- [Scripts](#scripts)
+- [Technologies Used](#technologies-used)
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd dm-website
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Development
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site will be available at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Google Cloud Platform (GCP) Deployment
 
-## Learn More
+The project includes custom pre-deploy and build scripts to manage file naming conventions that are incompatible with GCP:
 
-To learn more about Next.js, take a look at the following resources:
+- **Pre-deploy Script:** Renames files before deployment.
+- **Build Script:** Restores file names after deployment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run the following command for deployment:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+## Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Create a `.env` file in the project root and populate it with necessary environment variables.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To automatically generate an environment file, use:
+
+```bash
+npm run create-env
+```
+
+## Scripts
+
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the project for production.
+- `npm run start`: Start the production server.
+- `npm run lint`: Run the linter.
+- `npm run test`: Run unit tests using Vitest.
+- `npm run test:ui`: Launch Vitest UI for test visualization.
+- `npm run gcp-predeploy`: Prepare files for GCP deployment.
+- `npm run gcp-build`: Restore file names after deployment.
+- `npm run create-env`: Generate a `.env` file with current environment variables.
+- `npm run create-diff`: Generate a diff file for changes excluding specified directories.
+
+## Technologies Used
+
+### Frontend
+
+- **Framework:** Next.js
+- **UI Components:** React, TailwindCSS
+- **State Management:** Zustand
+- **Forms:** React Hook Form, Zod for validation
+- **Charts:** Recharts
+- **Animations:** Framer Motion
+
+### Backend
+
+- **Content Management:** Sanity CMS
+
+### Testing
+
+- **Unit Testing:** Vitest
+
+### Utilities
+
+- **HTTP Requests:** Axios
+- **Date Manipulation:** date-fns
+- **Cookie Management:** js-cookie

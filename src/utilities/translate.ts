@@ -1,4 +1,3 @@
-// src/utilities/translate.ts
 import en from "@/langs/en.json";
 import de from "@/langs/de.json";
 
@@ -28,25 +27,25 @@ type TranslateReturnType<T extends string> =
   T extends `${infer First}.${infer Rest}`
     ? { [K in First]: TranslateReturnType<Rest> }
     : T extends keyof TranslationFile
-    ? TranslationFile[T]
-    : never;
+      ? TranslationFile[T]
+      : never;
 
 // Overload signature for dot notation keys
 export function translate<T extends NestedKeyOf<TranslationFile>>(
   key: T,
-  lang?: keyof typeof availableLanguages
+  lang?: keyof typeof availableLanguages,
 ): TranslateReturnType<T>;
 
 // Overload signature for string keys (fallback)
 export function translate(
   key: string,
-  lang?: keyof typeof availableLanguages
+  lang?: keyof typeof availableLanguages,
 ): any;
 
 // Implementation
 export function translate(
   key: string,
-  lang: keyof typeof availableLanguages = "en"
+  lang: keyof typeof availableLanguages = "en",
 ) {
   // Default to 'en' if the requested language isn't available
   const targetLang = availableLanguages[lang] ? lang : "en";
@@ -56,7 +55,7 @@ export function translate(
 
   if (result === undefined) {
     console.warn(
-      `Translation key '${key}' not found in '${targetLang}' language file`
+      `Translation key '${key}' not found in '${targetLang}' language file`,
     );
     return {};
   }

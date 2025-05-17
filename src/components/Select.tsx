@@ -54,7 +54,7 @@ const Select = forwardRef<HTMLButtonElement, ISelect>(
       chevronClass,
       ...rest
     },
-    ref
+    ref,
   ) => {
     const [open, setOpen] = useState(false);
     const id = useId();
@@ -113,10 +113,10 @@ const Select = forwardRef<HTMLButtonElement, ISelect>(
             <AriaLabel
               htmlFor={id}
               className={cn(
-                "flex items-center text-white justify-start gap-1 text-base font-bold transition-colors duration-150",
+                "flex items-center justify-start gap-1 text-base font-bold text-white transition-colors duration-150",
                 { "text-red-700": error },
                 labelClass,
-                { "mb-1.5": !description }
+                { "mb-1.5": !description },
               )}
             >
               <motion.div
@@ -155,8 +155,8 @@ const Select = forwardRef<HTMLButtonElement, ISelect>(
             <Text
               id={`${id}-description`}
               className={cn(
-                "mb-1.5 mt-0.5 block pl-1 text-xs text-gray-600",
-                descriptionClass
+                "mt-0.5 mb-1.5 block pl-1 text-xs text-gray-600",
+                descriptionClass,
               )}
               slot="description"
             >
@@ -189,7 +189,7 @@ const Select = forwardRef<HTMLButtonElement, ISelect>(
           <S.Content
             className={cn(
               `w-full rounded-xl border border-gray-800 bg-black/80 p-1 shadow`,
-              contentClass
+              contentClass,
             )}
           >
             <S.ScrollUpButton className="flex items-center justify-center py-1">
@@ -206,7 +206,7 @@ const Select = forwardRef<HTMLButtonElement, ISelect>(
         </S.Portal>
       </S.Root>
     );
-  }
+  },
 );
 
 interface ISelectGroup extends S.SelectGroupProps {
@@ -274,13 +274,13 @@ const SelectTrigger = ({
           id={id}
           ref={ref}
           className={cn(
-            "group peer flex w-full items-center justify-between gap-5 rounded-xl border-white/30  bg-black/50 border px-3 py-3 text-sm text-white transition-all duration-75 focus:outline-none  disabled:cursor-not-allowed disabled:bg-gray-50 data-[placeholder]:text-gray-400",
+            "group peer flex w-full items-center justify-between gap-5 rounded-xl border border-white/30 bg-black/50 px-3 py-3 text-sm text-white transition-all duration-75 focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-50 data-[placeholder]:text-gray-400",
             {
               "border-red-600 focus:border-red-100 focus:ring-red-700": error,
             },
             `${isLoading ? "pl-10" : "pl-3"}`,
 
-            triggerClass
+            triggerClass,
           )}
           data-testid="select-trigger"
           {...rest}
@@ -299,15 +299,15 @@ const SelectTrigger = ({
           <div
             className={cn(
               "flex items-center justify-start gap-2 truncate",
-              placeholderClass
+              placeholderClass,
             )}
           >
             {Icon && !isLoading && (
               <span
                 data-testid="input-icon-svg"
                 className={cn(
-                  "flex items-center justify-center text-gray-500 group-focus:text-skin-primary peer-focus:text-skin-primary",
-                  { "text-red-700 peer-focus:text-red-700": error }
+                  "group-focus:text-skin-primary peer-focus:text-skin-primary flex items-center justify-center text-gray-500",
+                  { "text-red-700 peer-focus:text-red-700": error },
                 )}
               >
                 <Icon />
@@ -358,8 +358,8 @@ const Option = ({
       value={value}
       style={{ paddingLeft: `${0.75 * level}rem` }}
       className={cn(
-        `cursor-pointer rounded-lg p-3 py-[0.68rem] text-sm text-gray-200 data-[highlighted]:bg-[#421CA4] data-[state=checked]:font-medium data-[highlighted]:text-white data-[highlighted]:outline-none`,
-        className
+        `cursor-pointer rounded-lg p-3 py-[0.68rem] text-sm text-gray-200 data-[highlighted]:bg-[#421CA4] data-[highlighted]:text-white data-[highlighted]:outline-none data-[state=checked]:font-medium`,
+        className,
       )}
       data-testid={`select-option-${value}`}
       {...rest}
@@ -375,8 +375,8 @@ const OptionLabel = ({ children, className }: IOptionLabel) => {
   return (
     <S.Label
       className={cn(
-        "mb-2 mt-3 block px-3 text-sm font-semibold tracking-wide text-gray-300",
-        className
+        "mt-3 mb-2 block px-3 text-sm font-semibold tracking-wide text-gray-300",
+        className,
       )}
     >
       {children}

@@ -9,13 +9,10 @@ import ContactImage from "../../../public/about_image.webp";
 export default function Home() {
   const { lang } = useTranslate();
 
-  const { title, sub_title, call_us, email_us, visit_us } = translate(
-    "contact",
-    lang
-  );
+  const { title, sub_title, email_us, form } = translate("contact", lang);
   return (
-    <section className="relative flex flex-col h-dvh w-full pb-10">
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/30 to-transparent z-10"></div>
+    <section className="relative flex h-dvh w-full flex-col pb-10">
+      <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-black/30 to-transparent"></div>
       <Image
         src={ContactImage}
         alt="contact image"
@@ -26,108 +23,131 @@ export default function Home() {
 
       <Navbar />
 
-      <div className="relative flex flex-col z-50 px-20 mt-10  w-full">
-        <div className="p-10 w-full flex flex-col items-center justify-start rounded-xl bg-black/50 border border-white/20">
-          <div className="relative w-max flex items-center justify-center">
-            <div className="absolute inset-2 inset-y-3 blur-md bg-[#00FF80]/70"></div>
-            <h1 className="text-4xl relative uppercase text-shadow-sm font-bold text-white text-center">
+      <div className="relative z-50 mt-10 flex w-full flex-col overflow-y-auto px-20">
+        <div className="flex w-full flex-col items-center justify-start rounded-xl border border-white/20 bg-black/50 p-10">
+          <div className="relative flex w-max items-center justify-center">
+            <div className="absolute inset-2 inset-y-3 bg-[#00FF80]/70 blur-md"></div>
+            <h1 className="text-shadow-sm relative text-center text-4xl font-bold text-white uppercase">
               {title}
             </h1>
           </div>
-          <p className="text-xl uppercase text-white mt-2 text-center">
+          <p className="mt-2 text-center text-xl text-white uppercase">
             {sub_title}
           </p>
 
           <div className="relative flex items-center justify-center">
-            <div className="absolute -inset-1 blur-md bg-[#00FF80]/20"></div>
-            <div className="relative w-24 mt-2 h-2 rounded-full bg-black/80"></div>
+            <div className="absolute -inset-1 bg-[#00FF80]/20 blur-md"></div>
+            <div className="relative mt-2 h-2 w-24 rounded-full bg-black/80"></div>
           </div>
 
-          <div className="mt-10 grid grid-cols-3 gap-5 w-full">
-            <div className="w-full bg-black/20 border border-white/20 rounded-xl p-10 flex flex-col items-center justify-start">
-              <div className="p-5 rounded-full border text-[#00FF80] bg-radial from-black/10 from-5% border-[#00FF80]/70 to-[#00FF80]/20">
+          <div className="mt-10 grid w-full grid-cols-3 gap-5">
+            <div className="flex w-full flex-col items-center justify-center rounded-xl border border-white/20 bg-black/20 p-10">
+              <div className="rounded-full border border-[#00FF80]/70 bg-radial from-black/10 from-5% to-[#00FF80]/20 p-5 text-[#00FF80]">
                 <svg
+                  width={48}
+                  height={48}
+                  viewBox="0 0 48 48"
+                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-8"
-                  viewBox="0 0 24 24"
                 >
                   <path
-                    fill="currentColor"
-                    d="M19.2 20q-2.702 0-5.418-1.244t-5.005-3.533q-2.27-2.289-3.523-5.021Q4 7.469 4 4.8V4h4.439l.848 4.083-2.696 2.51q.684 1.186 1.417 2.167t1.527 1.769q.802.84 1.808 1.57t2.296 1.44l2.611-2.708 3.75.756V20zM6.121 9.654l2.092-1.92L7.635 5h-2.63q.03 1.144.309 2.305.278 1.16.807 2.349m8.45 8.335q.923.463 2.09.723t2.339.277v-2.605l-2.388-.475zm0 0"
+                    d="M43 36L29.714 24m-11.428 0L5 36M4 14l16.33 11.43c1.322.927 1.983 1.39 2.703 1.569.635.158 1.3.158 1.934 0 .72-.18 1.38-.642 2.703-1.568L44 14M13.6 40h20.8c3.36 0 5.04 0 6.324-.654a6 6 0 002.622-2.622C44 35.44 44 33.76 44 30.4V17.6c0-3.36 0-5.04-.654-6.324a6 6 0 00-2.622-2.622C39.44 8 37.76 8 34.4 8H13.6c-3.36 0-5.04 0-6.324.654a6 6 0 00-2.622 2.622C4 12.56 4 14.24 4 17.6v12.8c0 3.36 0 5.04.654 6.324a6 6 0 002.622 2.622C8.56 40 10.24 40 13.6 40z"
+                    stroke="#00FF80"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
 
-              <h2 className="mt-5 uppercase text-xl text-white font-medium">
-                {call_us.title}
-              </h2>
-
-              <p className="text-base text-white mt-2 text-center">
-                {call_us.description}
-              </p>
-
-              <p className="text-lg text-[#00FF80] mt-2">{call_us.number}</p>
-            </div>
-
-            <div className="w-full bg-black/20 border border-white/20 rounded-xl p-10 flex flex-col items-center justify-start">
-              <div className="p-5 rounded-full border text-[#00FF80] bg-radial from-black/10 from-5% border-[#00FF80]/70 to-[#00FF80]/20">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-8"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M4.616 19q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v10.769q0 .69-.463 1.153T19.385 19zM12 12.116L4 6.885v10.5q0 .269.173.442t.443.173h14.769q.269 0 .442-.173t.173-.443v-10.5zM12 11l7.692-5H4.308zM4 6.885V6v11.385q0 .269.173.442t.443.173H4z"
-                  />
-                </svg>
-              </div>
-
-              <h2 className="mt-5 uppercase text-xl text-white font-medium">
+              <h2 className="mt-5 text-xl font-medium text-white uppercase">
                 {email_us.title}
               </h2>
 
-              <p className="text-base text-white mt-2 text-center">
+              <p className="font-game mt-2 text-center text-xs text-white">
                 {email_us.description}
               </p>
 
-              <p className="text-lg text-[#00FF80] mt-2">{email_us.email}</p>
+              <p className="font-game mt-2 text-lg text-[#00FF80]">
+                {email_us.email.split("@")[0]}{" "}
+                <span className="font-sans">@</span>{" "}
+                {email_us.email.split("@")[1]}
+              </p>
             </div>
 
-            <div className="w-full bg-black/20 border border-white/20 rounded-xl p-10 flex flex-col items-center justify-start">
-              <div className="p-5 rounded-full border text-[#00FF80] bg-radial from-black/10 from-5% border-[#00FF80]/70 to-[#00FF80]/20">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  className="size-8"
-                >
-                  <g
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
+            <form
+              action=""
+              className="col-span-2 flex w-full flex-col rounded-xl border border-white/30 bg-black/10 p-5"
+            >
+              <div className="mb-5 grid grid-cols-1 gap-5 md:grid-cols-2">
+                <div className="w-full">
+                  <label
+                    htmlFor="first-name"
+                    className="block text-base font-bold text-white"
                   >
-                    <path d="M12.56 20.82a.96.96 0 01-1.12 0C6.611 17.378 1.486 10.298 6.667 5.182A7.6 7.6 0 0112 3c2 0 3.919.785 5.333 2.181 5.181 5.116.056 12.196-4.773 15.64" />
-                    <path d="M12 12a2 2 0 100-4 2 2 0 000 4" />
-                  </g>
-                </svg>
+                    {form.first_name.label}
+                  </label>
+                  <input
+                    id="first-name"
+                    type="text"
+                    placeholder={form.first_name.placeholder}
+                    className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                  />
+                </div>
+
+                <div className="w-full">
+                  <label
+                    htmlFor="last-name"
+                    className="block text-base font-bold text-white"
+                  >
+                    {form.last_name.label}
+                  </label>
+                  <input
+                    id="last-name"
+                    type="text"
+                    placeholder={form.last_name.placeholder}
+                    className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                  />
+                </div>
               </div>
 
-              <h2 className="mt-5 uppercase text-xl text-white font-medium">
-                {visit_us.title}
-              </h2>
+              <div className="mb-5 w-full">
+                <label
+                  htmlFor="email"
+                  className="block text-base font-bold text-white"
+                >
+                  {form.email.label}
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder={form.email.placeholder}
+                  className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                />
+              </div>
 
-              <p className="text-base text-white mt-2 text-center">
-                {visit_us.description}
-              </p>
+              <div className="w-full">
+                <label
+                  htmlFor="message"
+                  className="block text-base font-bold text-white"
+                >
+                  {form.message.label}
+                </label>
+                <textarea
+                  id="message"
+                  rows={3}
+                  placeholder={form.message.placeholder}
+                  className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                />
+              </div>
 
-              <p className="text-lg text-[#00FF80] mt-2 text-center">
-                {visit_us.address}
-              </p>
-            </div>
+              <div className="group relative mt-5 flex items-center justify-center">
+                <div className="absolute -inset-1 bg-[#03FF81]/50 blur-lg group-hover:bg-[#03FF81]/10"></div>
+                <button className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold text-white uppercase hover:from-transparent">
+                  {form.cta}
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

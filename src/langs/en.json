@@ -3,27 +3,31 @@
     "links": {
       "about": "About us",
       "faq": "FAQ",
-      "contact": "Contact",
-      "applyNow": "Apply Now"
+      "contact": "Contact"
     }
   },
   "homepage": {
-    "hero": {
-      "title_start": "immunotherapy for",
-      "title_highlight": "late-stage",
-      "title_end": "cancer",
-      "sub_title": "\"NO RESULTS / NO PAYMENT\"",
-      "description_start": "for stage 3 & 4 patients who failed chemotherapy. breakthrough treatment with",
-      "description_highlight": "zero upfront cost.",
-      "cta": "Apply now no upfront cost"
+    "title": "welcome to biotechnics",
+    "sub_title_1": "immunotherapy for",
+    "sub_title_highlight": "late-stage and paliative",
+    "sub_title_2": "cancer patients",
+    "feat_1": {
+      "title": "cancer fights hard ? fight harder ! ! !",
+      "description": "more about our cancer-fighting technology",
+      "cta": "Learn more"
     },
-    "features": [
-      "100% transparent",
-      "for-approved labs",
-      "ai powered treatment",
-      "zero upfront cost"
-    ],
-    "cta": "Inquiry"
+    "feat_2": {
+      "title": "zero upfront costs",
+      "description": "no results = no payment",
+      "tag": "just focus on your treatment. not on money",
+      "cta": "Apply Now"
+    },
+    "feat_3": {
+      "title": "no waiting, no apply process, no restrictions",
+      "description": "full 1 year supply buy here",
+      "address": "2550 innovation blvd. san francisco, ca",
+      "cta": "Buy now"
+    }
   },
   "about-us": {
     "title": "about our technology",
@@ -58,20 +62,29 @@
   "contact": {
     "title": "contact biotechnics",
     "sub_title": "reach out to our dedicated team of oncology specialists",
-    "call_us": {
-      "title": "call us",
-      "description": "speak with our oncology specialists",
-      "number": "1 (800) 555-2222"
-    },
     "email_us": {
       "title": "email us",
       "description": "send us a message anytime",
-      "email": "cancer.gmail.com"
+      "email": "info@biotechnics.com"
     },
-    "visit_us": {
-      "title": "visit us",
-      "description": "schedule an in-person consultation 2550 innovation blvd. san",
-      "address": "2550 innovation blvd. san francisco, ca"
+    "form": {
+      "first_name": {
+        "label": "First name",
+        "placeholder": "Enter first name"
+      },
+      "last_name": {
+        "label": "Last name",
+        "placeholder": "Enter last name"
+      },
+      "email": {
+        "label": "Email address",
+        "placeholder": "Enter email"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Enter message"
+      },
+      "cta": "Send message"
     }
   },
   "apply_now": {

@@ -7,7 +7,8 @@ import Cookie from "js-cookie";
 import Link from "next/link";
 import { useState } from "react";
 import Dropdown from "./dropdown";
-
+import Image from "next/image";
+import Logo from "../../public/logo.png";
 const Navbar = () => {
   const { lang } = useTranslate();
   const { setLang } = useTranslateActions();
@@ -16,61 +17,53 @@ const Navbar = () => {
 
   const [isLangOpen, setIsLangOpen] = useState(false);
   return (
-    <nav className="relative isolate z-40 w-full -mt-10 px-14 flex items-center justify-between">
+    <nav className="relative isolate z-40 -mt-10 flex w-full items-center justify-between px-14">
       <Link
         href="/"
-        className="p-1 w-60 h-48 rounded-2xl bg-black/10 backdrop-blur-xs"
+        className="relative h-48 w-60 rounded-2xl bg-black/10 p-1 backdrop-blur-xs"
       >
-        <img src="logo.png" alt="logo" className=" object-cover" />
+        <Image fill src={Logo} alt="logo" className="object-cover" />
       </Link>
 
-      <div className="flex items-center justify-end gap-5 ">
-        <div className="relative group flex items-center justify-center">
-          <div className="absolute -inset-1 blur-lg bg-white/70 group-hover:bg-white/20"></div>
+      <div className="flex items-center justify-end gap-5">
+        <div className="group relative flex items-center justify-center">
+          <div className="absolute -inset-1 bg-white/70 blur-lg group-hover:bg-white/20"></div>
           <Link
             href="/about"
-            className="relative bg-radial uppercase from-black/80 from-40% to-black/80 group-hover:from-white/10 transition-all duration-200 border border-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white tracking-widest "
+            className="relative rounded-xs border border-white/60 bg-radial from-black/80 from-40% to-black/80 px-3 py-2.5 text-sm font-semibold tracking-widest text-white uppercase transition-all duration-200 group-hover:from-white/10"
           >
             {links.about}
           </Link>
         </div>
 
-        <div className="relative group flex items-center justify-center">
-          <div className="absolute -inset-1 blur-lg bg-white/70 group-hover:bg-white/20"></div>
+        <div className="group relative flex items-center justify-center">
+          <div className="absolute -inset-1 bg-white/70 blur-lg group-hover:bg-white/20"></div>
           <Link
             href="/faq"
-            className="relative bg-radial uppercase from-black/80 from-40% to-black/80 group-hover:from-white/10 transition-all duration-200 border border-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white tracking-widest "
+            className="relative rounded-xs border border-white/60 bg-radial from-black/80 from-40% to-black/80 px-3 py-2.5 text-sm font-semibold tracking-widest text-white uppercase transition-all duration-200 group-hover:from-white/10"
           >
             {links.faq}
           </Link>
         </div>
 
-        <div className="relative group flex items-center justify-center">
-          <div className="absolute -inset-1 blur-lg bg-white/70 group-hover:bg-white/20"></div>
+        <div className="group relative flex items-center justify-center">
+          <div className="absolute -inset-1 bg-white/70 blur-lg group-hover:bg-white/20"></div>
           <Link
             href="/contact"
-            className="relative bg-radial uppercase from-black/80 from-40% to-black/80 group-hover:from-white/10 transition-all duration-200 border border-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white tracking-widest "
+            className="relative rounded-xs border border-white/60 bg-radial from-black/80 from-40% to-black/80 px-3 py-2.5 text-sm font-semibold tracking-widest text-white uppercase transition-all duration-200 group-hover:from-white/10"
           >
             {links.contact}
           </Link>
         </div>
 
-        <div className="relative group flex items-center justify-center">
-          <div className="absolute -inset-1 blur-lg bg-white/70 group-hover:bg-white/20"></div>
-          <Link
-            href="./apply-now"
-            className="bg-radial relative uppercase from-[#00FF80] from-10% to-[#00FF80] group-hover:from-white transition-all duration-200 border border-black px-5 py-2.5 text-sm tracking-widest font-semibold rounded-full text-black "
-          >
-            {links.applyNow}
-          </Link>
-        </div>
+        <div className="h-10 w-1 rounded-full bg-white"></div>
 
         <Dropdown open={isLangOpen} onOpenChange={setIsLangOpen}>
-          <div className="relative group flex items-center justify-center">
-            <div className="absolute -inset-1 blur-lg bg-white/70 group-hover:bg-white/20"></div>
+          <div className="group relative flex items-center justify-center">
+            <div className="absolute -inset-1 bg-white/70 blur-lg group-hover:bg-white/20"></div>
             <Dropdown.Button
               className={cn(
-                "relative bg-radial tracking-widest uppercase flex items-center justify-center gap-2 from-black/80 from-40% to-black/80 group-hover:from-white/10 transition-all duration-200 border border-white/60 px-3 py-2.5 text-sm font-semibold rounded-xs text-white "
+                "relative flex items-center justify-center gap-2 rounded-xs border border-white/60 bg-radial from-black/80 from-40% to-black/80 px-3 py-2.5 text-sm font-semibold tracking-widest text-white uppercase transition-all duration-200 group-hover:from-white/10",
               )}
             >
               <span className="text-sm">{lang}</span>
@@ -93,7 +86,7 @@ const Navbar = () => {
 
           <Dropdown.Menu
             align="start"
-            className="rounded-xl bg-gradient-to-br from-gray-900 to-gray-950 shadow-xl ring-[1px] ring-gray-800 "
+            className="rounded-xl bg-gradient-to-br from-gray-900 to-gray-950 shadow-xl ring-[1px] ring-gray-800"
           >
             <Dropdown.Item
               onSelect={() => {

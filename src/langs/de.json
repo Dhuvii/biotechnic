@@ -3,80 +3,93 @@
     "links": {
       "about": "Über uns",
       "faq": "FAQ",
-      "contact": "Kontakt",
-      "applyNow": "Jetzt bewerben"
+      "contact": "Kontakt"
     }
   },
   "homepage": {
-    "hero": {
-      "title_start": "Immuntherapie für",
-      "title_highlight": "Spätstadium",
-      "title_end": "Krebs",
-      "sub_title": "\"KEINE ERGEBNISSE / KEINE ZAHLUNG\"",
-      "description_start": "für Patienten im Stadium 3 & 4, bei denen die Chemotherapie versagt hat. bahnbrechende Behandlung mit",
-      "description_highlight": "null Vorauszahlung.",
-      "cta": "Jetzt bewerben ohne Vorauszahlung"
+    "title": "Willkommen bei Biotechnics",
+    "sub_title_1": "Immuntherapie für",
+    "sub_title_highlight": "fortgeschrittene und palliative",
+    "sub_title_2": "Krebspatienten",
+    "feat_1": {
+      "title": "Krebs kämpft hart? Kämpfe härter!!!",
+      "description": "Mehr über unsere krebsbekämpfende Technologie",
+      "cta": "Mehr erfahren"
     },
-    "features": [
-      "100 % transparent",
-      "von zugelassenen Labors",
-      "KI-gestützte Behandlung",
-      "null Vorauszahlung"
-    ],
-    "cta": "Anfrage"
+    "feat_2": {
+      "title": "Keine Vorabkosten",
+      "description": "Keine Ergebnisse = Keine Zahlung",
+      "tag": "Konzentrieren Sie sich nur auf Ihre Behandlung. Nicht auf Geld.",
+      "cta": "Jetzt bewerben"
+    },
+    "feat_3": {
+      "title": "Keine Wartezeit, kein Bewerbungsprozess, keine Einschränkungen",
+      "description": "Voller Jahresvorrat hier kaufen",
+      "address": "2550 Innovation Blvd., San Francisco, CA",
+      "cta": "Jetzt kaufen"
+    }
   },
   "about-us": {
-    "title": "über unsere Technologie",
-    "sub_title": "Verschmelzung von KI und Immuntherapie zur Bekämpfung resistenter Krebserkrankungen",
-    "description_one": "Unser revolutionärer Ansatz kombiniert künstliche Intelligenz mit fortschrittlicher Immuntherapie, um personalisierte Behandlungsprotokolle für Krebspatienten im Spätstadium zu entwickeln, die nicht auf herkömmliche Chemotherapie angesprochen haben.",
-    "description_two": "Durch die Analyse von Tausenden Datenpunkten Ihres spezifischen Krebsprofils identifiziert unser KI-System die optimale Kombination von Immuntherapie-Wirkstoffen zur gezielten Bekämpfung Ihrer einzigartigen Krebszellen.",
+    "title": "Über unsere Technologie",
+    "sub_title": "KI und Immuntherapie vereint zur Bekämpfung resistenter Krebsarten",
+    "description_one": "Unser revolutionärer Ansatz kombiniert künstliche Intelligenz mit fortschrittlicher Immuntherapie, um personalisierte Behandlungsprotokolle für Krebspatienten im Spätstadium zu entwickeln, die auf herkömmliche Chemotherapie nicht angesprochen haben.",
+    "description_two": "Durch die Analyse tausender Datenpunkte Ihres spezifischen Krebsprofils identifiziert unser KI-System die optimale Kombination von Immuntherapie-Wirkstoffen, um Ihre einzigartigen Krebszellen gezielt zu bekämpfen.",
     "success_rate": {
       "success_one": "70 % Tumorreduktion in Studien",
-      "success_two": "85 % Erfolg bei Patienten im Stadium 3",
-      "success_three": "60 % Erfolg bei Patienten im Stadium 4"
+      "success_two": "85 % Erfolg bei Patienten mit Stadium 3",
+      "success_three": "60 % Erfolg bei Patienten mit Stadium 4"
     },
     "features": [
-      "Fortschrittliche Reinraumtechnik mit FI-Überwachungssystemen",
-      "Proprietärer Syntheseprozess für Immuntherapien",
-      "Echtzeit-Optimierung der Behandlung durch KI-Feedback"
+      "Moderne Reinraum-Anlagen mit FI-Überwachungssystemen",
+      "Proprietäres Immuntherapie-Syntheseverfahren",
+      "Echtzeit-Behandlungsoptimierung durch KI-Feedback"
     ]
   },
   "faq": {
-    "title": "häufig gestellte Fragen",
-    "sub_title": "alles, was Sie über unsere bahnbrechende Behandlung wissen müssen",
+    "title": "Häufig gestellte Fragen",
+    "sub_title": "Alles, was Sie über unsere revolutionäre Behandlung wissen müssen",
     "faqs": [
       {
-        "question": "Wie funktioniert das Prinzip 'Keine Zahlung ohne Ergebnis'?",
+        "question": "Wie funktioniert die Zahlung ohne Vorkosten?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       },
       {
-        "question": "Wie funktioniert das Prinzip 'Keine Zahlung ohne Ergebnis'?",
+        "question": "Wie funktioniert die Zahlung ohne Vorkosten?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       }
     ]
   },
   "contact": {
-    "title": "Kontakt zu Biotechnics",
-    "sub_title": "Kontaktieren Sie unser engagiertes Team von Onkologie-Spezialisten",
-    "call_us": {
-      "title": "Rufen Sie uns an",
-      "description": "Sprechen Sie mit unseren Onkologie-Spezialisten",
-      "number": "1 (800) 555-2222"
-    },
+    "title": "Kontaktieren Sie Biotechnics",
+    "sub_title": "Wenden Sie sich an unser engagiertes Team von Onkologie-Spezialisten",
     "email_us": {
       "title": "Schreiben Sie uns",
       "description": "Senden Sie uns jederzeit eine Nachricht",
-      "email": "cancer.gmail.com"
+      "email": "info@biotechnics.com"
     },
-    "visit_us": {
-      "title": "Besuchen Sie uns",
-      "description": "Vereinbaren Sie eine persönliche Beratung 2550 Innovation Blvd. San",
-      "address": "2550 Innovation Blvd. San Francisco, CA"
+    "form": {
+      "first_name": {
+        "label": "Vorname",
+        "placeholder": "Vornamen eingeben"
+      },
+      "last_name": {
+        "label": "Nachname",
+        "placeholder": "Nachnamen eingeben"
+      },
+      "email": {
+        "label": "E-Mail-Adresse",
+        "placeholder": "E-Mail eingeben"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Nachricht eingeben"
+      },
+      "cta": "Nachricht senden"
     }
   },
   "apply_now": {
-    "title": "Starten Sie noch heute Ihre Reise",
-    "sub_title": "Machen Sie den ersten Schritt zu einer revolutionären Krebsbehandlung ohne Vorauszahlung – bewerben Sie sich jetzt, um zu sehen, ob Sie qualifiziert sind.",
+    "title": "Starten Sie noch heute",
+    "sub_title": "Machen Sie den ersten Schritt zu einer revolutionären Krebsbehandlung ohne Vorabkosten. Bewerben Sie sich jetzt, um zu sehen, ob Sie qualifiziert sind.",
     "application_process": {
       "title": "Bewerbungsprozess",
       "process": [
@@ -101,11 +114,11 @@
     "form": {
       "first_name": {
         "label": "Vorname",
-        "placeholder": "Vorname eingeben"
+        "placeholder": "Vornamen eingeben"
       },
       "last_name": {
         "label": "Nachname",
-        "placeholder": "Nachname eingeben"
+        "placeholder": "Nachnamen eingeben"
       },
       "email": {
         "label": "E-Mail-Adresse",
@@ -115,33 +128,33 @@
         "label": "Krebsart",
         "placeholder": "Krebsart auswählen",
         "options": [
-          { "name": "Chemotherapie", "value": "chemotherapy" },
-          { "name": "Strahlentherapie", "value": "radiation" },
-          { "name": "Operation", "value": "surgery" },
-          { "name": "Immuntherapie", "value": "immunotherapy" }
+          { "name": "chemotherapy", "value": "chemotherapy" },
+          { "name": "Radiation", "value": "radiation" },
+          { "name": "Surgery", "value": "surgery" },
+          { "name": "Immunotherapy", "value": "immunotherapy" }
         ]
       },
       "cancer_stage": {
         "label": "Krebsstadium",
         "placeholder": "Krebsstadium auswählen",
         "options": [
-          { "name": "Chemotherapie", "value": "chemotherapy" },
-          { "name": "Strahlentherapie", "value": "radiation" },
-          { "name": "Operation", "value": "surgery" },
-          { "name": "Immuntherapie", "value": "immunotherapy" }
+          { "name": "chemotherapy", "value": "chemotherapy" },
+          { "name": "Radiation", "value": "radiation" },
+          { "name": "Surgery", "value": "surgery" },
+          { "name": "Immunotherapy", "value": "immunotherapy" }
         ]
       },
       "previous_treatments": {
         "label": "Vorherige Behandlung",
         "options": [
-          { "name": "Chemotherapie", "value": "chemotherapy" },
-          { "name": "Strahlentherapie", "value": "radiation" },
-          { "name": "Operation", "value": "surgery" },
-          { "name": "Immuntherapie", "value": "immunotherapy" }
+          { "name": "chemotherapy", "value": "chemotherapy" },
+          { "name": "Radiation", "value": "radiation" },
+          { "name": "Surgery", "value": "surgery" },
+          { "name": "Immunotherapy", "value": "immunotherapy" }
         ]
       }
     },
-    "cta": "Jetzt bewerben – keine Vorauszahlung",
-    "back_cta": "Zurück nach Hause"
+    "cta": "Jetzt bewerben – Keine Vorabkosten",
+    "back_cta": "Zurück zur Startseite"
   }
 }

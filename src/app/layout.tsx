@@ -30,6 +30,18 @@ const customFont = localFont({
   display: "swap",
 });
 
+const gameCube = localFont({
+  src: [
+    {
+      path: "../../public/GameCube.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-game-cube",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -39,7 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} ${customFont.variable} antialiased font-custom`}
+        className={`${geistSans.variable} ${gameCube.variable} ${geistMono.variable} ${customFont.variable} font-custom antialiased`}
       >
         {children}
       </body>
