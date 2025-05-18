@@ -27,7 +27,7 @@ export default function Home() {
         <div className="flex w-full flex-col items-center justify-start rounded-xl border border-white/20 bg-black/50 p-10">
           <div className="relative flex w-max items-center justify-center">
             <div className="absolute inset-2 inset-y-3 bg-[#00FF80]/70 blur-md"></div>
-            <h1 className="text-shadow-sm relative text-center text-4xl font-bold text-white uppercase">
+            <h1 className="text-shadow-sm relative text-center text-5xl font-bold tracking-wider text-white uppercase">
               {title}
             </h1>
           </div>
@@ -83,7 +83,7 @@ export default function Home() {
                 <div className="w-full">
                   <label
                     htmlFor="first-name"
-                    className="block text-base font-bold text-white"
+                    className="block text-base font-bold tracking-widest text-white"
                   >
                     {form.first_name.label}
                   </label>
@@ -98,7 +98,7 @@ export default function Home() {
                 <div className="w-full">
                   <label
                     htmlFor="last-name"
-                    className="block text-base font-bold text-white"
+                    className="block text-base font-bold tracking-widest text-white"
                   >
                     {form.last_name.label}
                   </label>
@@ -114,7 +114,7 @@ export default function Home() {
               <div className="mb-5 w-full">
                 <label
                   htmlFor="email"
-                  className="block text-base font-bold text-white"
+                  className="block text-base font-bold tracking-widest text-white"
                 >
                   {form.email.label}
                 </label>
@@ -129,7 +129,7 @@ export default function Home() {
               <div className="w-full">
                 <label
                   htmlFor="message"
-                  className="block text-base font-bold text-white"
+                  className="block text-base font-bold tracking-widest text-white"
                 >
                   {form.message.label}
                 </label>

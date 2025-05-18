@@ -27,6 +27,74 @@
       "description": "full 1 year supply buy here",
       "address": "2550 innovation blvd. san francisco, ca",
       "cta": "Buy now"
+    },
+    "orderForm": {
+      "full_name": {
+        "label": "Full name",
+        "placeholder": "Enter full name"
+      },
+      "street_address": {
+        "label": "Street Address",
+        "placeholder": "Enter street address"
+      },
+      "region": {
+        "label": "Region",
+        "placeholder": "Enter region"
+      },
+      "city": {
+        "label": "City",
+        "placeholder": "Enter city"
+      },
+      "zip_code": {
+        "label": "Zip code",
+        "placeholder": "Enter zip code"
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "Enter country"
+      },
+      "phone_number": {
+        "label": "Phone number",
+        "placeholder": "Enter phone number"
+      },
+      "email": {
+        "label": "Email address",
+        "placeholder": "Enter email"
+      },
+      "terms_and_conditions": {
+        "label": "Terms and conditions",
+        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
+      },
+      "price": {
+        "label": "Price",
+        "value": "49.999 EUR"
+      },
+      "payment_option": {
+        "label": "Payment Option",
+        "value": "Bank Transfer [swift]"
+      },
+      "cta": "Order Now"
+    },
+    "orderConfirmation": {
+      "title": "order confirmation",
+      "sub_title": "thank you for your order",
+      "order_number": "order number",
+      "confirmation_email": {
+        "title": "confirmation email",
+        "content": "a copy of your order, including payment instructions, has been sent to your email."
+      },
+      "bank": {
+        "title": "Bank Transfer (SWIFT) Payment Instructions",
+        "bank_name": "Bank Name",
+        "account_holder": "Account Holder",
+        "iban": "IBAN",
+        "swift": "SWIFT/BIC",
+        "amount": "Amount"
+      },
+      "note": {
+        "title": "Note",
+        "content": "your order will only be processed after the full payment is received. please allow 1–5 business days for international bank transfers. don’t forget to include the reference when sending the payment."
+      }
     }
   },
   "about-us": {

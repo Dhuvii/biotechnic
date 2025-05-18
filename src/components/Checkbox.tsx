@@ -13,7 +13,7 @@ interface ICheckbox extends Cbx.CheckboxProps {
 const Checkbox = forwardRef(
   (
     { name, value = "", onChange, label, labelClass, ...rest }: ICheckbox,
-    ref: React.Ref<HTMLButtonElement>
+    ref: React.Ref<HTMLButtonElement>,
   ) => {
     const id = useId();
     const controls = useAnimationControls();
@@ -38,15 +38,15 @@ const Checkbox = forwardRef(
             onChange && onChange(value ? false : true);
           }}
           className={cn(
-            `flex aspect-square h-5 w-5 items-center justify-center rounded-md p-1 ring-[1px] transition duration-300 focus:outline-none focus-visible:border-transparent focus-visible:ring-2 focus-visible:ring-skin-primary group-hover:scale-110`,
-            `${value ? "ring-[#03FF81]" : "ring-gray-300"}`
+            `focus-visible:ring-skin-primary flex aspect-square h-5 w-5 items-center justify-center rounded-md p-1 ring-[1px] transition duration-300 group-hover:scale-110 focus:outline-none focus-visible:border-transparent focus-visible:ring-2`,
+            `${value ? "ring-[#03FF81]" : "ring-gray-300"}`,
           )}
           {...rest}
         >
           <AnimatePresence initial={false}>
             {value && (
               <motion.div
-                initial={"unchecked"}
+                initial={"checked"}
                 animate={controls}
                 exit={"unchecked"}
                 variants={{
@@ -67,7 +67,7 @@ const Checkbox = forwardRef(
                 <Cbx.Indicator forceMount>
                   <span className="">
                     <svg
-                      className="h-5 w-5 text-[#03FF81]"
+                      className="relative h-5 w-5 text-[#03FF81]"
                       viewBox="0 0 512 512"
                     >
                       <motion.path
@@ -97,8 +97,8 @@ const Checkbox = forwardRef(
           <label
             htmlFor={id}
             className={cn(
-              "cursor-pointer select-none pl-2 text-sm text-white font-bold",
-              labelClass
+              "cursor-pointer pl-2 text-sm font-bold text-white select-none",
+              labelClass,
             )}
           >
             {label}
@@ -106,7 +106,7 @@ const Checkbox = forwardRef(
         )}
       </div>
     );
-  }
+  },
 );
 
 Checkbox.displayName = "Checkbox";

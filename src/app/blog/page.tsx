@@ -35,7 +35,7 @@ const page = async () => {
             <div className="flex w-full flex-col items-center justify-center">
               <div className="relative flex w-max items-center justify-center">
                 <div className="absolute inset-2 inset-y-3 bg-[#00FF80]/70 blur-md"></div>
-                <h1 className="text-shadow-sm relative text-center text-4xl font-bold text-white uppercase">
+                <h1 className="text-shadow-sm relative text-center text-5xl font-bold tracking-wider text-white uppercase">
                   Blog
                 </h1>
               </div>
@@ -82,7 +82,7 @@ const page = async () => {
                     <div className="mt-10 w-full">
                       <div className="relative flex w-max items-center justify-center">
                         <div className="absolute inset-2 inset-y-3 bg-[#00FF80]/70 blur-md"></div>
-                        <h1 className="text-shadow-sm relative text-center text-4xl font-bold text-white uppercase">
+                        <h1 className="text-shadow-sm relative text-center text-5xl font-bold tracking-wider text-white uppercase">
                           {section.title}
                         </h1>
                       </div>

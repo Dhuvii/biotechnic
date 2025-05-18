@@ -4,8 +4,9 @@ import Navbar from "@/components/Navbar";
 import { useTranslate } from "@/store/translateStore";
 import { translate } from "@/utilities/translate";
 import Image from "next/image";
-import ContactImage from "../../public/about_image.webp";
 import Link from "next/link";
+import ContactImage from "../../public/about_image.webp";
+import BuyNowButton from "./BuyNowButton";
 
 export default function Home() {
   const { lang } = useTranslate();
@@ -36,7 +37,7 @@ export default function Home() {
         <div className="flex w-full flex-col items-center justify-start rounded-xl border border-white/20 bg-black/50 p-10">
           <div className="relative flex w-max items-center justify-center">
             <div className="absolute inset-2 inset-y-3 bg-[#00FF80]/70 blur-md"></div>
-            <h1 className="text-shadow-sm relative text-center text-4xl font-bold text-white uppercase">
+            <h1 className="text-shadow-sm relative text-center text-5xl font-bold tracking-wider text-white uppercase">
               {title}
             </h1>
           </div>
@@ -133,9 +134,12 @@ export default function Home() {
 
               <div className="group relative mt-5 flex items-center justify-center">
                 <div className="absolute -inset-1 bg-[#03FF81]/50 blur-lg group-hover:bg-[#03FF81]/10"></div>
-                <button className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold text-white uppercase hover:from-transparent">
+                <Link
+                  href={"/apply-now"}
+                  className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold text-white uppercase hover:from-transparent"
+                >
                   {feat_2.cta}
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -172,12 +176,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="group relative mt-5 flex items-center justify-center">
-                <div className="absolute -inset-1 bg-[#03FF81]/50 blur-lg group-hover:bg-[#03FF81]/10"></div>
-                <button className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold text-white uppercase hover:from-transparent">
-                  {feat_3.cta}
-                </button>
-              </div>
+              <BuyNowButton />
             </div>
           </div>
         </div>
