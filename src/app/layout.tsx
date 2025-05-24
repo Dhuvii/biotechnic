@@ -53,6 +53,14 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${gameCube.variable} ${geistMono.variable} ${customFont.variable} font-custom antialiased`}
       >
+        <div
+          id="select-container"
+          className="relative isolate z-[999999999]"
+        ></div>
+        <div
+          id="menu-container"
+          className="relative isolate z-[999999999]"
+        ></div>
         {children}
       </body>
     </html>

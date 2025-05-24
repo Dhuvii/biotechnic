@@ -1,5 +1,12 @@
 import en from "@/langs/en.json";
 import de from "@/langs/de.json";
+import cs from "@/langs/cs.json";
+import es from "@/langs/es.json";
+import zh from "@/langs/zh.json";
+import it from "@/langs/it.json";
+import ru from "@/langs/ru.json";
+import ar from "@/langs/ar.json";
+import pl from "@/langs/pl.json";
 
 type TranslationFile = typeof en;
 
@@ -18,8 +25,13 @@ function getNestedValue(obj: any, path: string): any {
 export const availableLanguages = {
   en,
   de,
-  // Add other languages here as you import them
-  // es: es,
+  cs,
+  es,
+  zh,
+  it,
+  ru,
+  ar,
+  pl,
 } as const;
 
 // Utility type for destructured return

@@ -1,0 +1,255 @@
+{
+  "navbar": {
+    "links": {
+      "about": "من نحن",
+      "faq": "الأسئلة الشائعة",
+      "contact": "اتصل بنا"
+    }
+  },
+  "homepage": {
+    "title": "مرحباً بكم في بايوتكنيكس",
+    "sub_title_1": "العلاج المناعي لمرضى",
+    "sub_title_highlight": "السرطان في المراحل المتأخرة والملطفة",
+    "sub_title_2": "",
+    "feat_1": {
+      "title": "السرطان يحارب بقوة؟ حاربه بقوة أكبر!!!",
+      "description": "المزيد عن تقنيتنا لمكافحة السرطان",
+      "cta": "اعرف المزيد"
+    },
+    "feat_2": {
+      "title": "بلا تكاليف مقدمة",
+      "description": "لا نتائج = لا دفع",
+      "tag": "ركز فقط على علاجك. وليس على المال",
+      "cta": "قدم الآن"
+    },
+    "feat_3": {
+      "title": "لا انتظار، لا عملية تقديم، لا قيود",
+      "description": "إمداد كامل لمدة عام واحد، اشترِ من هنا",
+      "address": "2550 innovation blvd. san francisco, ca",
+      "cta": "اشترِ الآن"
+    },
+    "orderForm": {
+      "full_name": {
+        "label": "الاسم الكامل",
+        "placeholder": "أدخل الاسم الكامل"
+      },
+      "street_address": {
+        "label": "عنوان الشارع",
+        "placeholder": "أدخل عنوان الشارع"
+      },
+      "region": {
+        "label": "المنطقة",
+        "placeholder": "أدخل المنطقة"
+      },
+      "city": {
+        "label": "المدينة",
+        "placeholder": "أدخل المدينة"
+      },
+      "zip_code": {
+        "label": "الرمز البريدي",
+        "placeholder": "أدخل الرمز البريدي"
+      },
+      "country": {
+        "label": "الدولة",
+        "placeholder": "أدخل الدولة"
+      },
+      "phone_number": {
+        "label": "رقم الهاتف",
+        "placeholder": "أدخل رقم الهاتف"
+      },
+      "email": {
+        "label": "عنوان البريد الإلكتروني",
+        "placeholder": "أدخل البريد الإلكتروني"
+      },
+      "terms_and_conditions": {
+        "label": "الشروط والأحكام",
+        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
+      },
+      "price": {
+        "label": "السعر",
+        "value": "49.999 EUR"
+      },
+      "payment_option": {
+        "label": "خيار الدفع",
+        "value": "تحويل بنكي [SWIFT]"
+      },
+      "cta": "اطلب الآن"
+    },
+    "orderConfirmation": {
+      "title": "تأكيد الطلب",
+      "sub_title": "شكراً لطلبك",
+      "order_number": "رقم الطلب",
+      "confirmation_email": {
+        "title": "رسالة تأكيد بالبريد الإلكتروني",
+        "content": "تم إرسال نسخة من طلبك، بما في ذلك تعليمات الدفع، إلى بريدك الإلكتروني."
+      },
+      "bank": {
+        "title": "تعليمات الدفع عن طريق التحويل البنكي (SWIFT)",
+        "bank_name": {
+          "tile": "اسم البنك",
+          "value": "Standard Chartered Bank (Hong Kong) Ltd"
+        },
+        "account_holder": {
+          "tile": "صاحب الحساب",
+          "value": "BIOTECHNICS LIMITED"
+        },
+        "benificiary_address": {
+          "tile": "عنوان المستفيد",
+          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, HONG KONG, HONG KONG, 999077"
+        },
+        "iban": {
+          "tile": "IBAN",
+          "value": "47412548280 (تحويلات بعملة اليورو فقط)"
+        },
+        "bank_code": {
+          "tile": "رمز البنك",
+          "value": "003"
+        },
+        "branch_code": {
+          "tile": "رمز الفرع",
+          "value": "474"
+        },
+        "swift": {
+          "tile": "SWIFT",
+          "value": "SCBLHKHH"
+        },
+        "amount": {
+          "tile": "المبلغ",
+          "value": "المبلغ"
+        }
+      },
+      "note": {
+        "title": "ملاحظة",
+        "content": "ستتم معالجة طلبك فقط بعد استلام المبلغ كاملاً. يرجى الانتظار من 1 إلى 5 أيام عمل للتحويلات البنكية الدولية. لا تنسَ تضمين الرقم المرجعي عند إرسال الدفعة."
+      }
+    }
+  },
+  "about-us": {
+    "title": "عن تقنيتنا",
+    "sub_title": "دمج الذكاء الاصطناعي والعلاج المناعي لاستهداف أنواع السرطان المقاومة",
+    "description_one": "نهجنا الثوري يجمع بين الذكاء الاصطناعي والعلاج المناعي المتقدم لإنشاء بروتوكولات علاجية مخصصة لمرضى السرطان في المراحل المتأخرة الذين لم يستجيبوا للعلاج الكيميائي التقليدي.",
+    "description_two": "من خلال تحليل آلاف نقاط البيانات من ملف تعريف السرطان الخاص بك، يحدد نظام الذكاء الاصطناعي لدينا المزيج الأمثل من عوامل العلاج المناعي لاستهداف خلايا السرطان الفريدة لديك.",
+    "success_rate": {
+      "success_one": "تقليل حجم الورم بنسبة 70٪ في التجارب",
+      "success_two": "نجاح بنسبة 85٪ مع مرضى المرحلة الثالثة",
+      "success_three": "نجاح بنسبة 60٪ مع مرضى المرحلة الرابعة"
+    },
+    "features": [
+      "مرافق غرف نظيفة متطورة مع أنظمة مراقبة fi",
+      "عملية تركيب علاج مناعي خاصة بنا",
+      "تحسين العلاج في الوقت الفعلي من خلال تغذية راجعة من الذكاء الاصطناعي"
+    ]
+  },
+  "faq": {
+    "title": "الأسئلة المتكررة",
+    "sub_title": "كل ما تحتاج لمعرفته حول علاجنا الثوري",
+    "faqs": [
+      {
+        "question": "كيف يعمل نظام 'لا دفع'؟",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
+      },
+      {
+        "question": "كيف يعمل نظام 'لا دفع'؟",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
+      }
+    ]
+  },
+  "contact": {
+    "title": "اتصل بـ بايوتكنيكس",
+    "sub_title": "تواصل مع فريقنا المتخصص من أخصائيي الأورام",
+    "email_us": {
+      "title": "راسلنا عبر البريد الإلكتروني",
+      "description": "أرسل لنا رسالة في أي وقت",
+      "email": "info@biotechnics.com"
+    },
+    "form": {
+      "first_name": {
+        "label": "الاسم الأول",
+        "placeholder": "أدخل الاسم الأول"
+      },
+      "last_name": {
+        "label": "اسم العائلة",
+        "placeholder": "أدخل اسم العائلة"
+      },
+      "email": {
+        "label": "عنوان البريد الإلكتروني",
+        "placeholder": "أدخل البريد الإلكتروني"
+      },
+      "message": {
+        "label": "الرسالة",
+        "placeholder": "أدخل الرسالة"
+      },
+      "cta": "أرسل الرسالة"
+    }
+  },
+  "apply_now": {
+    "title": "ابدأ رحلتك اليوم",
+    "sub_title": "اتخذ الخطوة الأولى نحو علاج ثوري للسرطان بدون تكلفة مقدمة. قدم الآن لترى ما إذا كنت مؤهلاً.",
+    "application_process": {
+      "title": "عملية التقديم",
+      "process": [
+        {
+          "title": "إرسال الطلب",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        },
+        {
+          "title": "إرسال الطلب",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        },
+        {
+          "title": "إرسال الطلب",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        },
+        {
+          "title": "إرسال الطلب",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        }
+      ]
+    },
+    "form": {
+      "first_name": {
+        "label": "الاسم الأول",
+        "placeholder": "أدخل الاسم الأول"
+      },
+      "last_name": {
+        "label": "اسم العائلة",
+        "placeholder": "أدخل اسم العائلة"
+      },
+      "email": {
+        "label": "عنوان البريد الإلكتروني",
+        "placeholder": "أدخل البريد الإلكتروني"
+      },
+      "cancer_type": {
+        "label": "نوع السرطان",
+        "placeholder": "اختر نوع السرطان",
+        "options": [
+          { "name": "العلاج الكيميائي", "value": "chemotherapy" },
+          { "name": "العلاج الإشعاعي", "value": "radiation" },
+          { "name": "الجراحة", "value": "surgery" },
+          { "name": "العلاج المناعي", "value": "immunotherapy" }
+        ]
+      },
+      "cancer_stage": {
+        "label": "مرحلة السرطان",
+        "placeholder": "اختر مرحلة السرطان",
+        "options": [
+          { "name": "العلاج الكيميائي", "value": "chemotherapy" },
+          { "name": "العلاج الإشعاعي", "value": "radiation" },
+          { "name": "الجراحة", "value": "surgery" },
+          { "name": "العلاج المناعي", "value": "immunotherapy" }
+        ]
+      },
+      "previous_treatments": {
+        "label": "العلاجات السابقة",
+        "options": [
+          { "name": "العلاج الكيميائي", "value": "chemotherapy" },
+          { "name": "العلاج الإشعاعي", "value": "radiation" },
+          { "name": "الجراحة", "value": "surgery" },
+          { "name": "العلاج المناعي", "value": "immunotherapy" }
+        ]
+      }
+    },
+    "cta": "قدم الآن - بدون تكلفة مقدمة",
+    "back_cta": "العودة إلى الصفحة الرئيسية"
+  }
+}

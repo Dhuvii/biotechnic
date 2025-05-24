@@ -97,6 +97,7 @@ const Navbar = () => {
             >
               <span>English</span>
             </Dropdown.Item>
+
             <Dropdown.Item
               onSelect={() => {
                 Cookie.set("bio-lang", "de");
@@ -105,6 +106,76 @@ const Navbar = () => {
               className="flex items-center gap-2 text-white/80 data-[highlighted]:text-white"
             >
               <span>German</span>
+            </Dropdown.Item>
+
+            <Dropdown.Item
+              onSelect={() => {
+                Cookie.set("bio-lang", "cs");
+                setLang("cs");
+              }}
+              className="flex items-center gap-2 text-white/80 data-[highlighted]:text-white"
+            >
+              <span>Czech</span>
+            </Dropdown.Item>
+
+            <Dropdown.Item
+              onSelect={() => {
+                Cookie.set("bio-lang", "es");
+                setLang("es");
+              }}
+              className="flex items-center gap-2 text-white/80 data-[highlighted]:text-white"
+            >
+              <span>Spanish</span>
+            </Dropdown.Item>
+
+            <Dropdown.Item
+              onSelect={() => {
+                Cookie.set("bio-lang", "zh");
+                setLang("zh");
+              }}
+              className="flex items-center gap-2 text-white/80 data-[highlighted]:text-white"
+            >
+              <span>Chinese</span>
+            </Dropdown.Item>
+
+            <Dropdown.Item
+              onSelect={() => {
+                Cookie.set("bio-lang", "it");
+                setLang("it");
+              }}
+              className="flex items-center gap-2 text-white/80 data-[highlighted]:text-white"
+            >
+              <span>Italian</span>
+            </Dropdown.Item>
+
+            <Dropdown.Item
+              onSelect={() => {
+                Cookie.set("bio-lang", "ru");
+                setLang("ru");
+              }}
+              className="flex items-center gap-2 text-white/80 data-[highlighted]:text-white"
+            >
+              <span>Russian</span>
+            </Dropdown.Item>
+
+            <Dropdown.Item
+              onSelect={() => {
+                Cookie.set("bio-lang", "ar");
+                setLang("ar");
+              }}
+              className="flex items-center gap-2 text-white/80 data-[highlighted]:text-white"
+            >
+              <span>Arabic</span>
+            </Dropdown.Item>
+
+            <Dropdown.Item
+              onSelect={() => {
+                Cookie.set("bio-lang", "pl");
+                setLang("pl");
+              }}
+              className="flex items-center gap-2 text-white/80 data-[highlighted]:text-white"
+            >
+              <span>Polish</span>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

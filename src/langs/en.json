@@ -85,11 +85,38 @@
       },
       "bank": {
         "title": "Bank Transfer (SWIFT) Payment Instructions",
-        "bank_name": "Bank Name",
-        "account_holder": "Account Holder",
-        "iban": "IBAN",
-        "swift": "SWIFT/BIC",
-        "amount": "Amount"
+        "bank_name": {
+          "tile": "bank name",
+          "value": "Standard Chartered Bank (Hong Kong) Ltd"
+        },
+        "account_holder": {
+          "tile": "account holder",
+          "value": "BIOTECHNICS LIMITED"
+        },
+        "benificiary_address": {
+          "tile": "Beneficiary's adress",
+          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, HONG KONG, HONG KONG, 999077"
+        },
+        "iban": {
+          "tile": "iban",
+          "value": "47412548280 (EUR currency transfers only)"
+        },
+        "bank_code": {
+          "tile": "bank code",
+          "value": "003"
+        },
+        "branch_code": {
+          "tile": "branch code",
+          "value": "474"
+        },
+        "swift": {
+          "tile": "swift",
+          "value": "SCBLHKHH"
+        },
+        "amount": {
+          "tile": "amount",
+          "value": "Amount"
+        }
       },
       "note": {
         "title": "Note",

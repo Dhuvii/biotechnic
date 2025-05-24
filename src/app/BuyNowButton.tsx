@@ -262,15 +262,17 @@ const BuyNowButton = () => {
             </div>
           </div>
 
-          <h1 className="text-center text-2xl">{orderConfirmation.title}</h1>
+          <h1 className="text-center text-2xl uppercase">
+            {orderConfirmation.title}
+          </h1>
           <p className="text-center text-lg">{orderConfirmation.sub_title}</p>
 
-          <h3 className="mt-5 text-center text-2xl">
+          <h3 className="mt-5 text-center text-2xl uppercase">
             {orderConfirmation.order_number} : # 115
           </h3>
 
           <div className="mt-5 w-full">
-            <p className="text-sm">
+            <p className="text-sm uppercase">
               {orderConfirmation.confirmation_email.title}
             </p>
             <p className="mt-2">
@@ -283,53 +285,88 @@ const BuyNowButton = () => {
             <div className="relative mt-2 h-2 w-24 rounded-full bg-white"></div>
           </div>
 
-          <h3 className="mt-5 text-left text-2xl">
+          <h3 className="mt-5 text-left text-2xl uppercase">
             {orderConfirmation.bank.title} :
           </h3>
 
           <div className="mt-5 flex items-center justify-start gap-2">
-            <p className="text-sm text-gray-400">
-              {orderConfirmation.bank.bank_name} :
+            <p className="text-sm whitespace-nowrap text-gray-400 uppercase">
+              {orderConfirmation.bank.bank_name.tile} :
             </p>
             <p className="text-sm text-white">
-              {orderConfirmation.bank.bank_name}
+              {orderConfirmation.bank.bank_name.value}
             </p>
           </div>
 
-          <div className="mt-2 flex items-center justify-start gap-2">
-            <p className="text-sm text-gray-400">
-              {orderConfirmation.bank.account_holder} :
+          <div className="mt-2 flex items-start justify-start gap-2">
+            <p className="text-sm whitespace-nowrap text-gray-400 uppercase">
+              {orderConfirmation.bank.account_holder.tile} :
             </p>
             <p className="text-sm text-white">
-              {orderConfirmation.bank.account_holder}
+              {orderConfirmation.bank.account_holder.value}
             </p>
           </div>
 
-          <div className="mt-2 flex items-center justify-start gap-2">
-            <p className="text-sm text-gray-400">
-              {orderConfirmation.bank.iban} :
+          {/* Added Missing Field: Beneficiary's Address */}
+          <div className="mt-2 flex items-start justify-start gap-2">
+            <p className="text-sm whitespace-nowrap text-gray-400 uppercase">
+              {orderConfirmation.bank.benificiary_address.tile} :
             </p>
-            <p className="text-sm text-white"># 11122 22233 2222 2222</p>
+            <p className="text-sm text-white">
+              {orderConfirmation.bank.benificiary_address.value}
+            </p>
           </div>
 
-          <div className="mt-2 flex items-center justify-start gap-2">
-            <p className="text-sm text-gray-400">
-              {orderConfirmation.bank.swift} :
+          <div className="mt-2 flex items-start justify-start gap-2">
+            <p className="text-sm whitespace-nowrap text-gray-400 uppercase">
+              {orderConfirmation.bank.iban.tile} :
             </p>
-            <p className="text-sm text-white"># 11122</p>
+            <p className="text-sm text-white">
+              {orderConfirmation.bank.iban.value}
+            </p>
           </div>
 
-          <div className="mt-2 flex items-center justify-start gap-2">
-            <p className="text-sm text-gray-400">
-              {orderConfirmation.bank.amount} :
+          {/* Added Missing Field: Bank Code */}
+          <div className="mt-2 flex items-start justify-start gap-2">
+            <p className="text-sm whitespace-nowrap text-gray-400 uppercase">
+              {orderConfirmation.bank.bank_code.tile} :
             </p>
-            <p className="text-sm text-white">49.999 EUR</p>
+            <p className="text-sm text-white">
+              {orderConfirmation.bank.bank_code.value}
+            </p>
+          </div>
+
+          {/* Added Missing Field: Branch Code */}
+          <div className="mt-2 flex items-start justify-start gap-2">
+            <p className="text-sm whitespace-nowrap text-gray-400 uppercase">
+              {orderConfirmation.bank.branch_code.tile} :
+            </p>
+            <p className="text-sm text-white">
+              {orderConfirmation.bank.branch_code.value}
+            </p>
+          </div>
+
+          <div className="mt-2 flex items-start justify-start gap-2">
+            <p className="text-sm whitespace-nowrap text-gray-400 uppercase">
+              {orderConfirmation.bank.swift.tile} :
+            </p>
+            <p className="text-sm text-white">
+              {orderConfirmation.bank.swift.value}
+            </p>
+          </div>
+
+          <div className="mt-2 flex items-start justify-start gap-2">
+            <p className="text-sm whitespace-nowrap text-gray-400 uppercase">
+              {orderConfirmation.bank.amount.tile} :
+            </p>
+            {/* Assuming the actual amount should come from the orderForm price */}
+            <p className="text-sm text-white">{orderForm.price.value}</p>
           </div>
 
           <div className="mt-10">
             <div className="flex items-center justify-start gap-2">
               <IoWarning className="size-5 text-yellow-500" />
-              <p>{orderConfirmation.note.title}</p>
+              <p className="uppercase">{orderConfirmation.note.title}</p>
             </div>
 
             <p className="mt-2 text-sm">{orderConfirmation.note.content}</p>

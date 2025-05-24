@@ -1,0 +1,255 @@
+{
+  "navbar": {
+    "links": {
+      "about": "О нас",
+      "faq": "ЧаВо",
+      "contact": "Контакты"
+    }
+  },
+  "homepage": {
+    "title": "добро пожаловать в biotechnics",
+    "sub_title_1": "иммунотерапия для",
+    "sub_title_highlight": "пациентов с раком на поздней и паллиативной",
+    "sub_title_2": "стадии",
+    "feat_1": {
+      "title": "рак борется упорно? боритесь еще упорнее!!!",
+      "description": "больше о нашей технологии борьбы с раком",
+      "cta": "Узнать больше"
+    },
+    "feat_2": {
+      "title": "нулевые первоначальные взносы",
+      "description": "нет результатов = нет оплаты",
+      "tag": "сосредоточьтесь на лечении, а не на деньгах",
+      "cta": "Подать заявку сейчас"
+    },
+    "feat_3": {
+      "title": "без ожидания, без процесса подачи заявки, без ограничений",
+      "description": "полный годовой запас, покупайте здесь",
+      "address": "2550 innovation blvd. san francisco, ca",
+      "cta": "Купить сейчас"
+    },
+    "orderForm": {
+      "full_name": {
+        "label": "Полное имя",
+        "placeholder": "Введите полное имя"
+      },
+      "street_address": {
+        "label": "Адрес улицы",
+        "placeholder": "Введите адрес улицы"
+      },
+      "region": {
+        "label": "Регион",
+        "placeholder": "Введите регион"
+      },
+      "city": {
+        "label": "Город",
+        "placeholder": "Введите город"
+      },
+      "zip_code": {
+        "label": "Почтовый индекс",
+        "placeholder": "Введите почтовый индекс"
+      },
+      "country": {
+        "label": "Страна",
+        "placeholder": "Введите страну"
+      },
+      "phone_number": {
+        "label": "Номер телефона",
+        "placeholder": "Введите номер телефона"
+      },
+      "email": {
+        "label": "Адрес электронной почты",
+        "placeholder": "Введите адрес электронной почты"
+      },
+      "terms_and_conditions": {
+        "label": "Условия и положения",
+        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
+      },
+      "price": {
+        "label": "Цена",
+        "value": "49.999 EUR"
+      },
+      "payment_option": {
+        "label": "Способ оплаты",
+        "value": "Банковский перевод [SWIFT]"
+      },
+      "cta": "Заказать сейчас"
+    },
+    "orderConfirmation": {
+      "title": "подтверждение заказа",
+      "sub_title": "спасибо за ваш заказ",
+      "order_number": "номер заказа",
+      "confirmation_email": {
+        "title": "электронное письмо с подтверждением",
+        "content": "копия вашего заказа, включая инструкции по оплате, была отправлена на вашу электронную почту."
+      },
+      "bank": {
+        "title": "Инструкции по оплате банковским переводом (SWIFT)",
+        "bank_name": {
+          "tile": "название банка",
+          "value": "Standard Chartered Bank (Hong Kong) Ltd"
+        },
+        "account_holder": {
+          "tile": "владелец счета",
+          "value": "BIOTECHNICS LIMITED"
+        },
+        "benificiary_address": {
+          "tile": "Адрес получателя",
+          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, HONG KONG, HONG KONG, 999077"
+        },
+        "iban": {
+          "tile": "IBAN",
+          "value": "47412548280 (только для переводов в EUR)"
+        },
+        "bank_code": {
+          "tile": "код банка",
+          "value": "003"
+        },
+        "branch_code": {
+          "tile": "код филиала",
+          "value": "474"
+        },
+        "swift": {
+          "tile": "SWIFT",
+          "value": "SCBLHKHH"
+        },
+        "amount": {
+          "tile": "сумма",
+          "value": "Сумма"
+        }
+      },
+      "note": {
+        "title": "Примечание",
+        "content": "ваш заказ будет обработан только после получения полной оплаты. международные банковские переводы могут занять 1–5 рабочих дней. не забудьте указать назначение платежа при отправке."
+      }
+    }
+  },
+  "about-us": {
+    "title": "о нашей технологии",
+    "sub_title": "объединение ИИ и иммунотерапии для борьбы с резистентными видами рака",
+    "description_one": "наш революционный подход сочетает искусственный интеллект с передовой иммунотерапией для создания персонализированных протоколов лечения для пациентов с раком на поздних стадиях, которые не ответили на традиционную химиотерапию.",
+    "description_two": "анализируя тысячи точек данных из вашего конкретного профиля рака, наша система ИИ определяет оптимальную комбинацию иммунотерапевтических агентов для воздействия на ваши уникальные раковые клетки",
+    "success_rate": {
+      "success_one": "70% уменьшение опухоли в испытаниях",
+      "success_two": "85% успеха у пациентов 3 стадии",
+      "success_three": "60% успеха у пациентов 4 стадии"
+    },
+    "features": [
+      "современные чистые помещения с системами fi-мониторинга",
+      "запатентованный процесс синтеза иммунотерапии",
+      "оптимизация лечения в режиме реального времени с помощью обратной связи от ИИ"
+    ]
+  },
+  "faq": {
+    "title": "часто задаваемые вопросы",
+    "sub_title": "все, что вам нужно знать о нашем революционном лечении",
+    "faqs": [
+      {
+        "question": "Как работает система «без оплаты»?",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
+      },
+      {
+        "question": "Как работает система «без оплаты»?",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
+      }
+    ]
+  },
+  "contact": {
+    "title": "связаться с biotechnics",
+    "sub_title": "обратитесь к нашей преданной команде специалистов-онкологов",
+    "email_us": {
+      "title": "напишите нам",
+      "description": "отправьте нам сообщение в любое время",
+      "email": "info@biotechnics.com"
+    },
+    "form": {
+      "first_name": {
+        "label": "Имя",
+        "placeholder": "Введите имя"
+      },
+      "last_name": {
+        "label": "Фамилия",
+        "placeholder": "Введите фамилию"
+      },
+      "email": {
+        "label": "Адрес электронной почты",
+        "placeholder": "Введите адрес электронной почты"
+      },
+      "message": {
+        "label": "Сообщение",
+        "placeholder": "Введите сообщение"
+      },
+      "cta": "Отправить сообщение"
+    }
+  },
+  "apply_now": {
+    "title": "начните свой путь сегодня",
+    "sub_title": "сделайте первый шаг к революционному лечению рака без первоначальных затрат. подайте заявку сейчас, чтобы узнать, соответствуете ли вы требованиям.",
+    "application_process": {
+      "title": "процесс подачи заявки",
+      "process": [
+        {
+          "title": "подать заявку",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        },
+        {
+          "title": "подать заявку",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        },
+        {
+          "title": "подать заявку",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        },
+        {
+          "title": "подать заявку",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        }
+      ]
+    },
+    "form": {
+      "first_name": {
+        "label": "Имя",
+        "placeholder": "Введите имя"
+      },
+      "last_name": {
+        "label": "Фамилия",
+        "placeholder": "Введите фамилию"
+      },
+      "email": {
+        "label": "Адрес электронной почты",
+        "placeholder": "Введите адрес электронной почты"
+      },
+      "cancer_type": {
+        "label": "Тип рака",
+        "placeholder": "Выберите тип рака",
+        "options": [
+          { "name": "химиотерапия", "value": "chemotherapy" },
+          { "name": "лучевая терапия", "value": "radiation" },
+          { "name": "хирургическое вмешательство", "value": "surgery" },
+          { "name": "иммунотерапия", "value": "immunotherapy" }
+        ]
+      },
+      "cancer_stage": {
+        "label": "Стадия рака",
+        "placeholder": "Выберите стадию рака",
+        "options": [
+          { "name": "химиотерапия", "value": "chemotherapy" },
+          { "name": "лучевая терапия", "value": "radiation" },
+          { "name": "хирургическое вмешательство", "value": "surgery" },
+          { "name": "иммунотерапия", "value": "immunotherapy" }
+        ]
+      },
+      "previous_treatments": {
+        "label": "предыдущие методы лечения",
+        "options": [
+          { "name": "химиотерапия", "value": "chemotherapy" },
+          { "name": "лучевая терапия", "value": "radiation" },
+          { "name": "хирургическое вмешательство", "value": "surgery" },
+          { "name": "иммунотерапия", "value": "immunotherapy" }
+        ]
+      }
+    },
+    "cta": "подать заявку сейчас - без первоначальных затрат",
+    "back_cta": "вернуться на главную"
+  }
+}

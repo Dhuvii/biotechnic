@@ -1,0 +1,255 @@
+{
+  "navbar": {
+    "links": {
+      "about": "Sobre nosotros",
+      "faq": "Preguntas frecuentes",
+      "contact": "Contacto"
+    }
+  },
+  "homepage": {
+    "title": "bienvenido a biotechnics",
+    "sub_title_1": "inmunoterapia para",
+    "sub_title_highlight": "pacientes con cáncer en etapa",
+    "sub_title_2": "tardía y paliativa",
+    "feat_1": {
+      "title": "¿el cáncer lucha duro? ¡lucha más duro!",
+      "description": "más sobre nuestra tecnología para combatir el cáncer",
+      "cta": "Aprende más"
+    },
+    "feat_2": {
+      "title": "cero costos iniciales",
+      "description": "sin resultados = sin pago",
+      "tag": "solo concéntrate en tu tratamiento. no en el dinero",
+      "cta": "Aplica ya"
+    },
+    "feat_3": {
+      "title": "sin esperas, sin proceso de solicitud, sin restricciones",
+      "description": "suministro completo para 1 año, compra aquí",
+      "address": "2550 innovation blvd. san francisco, ca",
+      "cta": "Compra ahora"
+    },
+    "orderForm": {
+      "full_name": {
+        "label": "Nombre completo",
+        "placeholder": "Introduce el nombre completo"
+      },
+      "street_address": {
+        "label": "Dirección",
+        "placeholder": "Introduce la dirección"
+      },
+      "region": {
+        "label": "Región",
+        "placeholder": "Introduce la región"
+      },
+      "city": {
+        "label": "Ciudad",
+        "placeholder": "Introduce la ciudad"
+      },
+      "zip_code": {
+        "label": "Código postal",
+        "placeholder": "Introduce el código postal"
+      },
+      "country": {
+        "label": "País",
+        "placeholder": "Introduce el país"
+      },
+      "phone_number": {
+        "label": "Número de teléfono",
+        "placeholder": "Introduce el número de teléfono"
+      },
+      "email": {
+        "label": "Dirección de correo electrónico",
+        "placeholder": "Introduce el correo electrónico"
+      },
+      "terms_and_conditions": {
+        "label": "Términos y condiciones",
+        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
+      },
+      "price": {
+        "label": "Precio",
+        "value": "49.999 EUR"
+      },
+      "payment_option": {
+        "label": "Opción de pago",
+        "value": "Transferencia bancaria [swift]"
+      },
+      "cta": "Pedir ahora"
+    },
+    "orderConfirmation": {
+      "title": "confirmación del pedido",
+      "sub_title": "gracias por tu pedido",
+      "order_number": "número de pedido",
+      "confirmation_email": {
+        "title": "correo electrónico de confirmación",
+        "content": "se ha enviado una copia de tu pedido, incluidas las instrucciones de pago, a tu correo electrónico."
+      },
+      "bank": {
+        "title": "Instrucciones de pago por transferencia bancaria (SWIFT)",
+        "bank_name": {
+          "tile": "nombre del banco",
+          "value": "Standard Chartered Bank (Hong Kong) Ltd"
+        },
+        "account_holder": {
+          "tile": "titular de la cuenta",
+          "value": "BIOTECHNICS LIMITED"
+        },
+        "benificiary_address": {
+          "tile": "Dirección del beneficiario",
+          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, HONG KONG, HONG KONG, 999077"
+        },
+        "iban": {
+          "tile": "IBAN",
+          "value": "47412548280 (solo transferencias en EUR)"
+        },
+        "bank_code": {
+          "tile": "código bancario",
+          "value": "003"
+        },
+        "branch_code": {
+          "tile": "código de sucursal",
+          "value": "474"
+        },
+        "swift": {
+          "tile": "SWIFT",
+          "value": "SCBLHKHH"
+        },
+        "amount": {
+          "tile": "importe",
+          "value": "Importe"
+        }
+      },
+      "note": {
+        "title": "Nota",
+        "content": "tu pedido solo se procesará después de recibir el pago completo. permite de 1 a 5 días hábiles para transferencias bancarias internacionales. no olvides incluir la referencia al enviar el pago."
+      }
+    }
+  },
+  "about-us": {
+    "title": "sobre nuestra tecnología",
+    "sub_title": "fusionando IA e inmunoterapia para combatir cánceres resistentes",
+    "description_one": "nuestro enfoque revolucionario combina inteligencia artificial con inmunoterapia avanzada para crear protocolos de tratamiento personalizados para pacientes con cáncer en etapa tardía que no han respondido a la quimioterapia tradicional.",
+    "description_two": "analizando miles de puntos de datos de tu perfil de cáncer específico, nuestro sistema de IA identifica la combinación óptima de agentes de inmunoterapia para atacar tus células cancerosas únicas",
+    "success_rate": {
+      "success_one": "70% de reducción tumoral en ensayos",
+      "success_two": "85% de éxito con pacientes en etapa 3",
+      "success_three": "60% de éxito con pacientes en etapa 4"
+    },
+    "features": [
+      "instalaciones avanzadas de sala limpia con sistemas de monitorización fi",
+      "proceso propio de síntesis de inmunoterapia",
+      "optimización del tratamiento en tiempo real mediante retroalimentación de IA"
+    ]
+  },
+  "faq": {
+    "title": "preguntas frecuentes",
+    "sub_title": "todo lo que necesitas saber sobre nuestro tratamiento revolucionario",
+    "faqs": [
+      {
+        "question": "¿Cómo funciona el no pago?",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
+      },
+      {
+        "question": "¿Cómo funciona el no pago?",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
+      }
+    ]
+  },
+  "contact": {
+    "title": "contacta con biotechnics",
+    "sub_title": "ponte en contacto con nuestro dedicado equipo de especialistas en oncología",
+    "email_us": {
+      "title": "envíanos un correo electrónico",
+      "description": "envíanos un mensaje en cualquier momento",
+      "email": "info@biotechnics.com"
+    },
+    "form": {
+      "first_name": {
+        "label": "Nombre",
+        "placeholder": "Introduce el nombre"
+      },
+      "last_name": {
+        "label": "Apellido",
+        "placeholder": "Introduce el apellido"
+      },
+      "email": {
+        "label": "Dirección de correo electrónico",
+        "placeholder": "Introduce el correo electrónico"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Introduce el mensaje"
+      },
+      "cta": "Enviar mensaje"
+    }
+  },
+  "apply_now": {
+    "title": "comienza tu viaje hoy",
+    "sub_title": "da el primer paso hacia un tratamiento revolucionario contra el cáncer sin costo inicial. aplica ahora para ver si calificas.",
+    "application_process": {
+      "title": "proceso de solicitud",
+      "process": [
+        {
+          "title": "enviar solicitud",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        },
+        {
+          "title": "enviar solicitud",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        },
+        {
+          "title": "enviar solicitud",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        },
+        {
+          "title": "enviar solicitud",
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+        }
+      ]
+    },
+    "form": {
+      "first_name": {
+        "label": "Nombre",
+        "placeholder": "Introduce el nombre"
+      },
+      "last_name": {
+        "label": "Apellido",
+        "placeholder": "Introduce el apellido"
+      },
+      "email": {
+        "label": "Dirección de correo electrónico",
+        "placeholder": "Introduce el correo electrónico"
+      },
+      "cancer_type": {
+        "label": "Tipo de cáncer",
+        "placeholder": "Selecciona el tipo de cáncer",
+        "options": [
+          { "name": "quimioterapia", "value": "chemotherapy" },
+          { "name": "radiación", "value": "radiation" },
+          { "name": "cirugía", "value": "surgery" },
+          { "name": "inmunoterapia", "value": "immunotherapy" }
+        ]
+      },
+      "cancer_stage": {
+        "label": "Etapa del cáncer",
+        "placeholder": "Selecciona la etapa del cáncer",
+        "options": [
+          { "name": "quimioterapia", "value": "chemotherapy" },
+          { "name": "radiación", "value": "radiation" },
+          { "name": "cirugía", "value": "surgery" },
+          { "name": "inmunoterapia", "value": "immunotherapy" }
+        ]
+      },
+      "previous_treatments": {
+        "label": "tratamientos previos",
+        "options": [
+          { "name": "quimioterapia", "value": "chemotherapy" },
+          { "name": "radiación", "value": "radiation" },
+          { "name": "cirugía", "value": "surgery" },
+          { "name": "inmunoterapia", "value": "immunotherapy" }
+        ]
+      }
+    },
+    "cta": "aplica ahora - sin costo inicial",
+    "back_cta": "volver al inicio"
+  }
+}
