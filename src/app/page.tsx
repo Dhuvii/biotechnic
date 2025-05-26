@@ -92,7 +92,7 @@ export default function Home() {
                 <div className="absolute -inset-1 bg-[#03FF81]/50 blur-lg group-hover:bg-[#03FF81]/10"></div>
                 <Link
                   href={"/blog"}
-                  className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold text-white uppercase hover:from-transparent"
+                  className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold tracking-wider text-white uppercase hover:from-transparent"
                 >
                   {feat_1.cta}
                 </Link>
@@ -136,7 +136,7 @@ export default function Home() {
                 <div className="absolute -inset-1 bg-[#03FF81]/50 blur-lg group-hover:bg-[#03FF81]/10"></div>
                 <Link
                   href={"/apply-now"}
-                  className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold text-white uppercase hover:from-transparent"
+                  className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold tracking-wider text-white uppercase hover:from-transparent"
                 >
                   {feat_2.cta}
                 </Link>

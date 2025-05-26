@@ -14,6 +14,7 @@ const BuyNowButton = () => {
   const [acceptInvite, setAcceptInvite] = useState(false);
 
   const { feat_3, orderForm, orderConfirmation } = translate("homepage", lang);
+
   return (
     <>
       <div className="group relative mt-5 flex items-center justify-center">
@@ -23,7 +24,7 @@ const BuyNowButton = () => {
           desktopClassName="w-full sm:max-w-xl"
           description={""}
           Trigger={() => (
-            <ModalButton className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold text-white uppercase hover:from-transparent">
+            <ModalButton className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold tracking-wider text-white uppercase hover:from-transparent">
               {feat_3.cta}
             </ModalButton>
           )}
