@@ -22,6 +22,13 @@ const eslintConfig = [
       "@typescript-eslint/no-unused-expressions": "off",
       "import/no-anonymous-default-export": "off",
       "no-var": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-wrapper-object-types": "off",
+      "@typescript-eslint/no-unnecessary-type-constraints": "off",
+      "@typescript-eslint/no-this-alias": "off",
+      "@typescript-eslint/no-unsafe-function-type": "off",
+      "@typescript-eslint/no-require-imports": "off",
+      "@typescript-eslint/no-unnecessary-type-constraint": "off",
     },
   },
 ];
