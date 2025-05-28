@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Dropdown from "./dropdown";
 import Image from "next/image";
-import Logo from "../../public/logo.webp";
+import Logo from "../../public/logo.png";
 const Navbar = () => {
   const { lang } = useTranslate();
   const { setLang } = useTranslateActions();
@@ -22,7 +22,7 @@ const Navbar = () => {
         href="/"
         className="relative h-48 w-60 rounded-2xl bg-black/10 p-1 backdrop-blur-xs"
       >
-        <Image fill src={Logo} alt="logo" className="object-cover" />
+        <Image fill src={Logo} alt="logo" className="w-full object-contain" />
       </Link>
 
       <div className="flex items-center justify-end gap-5">
@@ -176,6 +176,16 @@ const Navbar = () => {
               className="flex items-center gap-2 text-white/80 data-[highlighted]:text-white"
             >
               <span>Polish</span>
+            </Dropdown.Item>
+
+            <Dropdown.Item
+              onSelect={() => {
+                Cookie.set("bio-lang", "fr");
+                setLang("fr");
+              }}
+              className="flex items-center gap-2 text-white/80 data-[highlighted]:text-white"
+            >
+              <span>French</span>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

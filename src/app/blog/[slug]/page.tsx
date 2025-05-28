@@ -34,7 +34,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
               <div className="absolute -inset-1 bg-white/50 blur-lg group-hover:bg-white/10"></div>
               <Link
                 href={"/blog"}
-                className="relative flex w-full items-center justify-center gap-2 border border-white bg-radial from-white/60 from-10% to-white/60 px-5 py-2 text-sm font-bold text-white uppercase hover:from-transparent"
+                className="relative flex w-full items-center justify-center gap-2 border border-white bg-radial from-white/60 from-10% to-white/60 px-5 py-2 text-sm font-bold tracking-wider text-white uppercase hover:from-transparent"
               >
                 <IoArrowBack className="size-5" /> Go back
               </Link>

@@ -7,6 +7,7 @@ import it from "@/langs/it.json";
 import ru from "@/langs/ru.json";
 import ar from "@/langs/ar.json";
 import pl from "@/langs/pl.json";
+import fr from "@/langs/fr.json";
 
 type TranslationFile = typeof en;
 
@@ -32,6 +33,7 @@ export const availableLanguages = {
   ru,
   ar,
   pl,
+  fr,
 } as const;
 
 // Utility type for destructured return
