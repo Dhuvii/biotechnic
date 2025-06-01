@@ -13,8 +13,8 @@ export default function Faq() {
   const { title, sub_title, faqs } = translate("faq", lang);
 
   return (
-    <section className="relative flex flex-col h-dvh w-full pb-10 overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/30 to-transparent z-10"></div>
+    <section className="relative flex h-dvh w-full flex-col overflow-hidden pb-5 lg:pb-10">
+      <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-black/30 to-transparent"></div>
       <Image
         src={FaqImage}
         alt="hero image"
@@ -25,35 +25,35 @@ export default function Faq() {
 
       <Navbar />
 
-      <div className="relative z-50 flex flex-col px-20 mt-10 w-full overflow-y-auto">
-        <div className="p-10 w-full flex flex-col items-center justify-start rounded-xl bg-black/50 border border-white/20">
-          <div className="relative w-max flex items-center justify-center">
-            <div className="absolute inset-2 inset-y-3 blur-md bg-[#00FF80]/70"></div>
-            <h1 className="text-4xl relative uppercase text-shadow-sm font-bold text-white text-center">
+      <div className="relative z-50 mt-10 flex w-full flex-col overflow-y-auto px-5 lg:px-20">
+        <div className="flex w-full flex-col items-center justify-start rounded-xl border border-white/20 bg-black/50 p-5 lg:p-10">
+          <div className="relative flex items-center justify-center lg:w-max">
+            <div className="absolute inset-2 inset-y-3 bg-[#00FF80]/70 opacity-50 blur-md lg:opacity-100"></div>
+            <h1 className="text-shadow-sm relative text-center text-4xl font-bold tracking-wider text-white uppercase lg:text-5xl">
               {title}
             </h1>
           </div>
-          <p className="text-xl uppercase text-white mt-2 text-center">
+          <p className="mt-2 text-center text-xl text-white uppercase">
             {sub_title}
           </p>
 
           <div className="relative flex items-center justify-center">
-            <div className="absolute -inset-1 blur-md bg-[#00FF80]/20"></div>
-            <div className="relative w-24 mt-2 h-2 rounded-full bg-black/80"></div>
+            <div className="absolute -inset-1 bg-[#00FF80]/20 blur-md"></div>
+            <div className="relative mt-2 h-2 w-24 rounded-full bg-black/80"></div>
           </div>
 
-          <div className="mt-10 w-full max-w-4xl mx-auto">
-            <div className="w-full bg-black/40 border border-white/20 rounded-xl p-10 flex flex-col items-center justify-start">
+          <div className="mx-auto mt-10 w-full max-w-4xl">
+            <div className="flex w-full flex-col items-center justify-start rounded-xl border border-white/20 bg-black/40 p-10">
               <Accordion.Root type="multiple" className="w-full">
                 {faqs.map((faq, idx) => (
                   <Accordion.Item
                     key={idx}
                     value={idx.toString()}
-                    className="w-full py-3 border-b border-[#00FF80]/50"
+                    className="w-full border-b border-[#00FF80]/50 py-3"
                   >
                     <Accordion.Header className="w-full">
-                      <Accordion.Trigger className="w-full cursor-pointer text-left flex items-center justify-between">
-                        <div className="w-full font-bold uppercase text-white">
+                      <Accordion.Trigger className="flex w-full cursor-pointer items-center justify-between text-left">
+                        <div className="w-full font-bold tracking-widest text-white uppercase">
                           {faq.question}
                         </div>
 
@@ -76,7 +76,7 @@ export default function Faq() {
                       </Accordion.Trigger>
                     </Accordion.Header>
                     <Accordion.Content>
-                      <p className="text-white  mt-5 text-base/6">
+                      <p className="mt-5 text-base/6 tracking-widest text-white">
                         {faq.answer}
                       </p>
                     </Accordion.Content>

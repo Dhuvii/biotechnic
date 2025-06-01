@@ -26,7 +26,7 @@ export default function ApplyNow() {
 
       <Navbar />
 
-      <div className="relative mt-10 flex w-full flex-col overflow-hidden px-20">
+      <div className="relative mt-10 flex w-full flex-col overflow-hidden px-5 lg:px-20">
         <div className="grid w-full grid-cols-1 gap-5 overflow-y-auto rounded-xl border border-white/20 bg-black/70 p-5 md:grid-cols-4 lg:grid-cols-5">
           <div className="flex w-full flex-col md:col-span-2 md:max-w-xl">
             <h1 className="text-4xl font-bold text-white uppercase">{title}</h1>

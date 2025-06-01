@@ -30,8 +30,8 @@ const page = async () => {
 
       <div className="relative flex w-full flex-1 flex-col overflow-y-auto">
         <Navbar />
-        <div className="mt-10 w-full flex-1 flex-col px-20">
-          <div className="flex w-full flex-col rounded-2xl border border-white/20 bg-black/90 p-10">
+        <div className="mt-10 w-full flex-1 flex-col px-5 lg:px-20">
+          <div className="flex w-full flex-col rounded-2xl border border-white/20 bg-black/90 p-5 lg:p-10">
             <div className="flex w-full flex-col items-center justify-center">
               <div className="relative flex w-max items-center justify-center">
                 <div className="absolute inset-2 inset-y-3 bg-[#00FF80]/70 blur-md"></div>
@@ -50,7 +50,7 @@ const page = async () => {
             {featuredBlogs && featuredBlogs.items.length > 0 && (
               <Link
                 href={`/blog/${featuredBlogs.items[0].slug.current}`}
-                className="group mt-10 grid w-full grid-cols-5 gap-10 rounded-2xl"
+                className="group mt-10 grid w-full grid-cols-1 gap-10 rounded-2xl lg:grid-cols-5"
               >
                 <div className="relative col-span-3 aspect-video w-full overflow-hidden rounded-2xl">
                   <Image

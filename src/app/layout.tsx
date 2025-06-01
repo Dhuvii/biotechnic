@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Biotechnic",
+  title: "Biotechnic - Supra Biotechnology",
   description: "Immunotherapy for Cancer",
 };
 

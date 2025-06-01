@@ -28,7 +28,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
       <Navbar />
 
       {blog && (
-        <section className="relative flex h-full w-full flex-1 flex-col overflow-hidden px-20 pt-5">
+        <section className="relative flex h-full w-full flex-1 flex-col overflow-hidden px-5 pt-5 lg:px-20">
           <div className="relative mx-auto w-full flex-1 overflow-y-auto rounded-xl bg-black/90 p-5 text-white">
             <div className="group relative mt-5 flex w-max items-center justify-center">
               <div className="absolute -inset-1 bg-white/50 blur-lg group-hover:bg-white/10"></div>
@@ -40,7 +40,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
               </Link>
             </div>
 
-            <div className="mx-auto w-full max-w-3xl">
+            <div className="mx-auto mt-5 w-full max-w-3xl">
               {blog?.thumbnail && (
                 <div className="relative aspect-video w-full overflow-hidden rounded-2xl">
                   <div className="absolute inset-0 z-10 animate-pulse bg-white/5"></div>

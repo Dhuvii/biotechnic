@@ -23,11 +23,11 @@ export default function Home() {
 
       <Navbar />
 
-      <div className="relative z-50 mt-10 flex w-full flex-col overflow-y-auto px-20">
-        <div className="flex w-full flex-col items-center justify-start rounded-xl border border-white/20 bg-black/50 p-10">
-          <div className="relative flex w-max items-center justify-center">
-            <div className="absolute inset-2 inset-y-3 bg-[#00FF80]/70 blur-md"></div>
-            <h1 className="text-shadow-sm relative text-center text-5xl font-bold tracking-wider text-white uppercase">
+      <div className="relative z-50 mt-10 flex w-full flex-col overflow-y-auto px-5 lg:px-20">
+        <div className="flex w-full flex-col items-center justify-start rounded-xl border border-white/20 bg-black/50 p-5 lg:p-10">
+          <div className="relative flex items-center justify-center lg:w-max">
+            <div className="absolute inset-2 inset-y-3 bg-[#00FF80]/70 opacity-50 blur-md lg:opacity-100"></div>
+            <h1 className="text-shadow-sm relative text-center text-4xl font-bold tracking-wider text-white uppercase lg:text-5xl">
               {title}
             </h1>
           </div>
@@ -40,8 +40,8 @@ export default function Home() {
             <div className="relative mt-2 h-2 w-24 rounded-full bg-black/80"></div>
           </div>
 
-          <div className="mt-10 grid w-full grid-cols-3 gap-5">
-            <div className="flex w-full flex-col items-center justify-center rounded-xl border border-white/20 bg-black/20 p-10">
+          <div className="mt-10 grid w-full grid-cols-1 gap-5 lg:grid-cols-3">
+            <div className="flex w-full flex-col items-center justify-center rounded-xl border border-white/20 bg-black/20 p-5 lg:p-10">
               <div className="rounded-full border border-[#00FF80]/70 bg-radial from-black/10 from-5% to-[#00FF80]/20 p-5 text-[#00FF80]">
                 <svg
                   width={48}
@@ -143,7 +143,7 @@ export default function Home() {
 
               <div className="group relative mt-5 flex items-center justify-center">
                 <div className="absolute -inset-1 bg-[#03FF81]/50 blur-lg group-hover:bg-[#03FF81]/10"></div>
-                <button className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold text-white uppercase hover:from-transparent">
+                <button className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold tracking-widest text-white uppercase hover:from-transparent">
                   {form.cta}
                 </button>
               </div>
