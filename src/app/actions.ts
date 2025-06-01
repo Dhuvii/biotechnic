@@ -1,9 +1,8 @@
 "use server";
 
-// import { sendMail } from "@/lib/nodemailer.config";
-import { OrderSchema } from "@/schema/OrderSchema";
-import prisma from "@/lib/prisma";
 import { sendMail } from "@/lib/nodemailer.config";
+import prisma from "@/lib/prisma";
+import { OrderSchema } from "@/schema/OrderSchema";
 
 export const createOrder = async (order: typeof OrderSchema._output) => {
   let orderId = 115;
@@ -52,7 +51,7 @@ export const createOrder = async (order: typeof OrderSchema._output) => {
   });
 
   sendMail({
-    to: "dhuviuidesigns@gmail.com",
+    to: "info@biotechnics.com",
     subject: `Biotechnic: Order confirmed ${orderId}`,
     template: "owner",
     context: {
