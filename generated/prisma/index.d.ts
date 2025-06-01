@@ -14,6 +14,11 @@ export type PrismaPromise<T> = $Public.PrismaPromise<T>
 
 
 /**
+ * Model LastOrderId
+ * 
+ */
+export type LastOrderId = $Result.DefaultSelection<Prisma.$LastOrderIdPayload>
+/**
  * Model Order
  * 
  */
@@ -26,8 +31,8 @@ export type Order = $Result.DefaultSelection<Prisma.$OrderPayload>
  * @example
  * ```
  * const prisma = new PrismaClient()
- * // Fetch zero or more Orders
- * const orders = await prisma.order.findMany()
+ * // Fetch zero or more LastOrderIds
+ * const lastOrderIds = await prisma.lastOrderId.findMany()
  * ```
  *
  *
@@ -47,8 +52,8 @@ export class PrismaClient<
    * @example
    * ```
    * const prisma = new PrismaClient()
-   * // Fetch zero or more Orders
-   * const orders = await prisma.order.findMany()
+   * // Fetch zero or more LastOrderIds
+   * const lastOrderIds = await prisma.lastOrderId.findMany()
    * ```
    *
    *
@@ -112,6 +117,16 @@ export class PrismaClient<
   }>>
 
       /**
+   * `prisma.lastOrderId`: Exposes CRUD operations for the **LastOrderId** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more LastOrderIds
+    * const lastOrderIds = await prisma.lastOrderId.findMany()
+    * ```
+    */
+  get lastOrderId(): Prisma.LastOrderIdDelegate<ExtArgs, ClientOptions>;
+
+  /**
    * `prisma.order`: Exposes CRUD operations for the **Order** model.
     * Example usage:
     * ```ts
@@ -560,6 +575,7 @@ export namespace Prisma {
 
 
   export const ModelName: {
+    LastOrderId: 'LastOrderId',
     Order: 'Order'
   };
 
@@ -579,10 +595,84 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "order"
+      modelProps: "lastOrderId" | "order"
       txIsolationLevel: never
     }
     model: {
+      LastOrderId: {
+        payload: Prisma.$LastOrderIdPayload<ExtArgs>
+        fields: Prisma.LastOrderIdFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.LastOrderIdFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$LastOrderIdPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.LastOrderIdFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$LastOrderIdPayload>
+          }
+          findFirst: {
+            args: Prisma.LastOrderIdFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$LastOrderIdPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.LastOrderIdFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$LastOrderIdPayload>
+          }
+          findMany: {
+            args: Prisma.LastOrderIdFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$LastOrderIdPayload>[]
+          }
+          create: {
+            args: Prisma.LastOrderIdCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$LastOrderIdPayload>
+          }
+          createMany: {
+            args: Prisma.LastOrderIdCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          delete: {
+            args: Prisma.LastOrderIdDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$LastOrderIdPayload>
+          }
+          update: {
+            args: Prisma.LastOrderIdUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$LastOrderIdPayload>
+          }
+          deleteMany: {
+            args: Prisma.LastOrderIdDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.LastOrderIdUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          upsert: {
+            args: Prisma.LastOrderIdUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$LastOrderIdPayload>
+          }
+          aggregate: {
+            args: Prisma.LastOrderIdAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateLastOrderId>
+          }
+          groupBy: {
+            args: Prisma.LastOrderIdGroupByArgs<ExtArgs>
+            result: $Utils.Optional<LastOrderIdGroupByOutputType>[]
+          }
+          findRaw: {
+            args: Prisma.LastOrderIdFindRawArgs<ExtArgs>
+            result: JsonObject
+          }
+          aggregateRaw: {
+            args: Prisma.LastOrderIdAggregateRawArgs<ExtArgs>
+            result: JsonObject
+          }
+          count: {
+            args: Prisma.LastOrderIdCountArgs<ExtArgs>
+            result: $Utils.Optional<LastOrderIdCountAggregateOutputType> | number
+          }
+        }
+      }
       Order: {
         payload: Prisma.$OrderPayload<ExtArgs>
         fields: Prisma.OrderFieldRefs
@@ -728,6 +818,7 @@ export namespace Prisma {
     omit?: Prisma.GlobalOmitConfig
   }
   export type GlobalOmitConfig = {
+    lastOrderId?: LastOrderIdOmit
     order?: OrderOmit
   }
 
@@ -824,6 +915,961 @@ export namespace Prisma {
    */
 
   /**
+   * Model LastOrderId
+   */
+
+  export type AggregateLastOrderId = {
+    _count: LastOrderIdCountAggregateOutputType | null
+    _avg: LastOrderIdAvgAggregateOutputType | null
+    _sum: LastOrderIdSumAggregateOutputType | null
+    _min: LastOrderIdMinAggregateOutputType | null
+    _max: LastOrderIdMaxAggregateOutputType | null
+  }
+
+  export type LastOrderIdAvgAggregateOutputType = {
+    orderId: number | null
+  }
+
+  export type LastOrderIdSumAggregateOutputType = {
+    orderId: number | null
+  }
+
+  export type LastOrderIdMinAggregateOutputType = {
+    id: string | null
+    orderId: number | null
+    createdAt: Date | null
+    updatedAt: Date | null
+  }
+
+  export type LastOrderIdMaxAggregateOutputType = {
+    id: string | null
+    orderId: number | null
+    createdAt: Date | null
+    updatedAt: Date | null
+  }
+
+  export type LastOrderIdCountAggregateOutputType = {
+    id: number
+    orderId: number
+    createdAt: number
+    updatedAt: number
+    _all: number
+  }
+
+
+  export type LastOrderIdAvgAggregateInputType = {
+    orderId?: true
+  }
+
+  export type LastOrderIdSumAggregateInputType = {
+    orderId?: true
+  }
+
+  export type LastOrderIdMinAggregateInputType = {
+    id?: true
+    orderId?: true
+    createdAt?: true
+    updatedAt?: true
+  }
+
+  export type LastOrderIdMaxAggregateInputType = {
+    id?: true
+    orderId?: true
+    createdAt?: true
+    updatedAt?: true
+  }
+
+  export type LastOrderIdCountAggregateInputType = {
+    id?: true
+    orderId?: true
+    createdAt?: true
+    updatedAt?: true
+    _all?: true
+  }
+
+  export type LastOrderIdAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which LastOrderId to aggregate.
+     */
+    where?: LastOrderIdWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of LastOrderIds to fetch.
+     */
+    orderBy?: LastOrderIdOrderByWithRelationInput | LastOrderIdOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: LastOrderIdWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` LastOrderIds from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` LastOrderIds.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned LastOrderIds
+    **/
+    _count?: true | LastOrderIdCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: LastOrderIdAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: LastOrderIdSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: LastOrderIdMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: LastOrderIdMaxAggregateInputType
+  }
+
+  export type GetLastOrderIdAggregateType<T extends LastOrderIdAggregateArgs> = {
+        [P in keyof T & keyof AggregateLastOrderId]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateLastOrderId[P]>
+      : GetScalarType<T[P], AggregateLastOrderId[P]>
+  }
+
+
+
+
+  export type LastOrderIdGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: LastOrderIdWhereInput
+    orderBy?: LastOrderIdOrderByWithAggregationInput | LastOrderIdOrderByWithAggregationInput[]
+    by: LastOrderIdScalarFieldEnum[] | LastOrderIdScalarFieldEnum
+    having?: LastOrderIdScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: LastOrderIdCountAggregateInputType | true
+    _avg?: LastOrderIdAvgAggregateInputType
+    _sum?: LastOrderIdSumAggregateInputType
+    _min?: LastOrderIdMinAggregateInputType
+    _max?: LastOrderIdMaxAggregateInputType
+  }
+
+  export type LastOrderIdGroupByOutputType = {
+    id: string
+    orderId: number
+    createdAt: Date
+    updatedAt: Date
+    _count: LastOrderIdCountAggregateOutputType | null
+    _avg: LastOrderIdAvgAggregateOutputType | null
+    _sum: LastOrderIdSumAggregateOutputType | null
+    _min: LastOrderIdMinAggregateOutputType | null
+    _max: LastOrderIdMaxAggregateOutputType | null
+  }
+
+  type GetLastOrderIdGroupByPayload<T extends LastOrderIdGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<LastOrderIdGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof LastOrderIdGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], LastOrderIdGroupByOutputType[P]>
+            : GetScalarType<T[P], LastOrderIdGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type LastOrderIdSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    orderId?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+  }, ExtArgs["result"]["lastOrderId"]>
+
+
+
+  export type LastOrderIdSelectScalar = {
+    id?: boolean
+    orderId?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+  }
+
+  export type LastOrderIdOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "orderId" | "createdAt" | "updatedAt", ExtArgs["result"]["lastOrderId"]>
+
+  export type $LastOrderIdPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "LastOrderId"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      orderId: number
+      createdAt: Date
+      updatedAt: Date
+    }, ExtArgs["result"]["lastOrderId"]>
+    composites: {}
+  }
+
+  type LastOrderIdGetPayload<S extends boolean | null | undefined | LastOrderIdDefaultArgs> = $Result.GetResult<Prisma.$LastOrderIdPayload, S>
+
+  type LastOrderIdCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<LastOrderIdFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: LastOrderIdCountAggregateInputType | true
+    }
+
+  export interface LastOrderIdDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['LastOrderId'], meta: { name: 'LastOrderId' } }
+    /**
+     * Find zero or one LastOrderId that matches the filter.
+     * @param {LastOrderIdFindUniqueArgs} args - Arguments to find a LastOrderId
+     * @example
+     * // Get one LastOrderId
+     * const lastOrderId = await prisma.lastOrderId.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends LastOrderIdFindUniqueArgs>(args: SelectSubset<T, LastOrderIdFindUniqueArgs<ExtArgs>>): Prisma__LastOrderIdClient<$Result.GetResult<Prisma.$LastOrderIdPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one LastOrderId that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {LastOrderIdFindUniqueOrThrowArgs} args - Arguments to find a LastOrderId
+     * @example
+     * // Get one LastOrderId
+     * const lastOrderId = await prisma.lastOrderId.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends LastOrderIdFindUniqueOrThrowArgs>(args: SelectSubset<T, LastOrderIdFindUniqueOrThrowArgs<ExtArgs>>): Prisma__LastOrderIdClient<$Result.GetResult<Prisma.$LastOrderIdPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first LastOrderId that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {LastOrderIdFindFirstArgs} args - Arguments to find a LastOrderId
+     * @example
+     * // Get one LastOrderId
+     * const lastOrderId = await prisma.lastOrderId.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends LastOrderIdFindFirstArgs>(args?: SelectSubset<T, LastOrderIdFindFirstArgs<ExtArgs>>): Prisma__LastOrderIdClient<$Result.GetResult<Prisma.$LastOrderIdPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first LastOrderId that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {LastOrderIdFindFirstOrThrowArgs} args - Arguments to find a LastOrderId
+     * @example
+     * // Get one LastOrderId
+     * const lastOrderId = await prisma.lastOrderId.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends LastOrderIdFindFirstOrThrowArgs>(args?: SelectSubset<T, LastOrderIdFindFirstOrThrowArgs<ExtArgs>>): Prisma__LastOrderIdClient<$Result.GetResult<Prisma.$LastOrderIdPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more LastOrderIds that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {LastOrderIdFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all LastOrderIds
+     * const lastOrderIds = await prisma.lastOrderId.findMany()
+     * 
+     * // Get first 10 LastOrderIds
+     * const lastOrderIds = await prisma.lastOrderId.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const lastOrderIdWithIdOnly = await prisma.lastOrderId.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends LastOrderIdFindManyArgs>(args?: SelectSubset<T, LastOrderIdFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$LastOrderIdPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a LastOrderId.
+     * @param {LastOrderIdCreateArgs} args - Arguments to create a LastOrderId.
+     * @example
+     * // Create one LastOrderId
+     * const LastOrderId = await prisma.lastOrderId.create({
+     *   data: {
+     *     // ... data to create a LastOrderId
+     *   }
+     * })
+     * 
+     */
+    create<T extends LastOrderIdCreateArgs>(args: SelectSubset<T, LastOrderIdCreateArgs<ExtArgs>>): Prisma__LastOrderIdClient<$Result.GetResult<Prisma.$LastOrderIdPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many LastOrderIds.
+     * @param {LastOrderIdCreateManyArgs} args - Arguments to create many LastOrderIds.
+     * @example
+     * // Create many LastOrderIds
+     * const lastOrderId = await prisma.lastOrderId.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends LastOrderIdCreateManyArgs>(args?: SelectSubset<T, LastOrderIdCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Delete a LastOrderId.
+     * @param {LastOrderIdDeleteArgs} args - Arguments to delete one LastOrderId.
+     * @example
+     * // Delete one LastOrderId
+     * const LastOrderId = await prisma.lastOrderId.delete({
+     *   where: {
+     *     // ... filter to delete one LastOrderId
+     *   }
+     * })
+     * 
+     */
+    delete<T extends LastOrderIdDeleteArgs>(args: SelectSubset<T, LastOrderIdDeleteArgs<ExtArgs>>): Prisma__LastOrderIdClient<$Result.GetResult<Prisma.$LastOrderIdPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one LastOrderId.
+     * @param {LastOrderIdUpdateArgs} args - Arguments to update one LastOrderId.
+     * @example
+     * // Update one LastOrderId
+     * const lastOrderId = await prisma.lastOrderId.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends LastOrderIdUpdateArgs>(args: SelectSubset<T, LastOrderIdUpdateArgs<ExtArgs>>): Prisma__LastOrderIdClient<$Result.GetResult<Prisma.$LastOrderIdPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more LastOrderIds.
+     * @param {LastOrderIdDeleteManyArgs} args - Arguments to filter LastOrderIds to delete.
+     * @example
+     * // Delete a few LastOrderIds
+     * const { count } = await prisma.lastOrderId.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends LastOrderIdDeleteManyArgs>(args?: SelectSubset<T, LastOrderIdDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more LastOrderIds.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {LastOrderIdUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many LastOrderIds
+     * const lastOrderId = await prisma.lastOrderId.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends LastOrderIdUpdateManyArgs>(args: SelectSubset<T, LastOrderIdUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create or update one LastOrderId.
+     * @param {LastOrderIdUpsertArgs} args - Arguments to update or create a LastOrderId.
+     * @example
+     * // Update or create a LastOrderId
+     * const lastOrderId = await prisma.lastOrderId.upsert({
+     *   create: {
+     *     // ... data to create a LastOrderId
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the LastOrderId we want to update
+     *   }
+     * })
+     */
+    upsert<T extends LastOrderIdUpsertArgs>(args: SelectSubset<T, LastOrderIdUpsertArgs<ExtArgs>>): Prisma__LastOrderIdClient<$Result.GetResult<Prisma.$LastOrderIdPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more LastOrderIds that matches the filter.
+     * @param {LastOrderIdFindRawArgs} args - Select which filters you would like to apply.
+     * @example
+     * const lastOrderId = await prisma.lastOrderId.findRaw({
+     *   filter: { age: { $gt: 25 } }
+     * })
+     */
+    findRaw(args?: LastOrderIdFindRawArgs): Prisma.PrismaPromise<JsonObject>
+
+    /**
+     * Perform aggregation operations on a LastOrderId.
+     * @param {LastOrderIdAggregateRawArgs} args - Select which aggregations you would like to apply.
+     * @example
+     * const lastOrderId = await prisma.lastOrderId.aggregateRaw({
+     *   pipeline: [
+     *     { $match: { status: "registered" } },
+     *     { $group: { _id: "$country", total: { $sum: 1 } } }
+     *   ]
+     * })
+     */
+    aggregateRaw(args?: LastOrderIdAggregateRawArgs): Prisma.PrismaPromise<JsonObject>
+
+
+    /**
+     * Count the number of LastOrderIds.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {LastOrderIdCountArgs} args - Arguments to filter LastOrderIds to count.
+     * @example
+     * // Count the number of LastOrderIds
+     * const count = await prisma.lastOrderId.count({
+     *   where: {
+     *     // ... the filter for the LastOrderIds we want to count
+     *   }
+     * })
+    **/
+    count<T extends LastOrderIdCountArgs>(
+      args?: Subset<T, LastOrderIdCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], LastOrderIdCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a LastOrderId.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {LastOrderIdAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends LastOrderIdAggregateArgs>(args: Subset<T, LastOrderIdAggregateArgs>): Prisma.PrismaPromise<GetLastOrderIdAggregateType<T>>
+
+    /**
+     * Group by LastOrderId.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {LastOrderIdGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends LastOrderIdGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: LastOrderIdGroupByArgs['orderBy'] }
+        : { orderBy?: LastOrderIdGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, LastOrderIdGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetLastOrderIdGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the LastOrderId model
+   */
+  readonly fields: LastOrderIdFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for LastOrderId.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__LastOrderIdClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the LastOrderId model
+   */
+  interface LastOrderIdFieldRefs {
+    readonly id: FieldRef<"LastOrderId", 'String'>
+    readonly orderId: FieldRef<"LastOrderId", 'Int'>
+    readonly createdAt: FieldRef<"LastOrderId", 'DateTime'>
+    readonly updatedAt: FieldRef<"LastOrderId", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * LastOrderId findUnique
+   */
+  export type LastOrderIdFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LastOrderId
+     */
+    select?: LastOrderIdSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the LastOrderId
+     */
+    omit?: LastOrderIdOmit<ExtArgs> | null
+    /**
+     * Filter, which LastOrderId to fetch.
+     */
+    where: LastOrderIdWhereUniqueInput
+  }
+
+  /**
+   * LastOrderId findUniqueOrThrow
+   */
+  export type LastOrderIdFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LastOrderId
+     */
+    select?: LastOrderIdSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the LastOrderId
+     */
+    omit?: LastOrderIdOmit<ExtArgs> | null
+    /**
+     * Filter, which LastOrderId to fetch.
+     */
+    where: LastOrderIdWhereUniqueInput
+  }
+
+  /**
+   * LastOrderId findFirst
+   */
+  export type LastOrderIdFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LastOrderId
+     */
+    select?: LastOrderIdSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the LastOrderId
+     */
+    omit?: LastOrderIdOmit<ExtArgs> | null
+    /**
+     * Filter, which LastOrderId to fetch.
+     */
+    where?: LastOrderIdWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of LastOrderIds to fetch.
+     */
+    orderBy?: LastOrderIdOrderByWithRelationInput | LastOrderIdOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for LastOrderIds.
+     */
+    cursor?: LastOrderIdWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` LastOrderIds from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` LastOrderIds.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of LastOrderIds.
+     */
+    distinct?: LastOrderIdScalarFieldEnum | LastOrderIdScalarFieldEnum[]
+  }
+
+  /**
+   * LastOrderId findFirstOrThrow
+   */
+  export type LastOrderIdFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LastOrderId
+     */
+    select?: LastOrderIdSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the LastOrderId
+     */
+    omit?: LastOrderIdOmit<ExtArgs> | null
+    /**
+     * Filter, which LastOrderId to fetch.
+     */
+    where?: LastOrderIdWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of LastOrderIds to fetch.
+     */
+    orderBy?: LastOrderIdOrderByWithRelationInput | LastOrderIdOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for LastOrderIds.
+     */
+    cursor?: LastOrderIdWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` LastOrderIds from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` LastOrderIds.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of LastOrderIds.
+     */
+    distinct?: LastOrderIdScalarFieldEnum | LastOrderIdScalarFieldEnum[]
+  }
+
+  /**
+   * LastOrderId findMany
+   */
+  export type LastOrderIdFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LastOrderId
+     */
+    select?: LastOrderIdSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the LastOrderId
+     */
+    omit?: LastOrderIdOmit<ExtArgs> | null
+    /**
+     * Filter, which LastOrderIds to fetch.
+     */
+    where?: LastOrderIdWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of LastOrderIds to fetch.
+     */
+    orderBy?: LastOrderIdOrderByWithRelationInput | LastOrderIdOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing LastOrderIds.
+     */
+    cursor?: LastOrderIdWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` LastOrderIds from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` LastOrderIds.
+     */
+    skip?: number
+    distinct?: LastOrderIdScalarFieldEnum | LastOrderIdScalarFieldEnum[]
+  }
+
+  /**
+   * LastOrderId create
+   */
+  export type LastOrderIdCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LastOrderId
+     */
+    select?: LastOrderIdSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the LastOrderId
+     */
+    omit?: LastOrderIdOmit<ExtArgs> | null
+    /**
+     * The data needed to create a LastOrderId.
+     */
+    data: XOR<LastOrderIdCreateInput, LastOrderIdUncheckedCreateInput>
+  }
+
+  /**
+   * LastOrderId createMany
+   */
+  export type LastOrderIdCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many LastOrderIds.
+     */
+    data: LastOrderIdCreateManyInput | LastOrderIdCreateManyInput[]
+  }
+
+  /**
+   * LastOrderId update
+   */
+  export type LastOrderIdUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LastOrderId
+     */
+    select?: LastOrderIdSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the LastOrderId
+     */
+    omit?: LastOrderIdOmit<ExtArgs> | null
+    /**
+     * The data needed to update a LastOrderId.
+     */
+    data: XOR<LastOrderIdUpdateInput, LastOrderIdUncheckedUpdateInput>
+    /**
+     * Choose, which LastOrderId to update.
+     */
+    where: LastOrderIdWhereUniqueInput
+  }
+
+  /**
+   * LastOrderId updateMany
+   */
+  export type LastOrderIdUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update LastOrderIds.
+     */
+    data: XOR<LastOrderIdUpdateManyMutationInput, LastOrderIdUncheckedUpdateManyInput>
+    /**
+     * Filter which LastOrderIds to update
+     */
+    where?: LastOrderIdWhereInput
+    /**
+     * Limit how many LastOrderIds to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * LastOrderId upsert
+   */
+  export type LastOrderIdUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LastOrderId
+     */
+    select?: LastOrderIdSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the LastOrderId
+     */
+    omit?: LastOrderIdOmit<ExtArgs> | null
+    /**
+     * The filter to search for the LastOrderId to update in case it exists.
+     */
+    where: LastOrderIdWhereUniqueInput
+    /**
+     * In case the LastOrderId found by the `where` argument doesn't exist, create a new LastOrderId with this data.
+     */
+    create: XOR<LastOrderIdCreateInput, LastOrderIdUncheckedCreateInput>
+    /**
+     * In case the LastOrderId was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<LastOrderIdUpdateInput, LastOrderIdUncheckedUpdateInput>
+  }
+
+  /**
+   * LastOrderId delete
+   */
+  export type LastOrderIdDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LastOrderId
+     */
+    select?: LastOrderIdSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the LastOrderId
+     */
+    omit?: LastOrderIdOmit<ExtArgs> | null
+    /**
+     * Filter which LastOrderId to delete.
+     */
+    where: LastOrderIdWhereUniqueInput
+  }
+
+  /**
+   * LastOrderId deleteMany
+   */
+  export type LastOrderIdDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which LastOrderIds to delete
+     */
+    where?: LastOrderIdWhereInput
+    /**
+     * Limit how many LastOrderIds to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * LastOrderId findRaw
+   */
+  export type LastOrderIdFindRawArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The query predicate filter. If unspecified, then all documents in the collection will match the predicate. ${@link https://docs.mongodb.com/manual/reference/operator/query MongoDB Docs}.
+     */
+    filter?: InputJsonValue
+    /**
+     * Additional options to pass to the `find` command ${@link https://docs.mongodb.com/manual/reference/command/find/#command-fields MongoDB Docs}.
+     */
+    options?: InputJsonValue
+  }
+
+  /**
+   * LastOrderId aggregateRaw
+   */
+  export type LastOrderIdAggregateRawArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * An array of aggregation stages to process and transform the document stream via the aggregation pipeline. ${@link https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline MongoDB Docs}.
+     */
+    pipeline?: InputJsonValue[]
+    /**
+     * Additional options to pass to the `aggregate` command ${@link https://docs.mongodb.com/manual/reference/command/aggregate/#command-fields MongoDB Docs}.
+     */
+    options?: InputJsonValue
+  }
+
+  /**
+   * LastOrderId without action
+   */
+  export type LastOrderIdDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the LastOrderId
+     */
+    select?: LastOrderIdSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the LastOrderId
+     */
+    omit?: LastOrderIdOmit<ExtArgs> | null
+  }
+
+
+  /**
    * Model Order
    */
 
@@ -846,6 +1892,14 @@ export namespace Prisma {
   export type OrderMinAggregateOutputType = {
     id: string | null
     orderId: number | null
+    fullName: string | null
+    streetAddress: string | null
+    region: string | null
+    city: string | null
+    zipCode: string | null
+    country: string | null
+    email: string | null
+    phoneNumber: string | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -853,6 +1907,14 @@ export namespace Prisma {
   export type OrderMaxAggregateOutputType = {
     id: string | null
     orderId: number | null
+    fullName: string | null
+    streetAddress: string | null
+    region: string | null
+    city: string | null
+    zipCode: string | null
+    country: string | null
+    email: string | null
+    phoneNumber: string | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -860,6 +1922,14 @@ export namespace Prisma {
   export type OrderCountAggregateOutputType = {
     id: number
     orderId: number
+    fullName: number
+    streetAddress: number
+    region: number
+    city: number
+    zipCode: number
+    country: number
+    email: number
+    phoneNumber: number
     createdAt: number
     updatedAt: number
     _all: number
@@ -877,6 +1947,14 @@ export namespace Prisma {
   export type OrderMinAggregateInputType = {
     id?: true
     orderId?: true
+    fullName?: true
+    streetAddress?: true
+    region?: true
+    city?: true
+    zipCode?: true
+    country?: true
+    email?: true
+    phoneNumber?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -884,6 +1962,14 @@ export namespace Prisma {
   export type OrderMaxAggregateInputType = {
     id?: true
     orderId?: true
+    fullName?: true
+    streetAddress?: true
+    region?: true
+    city?: true
+    zipCode?: true
+    country?: true
+    email?: true
+    phoneNumber?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -891,6 +1977,14 @@ export namespace Prisma {
   export type OrderCountAggregateInputType = {
     id?: true
     orderId?: true
+    fullName?: true
+    streetAddress?: true
+    region?: true
+    city?: true
+    zipCode?: true
+    country?: true
+    email?: true
+    phoneNumber?: true
     createdAt?: true
     updatedAt?: true
     _all?: true
@@ -985,6 +2079,14 @@ export namespace Prisma {
   export type OrderGroupByOutputType = {
     id: string
     orderId: number
+    fullName: string
+    streetAddress: string
+    region: string | null
+    city: string
+    zipCode: string
+    country: string
+    email: string
+    phoneNumber: string
     createdAt: Date
     updatedAt: Date
     _count: OrderCountAggregateOutputType | null
@@ -1011,6 +2113,14 @@ export namespace Prisma {
   export type OrderSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     orderId?: boolean
+    fullName?: boolean
+    streetAddress?: boolean
+    region?: boolean
+    city?: boolean
+    zipCode?: boolean
+    country?: boolean
+    email?: boolean
+    phoneNumber?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["order"]>
@@ -1020,11 +2130,19 @@ export namespace Prisma {
   export type OrderSelectScalar = {
     id?: boolean
     orderId?: boolean
+    fullName?: boolean
+    streetAddress?: boolean
+    region?: boolean
+    city?: boolean
+    zipCode?: boolean
+    country?: boolean
+    email?: boolean
+    phoneNumber?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type OrderOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "orderId" | "createdAt" | "updatedAt", ExtArgs["result"]["order"]>
+  export type OrderOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "orderId" | "fullName" | "streetAddress" | "region" | "city" | "zipCode" | "country" | "email" | "phoneNumber" | "createdAt" | "updatedAt", ExtArgs["result"]["order"]>
 
   export type $OrderPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Order"
@@ -1032,6 +2150,14 @@ export namespace Prisma {
     scalars: $Extensions.GetPayloadResult<{
       id: string
       orderId: number
+      fullName: string
+      streetAddress: string
+      region: string | null
+      city: string
+      zipCode: string
+      country: string
+      email: string
+      phoneNumber: string
       createdAt: Date
       updatedAt: Date
     }, ExtArgs["result"]["order"]>
@@ -1428,6 +2554,14 @@ export namespace Prisma {
   interface OrderFieldRefs {
     readonly id: FieldRef<"Order", 'String'>
     readonly orderId: FieldRef<"Order", 'Int'>
+    readonly fullName: FieldRef<"Order", 'String'>
+    readonly streetAddress: FieldRef<"Order", 'String'>
+    readonly region: FieldRef<"Order", 'String'>
+    readonly city: FieldRef<"Order", 'String'>
+    readonly zipCode: FieldRef<"Order", 'String'>
+    readonly country: FieldRef<"Order", 'String'>
+    readonly email: FieldRef<"Order", 'String'>
+    readonly phoneNumber: FieldRef<"Order", 'String'>
     readonly createdAt: FieldRef<"Order", 'DateTime'>
     readonly updatedAt: FieldRef<"Order", 'DateTime'>
   }
@@ -1782,9 +2916,27 @@ export namespace Prisma {
    * Enums
    */
 
+  export const LastOrderIdScalarFieldEnum: {
+    id: 'id',
+    orderId: 'orderId',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
+  };
+
+  export type LastOrderIdScalarFieldEnum = (typeof LastOrderIdScalarFieldEnum)[keyof typeof LastOrderIdScalarFieldEnum]
+
+
   export const OrderScalarFieldEnum: {
     id: 'id',
     orderId: 'orderId',
+    fullName: 'fullName',
+    streetAddress: 'streetAddress',
+    region: 'region',
+    city: 'city',
+    zipCode: 'zipCode',
+    country: 'country',
+    email: 'email',
+    phoneNumber: 'phoneNumber',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt'
   };
@@ -1872,12 +3024,69 @@ export namespace Prisma {
    */
 
 
+  export type LastOrderIdWhereInput = {
+    AND?: LastOrderIdWhereInput | LastOrderIdWhereInput[]
+    OR?: LastOrderIdWhereInput[]
+    NOT?: LastOrderIdWhereInput | LastOrderIdWhereInput[]
+    id?: StringFilter<"LastOrderId"> | string
+    orderId?: IntFilter<"LastOrderId"> | number
+    createdAt?: DateTimeFilter<"LastOrderId"> | Date | string
+    updatedAt?: DateTimeFilter<"LastOrderId"> | Date | string
+  }
+
+  export type LastOrderIdOrderByWithRelationInput = {
+    id?: SortOrder
+    orderId?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type LastOrderIdWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: LastOrderIdWhereInput | LastOrderIdWhereInput[]
+    OR?: LastOrderIdWhereInput[]
+    NOT?: LastOrderIdWhereInput | LastOrderIdWhereInput[]
+    orderId?: IntFilter<"LastOrderId"> | number
+    createdAt?: DateTimeFilter<"LastOrderId"> | Date | string
+    updatedAt?: DateTimeFilter<"LastOrderId"> | Date | string
+  }, "id">
+
+  export type LastOrderIdOrderByWithAggregationInput = {
+    id?: SortOrder
+    orderId?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+    _count?: LastOrderIdCountOrderByAggregateInput
+    _avg?: LastOrderIdAvgOrderByAggregateInput
+    _max?: LastOrderIdMaxOrderByAggregateInput
+    _min?: LastOrderIdMinOrderByAggregateInput
+    _sum?: LastOrderIdSumOrderByAggregateInput
+  }
+
+  export type LastOrderIdScalarWhereWithAggregatesInput = {
+    AND?: LastOrderIdScalarWhereWithAggregatesInput | LastOrderIdScalarWhereWithAggregatesInput[]
+    OR?: LastOrderIdScalarWhereWithAggregatesInput[]
+    NOT?: LastOrderIdScalarWhereWithAggregatesInput | LastOrderIdScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"LastOrderId"> | string
+    orderId?: IntWithAggregatesFilter<"LastOrderId"> | number
+    createdAt?: DateTimeWithAggregatesFilter<"LastOrderId"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"LastOrderId"> | Date | string
+  }
+
   export type OrderWhereInput = {
     AND?: OrderWhereInput | OrderWhereInput[]
     OR?: OrderWhereInput[]
     NOT?: OrderWhereInput | OrderWhereInput[]
     id?: StringFilter<"Order"> | string
     orderId?: IntFilter<"Order"> | number
+    fullName?: StringFilter<"Order"> | string
+    streetAddress?: StringFilter<"Order"> | string
+    region?: StringNullableFilter<"Order"> | string | null
+    city?: StringFilter<"Order"> | string
+    zipCode?: StringFilter<"Order"> | string
+    country?: StringFilter<"Order"> | string
+    email?: StringFilter<"Order"> | string
+    phoneNumber?: StringFilter<"Order"> | string
     createdAt?: DateTimeFilter<"Order"> | Date | string
     updatedAt?: DateTimeFilter<"Order"> | Date | string
   }
@@ -1885,6 +3094,14 @@ export namespace Prisma {
   export type OrderOrderByWithRelationInput = {
     id?: SortOrder
     orderId?: SortOrder
+    fullName?: SortOrder
+    streetAddress?: SortOrder
+    region?: SortOrder
+    city?: SortOrder
+    zipCode?: SortOrder
+    country?: SortOrder
+    email?: SortOrder
+    phoneNumber?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -1895,6 +3112,14 @@ export namespace Prisma {
     OR?: OrderWhereInput[]
     NOT?: OrderWhereInput | OrderWhereInput[]
     orderId?: IntFilter<"Order"> | number
+    fullName?: StringFilter<"Order"> | string
+    streetAddress?: StringFilter<"Order"> | string
+    region?: StringNullableFilter<"Order"> | string | null
+    city?: StringFilter<"Order"> | string
+    zipCode?: StringFilter<"Order"> | string
+    country?: StringFilter<"Order"> | string
+    email?: StringFilter<"Order"> | string
+    phoneNumber?: StringFilter<"Order"> | string
     createdAt?: DateTimeFilter<"Order"> | Date | string
     updatedAt?: DateTimeFilter<"Order"> | Date | string
   }, "id">
@@ -1902,6 +3127,14 @@ export namespace Prisma {
   export type OrderOrderByWithAggregationInput = {
     id?: SortOrder
     orderId?: SortOrder
+    fullName?: SortOrder
+    streetAddress?: SortOrder
+    region?: SortOrder
+    city?: SortOrder
+    zipCode?: SortOrder
+    country?: SortOrder
+    email?: SortOrder
+    phoneNumber?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     _count?: OrderCountOrderByAggregateInput
@@ -1917,13 +3150,74 @@ export namespace Prisma {
     NOT?: OrderScalarWhereWithAggregatesInput | OrderScalarWhereWithAggregatesInput[]
     id?: StringWithAggregatesFilter<"Order"> | string
     orderId?: IntWithAggregatesFilter<"Order"> | number
+    fullName?: StringWithAggregatesFilter<"Order"> | string
+    streetAddress?: StringWithAggregatesFilter<"Order"> | string
+    region?: StringNullableWithAggregatesFilter<"Order"> | string | null
+    city?: StringWithAggregatesFilter<"Order"> | string
+    zipCode?: StringWithAggregatesFilter<"Order"> | string
+    country?: StringWithAggregatesFilter<"Order"> | string
+    email?: StringWithAggregatesFilter<"Order"> | string
+    phoneNumber?: StringWithAggregatesFilter<"Order"> | string
     createdAt?: DateTimeWithAggregatesFilter<"Order"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"Order"> | Date | string
+  }
+
+  export type LastOrderIdCreateInput = {
+    id?: string
+    orderId: number
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type LastOrderIdUncheckedCreateInput = {
+    id?: string
+    orderId: number
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type LastOrderIdUpdateInput = {
+    orderId?: IntFieldUpdateOperationsInput | number
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type LastOrderIdUncheckedUpdateInput = {
+    orderId?: IntFieldUpdateOperationsInput | number
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type LastOrderIdCreateManyInput = {
+    id?: string
+    orderId: number
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type LastOrderIdUpdateManyMutationInput = {
+    orderId?: IntFieldUpdateOperationsInput | number
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type LastOrderIdUncheckedUpdateManyInput = {
+    orderId?: IntFieldUpdateOperationsInput | number
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type OrderCreateInput = {
     id?: string
     orderId: number
+    fullName: string
+    streetAddress: string
+    region?: string | null
+    city: string
+    zipCode: string
+    country: string
+    email: string
+    phoneNumber: string
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -1931,18 +3225,42 @@ export namespace Prisma {
   export type OrderUncheckedCreateInput = {
     id?: string
     orderId: number
+    fullName: string
+    streetAddress: string
+    region?: string | null
+    city: string
+    zipCode: string
+    country: string
+    email: string
+    phoneNumber: string
     createdAt?: Date | string
     updatedAt?: Date | string
   }
 
   export type OrderUpdateInput = {
     orderId?: IntFieldUpdateOperationsInput | number
+    fullName?: StringFieldUpdateOperationsInput | string
+    streetAddress?: StringFieldUpdateOperationsInput | string
+    region?: NullableStringFieldUpdateOperationsInput | string | null
+    city?: StringFieldUpdateOperationsInput | string
+    zipCode?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    email?: StringFieldUpdateOperationsInput | string
+    phoneNumber?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type OrderUncheckedUpdateInput = {
     orderId?: IntFieldUpdateOperationsInput | number
+    fullName?: StringFieldUpdateOperationsInput | string
+    streetAddress?: StringFieldUpdateOperationsInput | string
+    region?: NullableStringFieldUpdateOperationsInput | string | null
+    city?: StringFieldUpdateOperationsInput | string
+    zipCode?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    email?: StringFieldUpdateOperationsInput | string
+    phoneNumber?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -1950,18 +3268,42 @@ export namespace Prisma {
   export type OrderCreateManyInput = {
     id?: string
     orderId: number
+    fullName: string
+    streetAddress: string
+    region?: string | null
+    city: string
+    zipCode: string
+    country: string
+    email: string
+    phoneNumber: string
     createdAt?: Date | string
     updatedAt?: Date | string
   }
 
   export type OrderUpdateManyMutationInput = {
     orderId?: IntFieldUpdateOperationsInput | number
+    fullName?: StringFieldUpdateOperationsInput | string
+    streetAddress?: StringFieldUpdateOperationsInput | string
+    region?: NullableStringFieldUpdateOperationsInput | string | null
+    city?: StringFieldUpdateOperationsInput | string
+    zipCode?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    email?: StringFieldUpdateOperationsInput | string
+    phoneNumber?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type OrderUncheckedUpdateManyInput = {
     orderId?: IntFieldUpdateOperationsInput | number
+    fullName?: StringFieldUpdateOperationsInput | string
+    streetAddress?: StringFieldUpdateOperationsInput | string
+    region?: NullableStringFieldUpdateOperationsInput | string | null
+    city?: StringFieldUpdateOperationsInput | string
+    zipCode?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    email?: StringFieldUpdateOperationsInput | string
+    phoneNumber?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -2003,32 +3345,32 @@ export namespace Prisma {
     not?: NestedDateTimeFilter<$PrismaModel> | Date | string
   }
 
-  export type OrderCountOrderByAggregateInput = {
+  export type LastOrderIdCountOrderByAggregateInput = {
     id?: SortOrder
     orderId?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
 
-  export type OrderAvgOrderByAggregateInput = {
+  export type LastOrderIdAvgOrderByAggregateInput = {
     orderId?: SortOrder
   }
 
-  export type OrderMaxOrderByAggregateInput = {
+  export type LastOrderIdMaxOrderByAggregateInput = {
     id?: SortOrder
     orderId?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
 
-  export type OrderMinOrderByAggregateInput = {
+  export type LastOrderIdMinOrderByAggregateInput = {
     id?: SortOrder
     orderId?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
 
-  export type OrderSumOrderByAggregateInput = {
+  export type LastOrderIdSumOrderByAggregateInput = {
     orderId?: SortOrder
   }
 
@@ -2080,6 +3422,94 @@ export namespace Prisma {
     _max?: NestedDateTimeFilter<$PrismaModel>
   }
 
+  export type StringNullableFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel> | null
+    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    contains?: string | StringFieldRefInput<$PrismaModel>
+    startsWith?: string | StringFieldRefInput<$PrismaModel>
+    endsWith?: string | StringFieldRefInput<$PrismaModel>
+    mode?: QueryMode
+    not?: NestedStringNullableFilter<$PrismaModel> | string | null
+    isSet?: boolean
+  }
+
+  export type OrderCountOrderByAggregateInput = {
+    id?: SortOrder
+    orderId?: SortOrder
+    fullName?: SortOrder
+    streetAddress?: SortOrder
+    region?: SortOrder
+    city?: SortOrder
+    zipCode?: SortOrder
+    country?: SortOrder
+    email?: SortOrder
+    phoneNumber?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type OrderAvgOrderByAggregateInput = {
+    orderId?: SortOrder
+  }
+
+  export type OrderMaxOrderByAggregateInput = {
+    id?: SortOrder
+    orderId?: SortOrder
+    fullName?: SortOrder
+    streetAddress?: SortOrder
+    region?: SortOrder
+    city?: SortOrder
+    zipCode?: SortOrder
+    country?: SortOrder
+    email?: SortOrder
+    phoneNumber?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type OrderMinOrderByAggregateInput = {
+    id?: SortOrder
+    orderId?: SortOrder
+    fullName?: SortOrder
+    streetAddress?: SortOrder
+    region?: SortOrder
+    city?: SortOrder
+    zipCode?: SortOrder
+    country?: SortOrder
+    email?: SortOrder
+    phoneNumber?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type OrderSumOrderByAggregateInput = {
+    orderId?: SortOrder
+  }
+
+  export type StringNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel> | null
+    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    contains?: string | StringFieldRefInput<$PrismaModel>
+    startsWith?: string | StringFieldRefInput<$PrismaModel>
+    endsWith?: string | StringFieldRefInput<$PrismaModel>
+    mode?: QueryMode
+    not?: NestedStringNullableWithAggregatesFilter<$PrismaModel> | string | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedStringNullableFilter<$PrismaModel>
+    _max?: NestedStringNullableFilter<$PrismaModel>
+    isSet?: boolean
+  }
+
   export type IntFieldUpdateOperationsInput = {
     set?: number
     increment?: number
@@ -2090,6 +3520,15 @@ export namespace Prisma {
 
   export type DateTimeFieldUpdateOperationsInput = {
     set?: Date | string
+  }
+
+  export type StringFieldUpdateOperationsInput = {
+    set?: string
+  }
+
+  export type NullableStringFieldUpdateOperationsInput = {
+    set?: string | null
+    unset?: boolean
   }
 
   export type NestedStringFilter<$PrismaModel = never> = {
@@ -2184,6 +3623,51 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedDateTimeFilter<$PrismaModel>
     _max?: NestedDateTimeFilter<$PrismaModel>
+  }
+
+  export type NestedStringNullableFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel> | null
+    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    contains?: string | StringFieldRefInput<$PrismaModel>
+    startsWith?: string | StringFieldRefInput<$PrismaModel>
+    endsWith?: string | StringFieldRefInput<$PrismaModel>
+    not?: NestedStringNullableFilter<$PrismaModel> | string | null
+    isSet?: boolean
+  }
+
+  export type NestedStringNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: string | StringFieldRefInput<$PrismaModel> | null
+    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    lt?: string | StringFieldRefInput<$PrismaModel>
+    lte?: string | StringFieldRefInput<$PrismaModel>
+    gt?: string | StringFieldRefInput<$PrismaModel>
+    gte?: string | StringFieldRefInput<$PrismaModel>
+    contains?: string | StringFieldRefInput<$PrismaModel>
+    startsWith?: string | StringFieldRefInput<$PrismaModel>
+    endsWith?: string | StringFieldRefInput<$PrismaModel>
+    not?: NestedStringNullableWithAggregatesFilter<$PrismaModel> | string | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedStringNullableFilter<$PrismaModel>
+    _max?: NestedStringNullableFilter<$PrismaModel>
+    isSet?: boolean
+  }
+
+  export type NestedIntNullableFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel> | null
+    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntNullableFilter<$PrismaModel> | number | null
+    isSet?: boolean
   }
 
 

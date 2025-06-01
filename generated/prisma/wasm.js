@@ -113,9 +113,24 @@ Prisma.NullTypes = {
  * Enums
  */
 
+exports.Prisma.LastOrderIdScalarFieldEnum = {
+  id: 'id',
+  orderId: 'orderId',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
 exports.Prisma.OrderScalarFieldEnum = {
   id: 'id',
   orderId: 'orderId',
+  fullName: 'fullName',
+  streetAddress: 'streetAddress',
+  region: 'region',
+  city: 'city',
+  zipCode: 'zipCode',
+  country: 'country',
+  email: 'email',
+  phoneNumber: 'phoneNumber',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 };
@@ -132,6 +147,7 @@ exports.Prisma.QueryMode = {
 
 
 exports.Prisma.ModelName = {
+  LastOrderId: 'LastOrderId',
   Order: 'Order'
 };
 

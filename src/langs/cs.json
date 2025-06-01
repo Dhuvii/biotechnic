@@ -2,30 +2,30 @@
   "navbar": {
     "links": {
       "about": "O nás",
-      "faq": "Často kladené otázky",
+      "faq": "Časté dotazy",
       "contact": "Kontakt"
     }
   },
   "homepage": {
-    "title": "vítejte v biotechnics",
-    "sub_title_1": "imunoterapie pro",
-    "sub_title_highlight": "pozdní stadium a paliativní",
+    "title": "Vítejte v Biotechnics",
+    "sub_title_1": "Imunoterapie pro",
+    "sub_title_highlight": "pokročilé a paliativní",
     "sub_title_2": "pacienty s rakovinou",
     "feat_1": {
-      "title": "rakovina bojuje tvrdě? bojujte tvrději!!!",
-      "description": "více o naší technologii boje proti rakovině",
+      "title": "Rakovina bojuje tvrdě? Bojujte ještě tvrději!!!",
+      "description": "Více o naší technologii boje proti rakovině",
       "cta": "Zjistit více"
     },
     "feat_2": {
-      "title": "nulové počáteční náklady",
-      "description": "žádné výsledky = žádná platba",
-      "tag": "soustřeďte se na léčbu. ne na peníze",
-      "cta": "Požádat nyní"
+      "title": "Žádné počáteční náklady",
+      "description": "Žádné výsledky = žádná platba",
+      "tag": "Soustřeďte se na léčbu, ne na peníze",
+      "cta": "Přihlásit se nyní"
     },
     "feat_3": {
-      "title": "žádné čekání, žádný proces žádosti, žádná omezení",
-      "description": "plná roční zásoba k zakoupení zde",
-      "address": "2550 innovation blvd. san francisco, ca",
+      "title": "Žádné čekání, žádný proces žádosti, žádné omezení",
+      "description": "Zakupte si roční zásobu zde",
+      "address": "2550 Innovation Blvd. San Francisco, CA",
       "cta": "Koupit nyní"
     },
     "orderForm": {
@@ -34,12 +34,12 @@
         "placeholder": "Zadejte celé jméno"
       },
       "street_address": {
-        "label": "Ulice a číslo popisné",
-        "placeholder": "Zadejte ulici a číslo popisné"
+        "label": "Ulice",
+        "placeholder": "Zadejte adresu ulice"
       },
       "region": {
-        "label": "Region",
-        "placeholder": "Zadejte region"
+        "label": "Kraj",
+        "placeholder": "Zadejte kraj"
       },
       "city": {
         "label": "Město",
@@ -71,26 +71,59 @@
       },
       "payment_option": {
         "label": "Možnost platby",
-        "value": "Bankovní převod [swift]"
+        "value": "Bankovní převod [SWIFT]"
       },
-      "cta": "Objednat nyní"
+      "cta": "Objednat nyní",
+      "errors": {
+        "fullName": {
+          "required": "Celé jméno je povinné."
+        },
+        "streetAddress": {
+          "required": "Adresa ulice je povinná."
+        },
+        "city": {
+          "required": "Město je povinné."
+        },
+        "zipCode": {
+          "required": "PSČ je povinné."
+        },
+        "country": {
+          "required": "Země je povinná."
+        },
+        "email": {
+          "required": "E-mail je povinný.",
+          "invalid": "Neplatná e-mailová adresa."
+        },
+        "phoneNumber": {
+          "required": "Telefonní číslo je povinné."
+        },
+        "termsAccepted": {
+          "required": "Musíte přijmout obchodní podmínky."
+        },
+        "price": {
+          "positive": "Cena musí být kladné číslo."
+        },
+        "paymentOption": {
+          "required": "Možnost platby je povinná."
+        }
+      }
     },
     "orderConfirmation": {
-      "title": "potvrzení objednávky",
-      "sub_title": "děkujeme za vaši objednávku",
-      "order_number": "číslo objednávky",
+      "title": "Potvrzení objednávky",
+      "sub_title": "Děkujeme za vaši objednávku",
+      "order_number": "Číslo objednávky",
       "confirmation_email": {
-        "title": "potvrzovací e-mail",
-        "content": "kopie vaší objednávky, včetně platebních pokynů, byla odeslána na váš e-mail."
+        "title": "Potvrzovací e-mail",
+        "content": "Kopie vaší objednávky, včetně platebních instrukcí, byla odeslána na váš e-mail."
       },
       "bank": {
-        "title": "Platební pokyny pro bankovní převod (SWIFT)",
+        "title": "Pokyny pro bankovní převod (SWIFT)",
         "bank_name": {
-          "tile": "název banky",
+          "tile": "Název banky",
           "value": "Standard Chartered Bank (Hong Kong) Ltd"
         },
         "account_holder": {
-          "tile": "držitel účtu",
+          "tile": "Držitel účtu",
           "value": "BIOTECHNICS LIMITED"
         },
         "benificiary_address": {
@@ -99,14 +132,14 @@
         },
         "iban": {
           "tile": "IBAN",
-          "value": "47412548280 (pouze pro převody v měně EUR)"
+          "value": "47412548280 (pouze převody v měně EUR)"
         },
         "bank_code": {
-          "tile": "kód banky",
+          "tile": "Kód banky",
           "value": "003"
         },
         "branch_code": {
-          "tile": "kód pobočky",
+          "tile": "Kód pobočky",
           "value": "474"
         },
         "swift": {
@@ -114,52 +147,52 @@
           "value": "SCBLHKHH"
         },
         "amount": {
-          "tile": "částka",
+          "tile": "Částka",
           "value": "Částka"
         }
       },
       "note": {
         "title": "Poznámka",
-        "content": "vaše objednávka bude zpracována až po obdržení celé platby. u mezinárodních bankovních převodů počítejte s 1–5 pracovními dny. při odesílání platby nezapomeňte uvést variabilní symbol."
+        "content": "Vaše objednávka bude zpracována až po přijetí plné platby. U mezinárodních bankovních převodů prosím počítejte s 1–5 pracovními dny. Nezapomeňte při odesílání platby uvést referenci."
       }
     }
   },
   "about-us": {
-    "title": "o naší technologii",
-    "sub_title": "spojení AI a imunoterapie k cílení na rezistentní rakoviny",
-    "description_one": "náš revoluční přístup kombinuje umělou inteligenci s pokročilou imunoterapií k vytvoření personalizovaných léčebných protokolů pro pacienty s rakovinou v pozdním stadiu, kteří nereagovali na tradiční chemoterapii.",
-    "description_two": "analýzou tisíců datových bodů z vašeho specifického profilu rakoviny náš systém AI identifikuje optimální kombinaci imunoterapeutických látek k zacílení na vaše jedinečné rakovinné buňky",
+    "title": "O naší technologii",
+    "sub_title": "Kombinace AI a imunoterapie k cílení na odolné rakoviny",
+    "description_one": "Náš revoluční přístup kombinuje umělou inteligenci s pokročilou imunoterapií k vytvoření personalizovaných léčebných protokolů pro pacienty s pokročilou rakovinou, kteří nereagovali na tradiční chemoterapii.",
+    "description_two": "Analýzou tisíců datových bodů z vašeho specifického profilu rakoviny náš systém AI identifikuje optimální kombinaci imunoterapeutických látek k cílení na vaše jedinečné rakovinné buňky.",
     "success_rate": {
-      "success_one": "70% redukce nádoru v testech",
-      "success_two": "85% úspěšnost u pacientů ve 3. stadiu",
-      "success_three": "60% úspěšnost u pacientů ve 4. stadiu"
+      "success_one": "70% redukce nádoru v klinických testech",
+      "success_two": "85% úspěšnost u pacientů s rakovinou 3. stadia",
+      "success_three": "60% úspěšnost u pacientů s rakovinou 4. stadia"
     },
     "features": [
-      "pokročilá zařízení čistých prostor s monitorovacími systémy fi",
-      "proprietární proces syntézy imunoterapie",
-      "optimalizace léčby v reálném čase prostřednictvím zpětné vazby AI"
+      "Pokročilá zařízení čistých prostor s fi-monitorovacími systémy",
+      "Vlastní proces syntézy imunoterapie",
+      "Optimalizace léčby v reálném čase prostřednictvím zpětné vazby AI"
     ]
   },
   "faq": {
-    "title": "často kladené otázky",
-    "sub_title": "vše, co potřebujete vědět o naší revoluční léčbě",
+    "title": "Časté dotazy",
+    "sub_title": "Vše, co potřebujete vědět o naší revoluční léčbě",
     "faqs": [
       {
-        "question": "Jak funguje žádná platba",
+        "question": "Jak funguje žádná platba?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       },
       {
-        "question": "Jak funguje žádná platba",
+        "question": "Jak funguje žádná platba?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       }
     ]
   },
   "contact": {
-    "title": "kontaktujte biotechnics",
-    "sub_title": "obraťte se na náš specializovaný tým onkologických specialistů",
+    "title": "Kontaktujte Biotechnics",
+    "sub_title": "Spojte se s naším specializovaným týmem onkologických specialistů",
     "email_us": {
-      "title": "napište nám e-mail",
-      "description": "pošlete nám zprávu kdykoli",
+      "title": "Napište nám",
+      "description": "Pošlete nám zprávu kdykoliv",
       "email": "info@biotechnics.com"
     },
     "form": {
@@ -183,25 +216,25 @@
     }
   },
   "apply_now": {
-    "title": "začněte svou cestu ještě dnes",
-    "sub_title": "udělejte první krok k revoluční léčbě rakoviny bez počátečních nákladů. požádejte nyní, abyste zjistili, zda splňujete podmínky.",
+    "title": "Začněte svou cestu ještě dnes",
+    "sub_title": "Udělejte první krok k revoluční léčbě rakoviny bez počátečních nákladů. Přihlaste se nyní a zjistěte, zda splňujete podmínky.",
     "application_process": {
-      "title": "proces žádosti",
+      "title": "Proces žádosti",
       "process": [
         {
-          "title": "odeslat žádost",
+          "title": "Odeslat žádost",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "odeslat žádost",
+          "title": "Odeslat žádost",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "odeslat žádost",
+          "title": "Odeslat žádost",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "odeslat žádost",
+          "title": "Odeslat žádost",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         }
       ]
@@ -223,33 +256,33 @@
         "label": "Typ rakoviny",
         "placeholder": "Vyberte typ rakoviny",
         "options": [
-          { "name": "chemoterapie", "value": "chemoterapie" },
-          { "name": "ozařování", "value": "ozarovani" },
-          { "name": "chirurgie", "value": "chirurgie" },
-          { "name": "imunoterapie", "value": "imunoterapie" }
+          { "name": "Chemoterapie", "value": "chemotherapy" },
+          { "name": "Radiace", "value": "radiation" },
+          { "name": "Chirurgie", "value": "surgery" },
+          { "name": "Imunoterapie", "value": "immunotherapy" }
         ]
       },
       "cancer_stage": {
         "label": "Stadium rakoviny",
         "placeholder": "Vyberte stadium rakoviny",
         "options": [
-          { "name": "chemoterapie", "value": "chemoterapie" },
-          { "name": "ozařování", "value": "ozarovani" },
-          { "name": "chirurgie", "value": "chirurgie" },
-          { "name": "imunoterapie", "value": "imunoterapie" }
+          { "name": "Chemoterapie", "value": "chemotherapy" },
+          { "name": "Radiace", "value": "radiation" },
+          { "name": "Chirurgie", "value": "surgery" },
+          { "name": "Imunoterapie", "value": "immunotherapy" }
         ]
       },
       "previous_treatments": {
-        "label": "předchozí léčby",
+        "label": "Předchozí léčba",
         "options": [
-          { "name": "chemoterapie", "value": "chemoterapie" },
-          { "name": "ozařování", "value": "ozarovani" },
-          { "name": "chirurgie", "value": "chirurgie" },
-          { "name": "imunoterapie", "value": "imunoterapie" }
+          { "name": "Chemoterapie", "value": "chemotherapy" },
+          { "name": "Radiace", "value": "radiation" },
+          { "name": "Chirurgie", "value": "surgery" },
+          { "name": "Imunoterapie", "value": "immunotherapy" }
         ]
       }
     },
-    "cta": "požádat nyní - žádné počáteční náklady",
-    "back_cta": "zpět domů"
+    "cta": "Přihlásit se nyní - bez počátečních nákladů",
+    "back_cta": "Zpět domů"
   }
 }

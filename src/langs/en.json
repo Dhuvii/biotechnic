@@ -73,7 +73,40 @@
         "label": "Payment Option",
         "value": "Bank Transfer [swift]"
       },
-      "cta": "Order Now"
+      "cta": "Order Now",
+      "errors": {
+        "fullName": {
+          "required": "Full name is required."
+        },
+        "streetAddress": {
+          "required": "Street address is required."
+        },
+        "city": {
+          "required": "City is required."
+        },
+        "zipCode": {
+          "required": "Zip code is required."
+        },
+        "country": {
+          "required": "Country is required."
+        },
+        "email": {
+          "required": "Email is required.",
+          "invalid": "Invalid email address."
+        },
+        "phoneNumber": {
+          "required": "Phone number is required."
+        },
+        "termsAccepted": {
+          "required": "You must accept the terms and conditions."
+        },
+        "price": {
+          "positive": "Price must be a positive number."
+        },
+        "paymentOption": {
+          "required": "Payment option is required."
+        }
+      }
     },
     "orderConfirmation": {
       "title": "order confirmation",

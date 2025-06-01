@@ -2,67 +2,67 @@
   "navbar": {
     "links": {
       "about": "O nas",
-      "faq": "FAQ",
+      "faq": "Często zadawane pytania",
       "contact": "Kontakt"
     }
   },
   "homepage": {
-    "title": "witamy w biotechnics",
-    "sub_title_1": "immunoterapia dla",
-    "sub_title_highlight": "pacjentów w późnym stadium i paliatywnych",
-    "sub_title_2": "chorych na raka",
+    "title": "Witamy w Biotechnics",
+    "sub_title_1": "Immunoterapia dla",
+    "sub_title_highlight": "zaawansowanych i paliatywnych",
+    "sub_title_2": "pacjentów z rakiem",
     "feat_1": {
-      "title": "rak walczy mocno? walcz mocniej!!!",
-      "description": "więcej o naszej technologii walki z rakiem",
+      "title": "Rak walczy mocno? Walcz jeszcze mocniej!!!",
+      "description": "Dowiedz się więcej o naszej technologii walki z rakiem",
       "cta": "Dowiedz się więcej"
     },
     "feat_2": {
-      "title": "zero kosztów początkowych",
-      "description": "brak wyników = brak płatności",
-      "tag": "skup się na leczeniu, nie na pieniądzach",
-      "cta": "Aplikuj teraz"
+      "title": "Zero kosztów początkowych",
+      "description": "Brak wyników = brak płatności",
+      "tag": "Skup się na leczeniu, nie na pieniądzach",
+      "cta": "Złóż wniosek teraz"
     },
     "feat_3": {
-      "title": "bez czekania, bez procesu aplikacyjnego, bez ograniczeń",
-      "description": "pełny roczny zapas kup tutaj",
-      "address": "2550 innovation blvd. san francisco, ca",
+      "title": "Bez oczekiwania, bez procesu aplikacyjnego, bez ograniczeń",
+      "description": "Kup tutaj roczny zapas",
+      "address": "2550 Innovation Blvd. San Francisco, CA",
       "cta": "Kup teraz"
     },
     "orderForm": {
       "full_name": {
-        "label": "Imię i nazwisko",
-        "placeholder": "Wpisz imię i nazwisko"
+        "label": "Pełne imię i nazwisko",
+        "placeholder": "Wprowadź pełne imię i nazwisko"
       },
       "street_address": {
         "label": "Adres ulicy",
-        "placeholder": "Wpisz adres ulicy"
+        "placeholder": "Wprowadź adres ulicy"
       },
       "region": {
-        "label": "Region",
-        "placeholder": "Wpisz region"
+        "label": "Województwo",
+        "placeholder": "Wprowadź województwo"
       },
       "city": {
         "label": "Miasto",
-        "placeholder": "Wpisz miasto"
+        "placeholder": "Wprowadź miasto"
       },
       "zip_code": {
         "label": "Kod pocztowy",
-        "placeholder": "Wpisz kod pocztowy"
+        "placeholder": "Wprowadź kod pocztowy"
       },
       "country": {
         "label": "Kraj",
-        "placeholder": "Wpisz kraj"
+        "placeholder": "Wprowadź kraj"
       },
       "phone_number": {
         "label": "Numer telefonu",
-        "placeholder": "Wpisz numer telefonu"
+        "placeholder": "Wprowadź numer telefonu"
       },
       "email": {
         "label": "Adres e-mail",
-        "placeholder": "Wpisz adres e-mail"
+        "placeholder": "Wprowadź adres e-mail"
       },
       "terms_and_conditions": {
-        "label": "Regulamin",
+        "label": "Warunki korzystania",
         "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
       },
       "price": {
@@ -73,24 +73,57 @@
         "label": "Opcja płatności",
         "value": "Przelew bankowy [SWIFT]"
       },
-      "cta": "Zamów teraz"
+      "cta": "Zamów teraz",
+      "errors": {
+        "fullName": {
+          "required": "Pełne imię i nazwisko jest wymagane."
+        },
+        "streetAddress": {
+          "required": "Adres ulicy jest wymagany."
+        },
+        "city": {
+          "required": "Miasto jest wymagane."
+        },
+        "zipCode": {
+          "required": "Kod pocztowy jest wymagany."
+        },
+        "country": {
+          "required": "Kraj jest wymagany."
+        },
+        "email": {
+          "required": "Adres e-mail jest wymagany.",
+          "invalid": "Nieprawidłowy adres e-mail."
+        },
+        "phoneNumber": {
+          "required": "Numer telefonu jest wymagany."
+        },
+        "termsAccepted": {
+          "required": "Musisz zaakceptować warunki korzystania."
+        },
+        "price": {
+          "positive": "Cena musi być liczbą dodatnią."
+        },
+        "paymentOption": {
+          "required": "Opcja płatności jest wymagana."
+        }
+      }
     },
     "orderConfirmation": {
-      "title": "potwierdzenie zamówienia",
-      "sub_title": "dziękujemy za złożenie zamówienia",
-      "order_number": "numer zamówienia",
+      "title": "Potwierdzenie zamówienia",
+      "sub_title": "Dziękujemy za Twoje zamówienie",
+      "order_number": "Numer zamówienia",
       "confirmation_email": {
-        "title": "e-mail potwierdzający",
-        "content": "kopia Twojego zamówienia, wraz z instrukcjami płatności, została wysłana na Twój adres e-mail."
+        "title": "E-mail potwierdzający",
+        "content": "Kopia Twojego zamówienia, wraz z instrukcjami płatności, została wysłana na Twój adres e-mail."
       },
       "bank": {
-        "title": "Instrukcje dotyczące płatności przelewem bankowym (SWIFT)",
+        "title": "Instrukcje płatności przelewem bankowym (SWIFT)",
         "bank_name": {
-          "tile": "nazwa banku",
+          "tile": "Nazwa banku",
           "value": "Standard Chartered Bank (Hong Kong) Ltd"
         },
         "account_holder": {
-          "tile": "posiadacz rachunku",
+          "tile": "Właściciel konta",
           "value": "BIOTECHNICS LIMITED"
         },
         "benificiary_address": {
@@ -102,11 +135,11 @@
           "value": "47412548280 (tylko przelewy w walucie EUR)"
         },
         "bank_code": {
-          "tile": "kod banku",
+          "tile": "Kod banku",
           "value": "003"
         },
         "branch_code": {
-          "tile": "kod oddziału",
+          "tile": "Kod oddziału",
           "value": "474"
         },
         "swift": {
@@ -114,35 +147,35 @@
           "value": "SCBLHKHH"
         },
         "amount": {
-          "tile": "kwota",
+          "tile": "Kwota",
           "value": "Kwota"
         }
       },
       "note": {
         "title": "Uwaga",
-        "content": "Twoje zamówienie zostanie przetworzone dopiero po otrzymaniu pełnej płatności. W przypadku międzynarodowych przelewów bankowych czas oczekiwania wynosi 1–5 dni roboczych. Nie zapomnij podać numeru referencyjnego podczas wysyłania płatności."
+        "content": "Twoje zamówienie zostanie przetworzone dopiero po otrzymaniu pełnej płatności. Prosimy uwzględnić 1-5 dni roboczych na międzynarodowe przelewy bankowe. Nie zapomnij podać referencji podczas wysyłania płatności."
       }
     }
   },
   "about-us": {
-    "title": "o naszej technologii",
-    "sub_title": "łączenie sztucznej inteligencji i immunoterapii w celu zwalczania opornych nowotworów",
-    "description_one": "nasze rewolucyjne podejście łączy sztuczną inteligencję z zaawansowaną immunoterapią w celu tworzenia spersonalizowanych protokołów leczenia dla pacjentów z rakiem w późnym stadium, którzy nie zareagowali na tradycyjną chemioterapię.",
-    "description_two": "analizując tysiące punktów danych z Twojego specyficznego profilu nowotworowego, nasz system AI identyfikuje optymalną kombinację środków immunoterapeutycznych do zwalczania Twoich unikalnych komórek nowotworowych",
+    "title": "O naszej technologii",
+    "sub_title": "Łączenie sztucznej inteligencji z immunoterapią w walce z opornymi nowotworami",
+    "description_one": "Nasze rewolucyjne podejście łączy sztuczną inteligencję z zaawansowaną immunoterapią, aby stworzyć spersonalizowane protokoły leczenia dla pacjentów z zaawansowanym rakiem, którzy nie reagowali na tradycyjną chemioterapię.",
+    "description_two": "Analizując tysiące punktów danych z Twojego konkretnego profilu nowotworowego, nasz system sztucznej inteligencji identyfikuje optymalną kombinację środków immunoterapeutycznych do zwalczania Twoich unikalnych komórek rakowych.",
     "success_rate": {
-      "success_one": "70% redukcji guza w badaniach",
-      "success_two": "85% skuteczności u pacjentów w stadium 3",
-      "success_three": "60% skuteczności u pacjentów w stadium 4"
+      "success_one": "70% redukcja guza w badaniach klinicznych",
+      "success_two": "85% sukcesu u pacjentów z rakiem w stadium 3",
+      "success_three": "60% sukcesu u pacjentów z rakiem w stadium 4"
     },
     "features": [
-      "zaawansowane pomieszczenia czyste z systemami monitorowania fi",
-      "opatentowany proces syntezy immunoterapii",
-      "optymalizacja leczenia w czasie rzeczywistym dzięki informacjom zwrotnym od AI"
+      "Zaawansowane pomieszczenia czyste z systemami monitorowania fi",
+      "Własny proces syntezy immunoterapii",
+      "Optymalizacja leczenia w czasie rzeczywistym dzięki informacjom zwrotnym od sztucznej inteligencji"
     ]
   },
   "faq": {
-    "title": "często zadawane pytania",
-    "sub_title": "wszystko, co musisz wiedzieć o naszym rewolucyjnym leczeniu",
+    "title": "Często zadawane pytania",
+    "sub_title": "Wszystko, co musisz wiedzieć o naszym rewolucyjnym leczeniu",
     "faqs": [
       {
         "question": "Jak działa brak płatności?",
@@ -155,53 +188,53 @@
     ]
   },
   "contact": {
-    "title": "skontaktuj się z biotechnics",
-    "sub_title": "skontaktuj się z naszym oddanym zespołem specjalistów onkologii",
+    "title": "Skontaktuj się z Biotechnics",
+    "sub_title": "Skontaktuj się z naszym dedykowanym zespołem specjalistów onkologicznych",
     "email_us": {
-      "title": "napisz do nas e-mail",
-      "description": "wyślij nam wiadomość w dowolnym momencie",
+      "title": "Napisz do nas",
+      "description": "Wyślij nam wiadomość w dowolnym momencie",
       "email": "info@biotechnics.com"
     },
     "form": {
       "first_name": {
         "label": "Imię",
-        "placeholder": "Wpisz imię"
+        "placeholder": "Wprowadź imię"
       },
       "last_name": {
         "label": "Nazwisko",
-        "placeholder": "Wpisz nazwisko"
+        "placeholder": "Wprowadź nazwisko"
       },
       "email": {
         "label": "Adres e-mail",
-        "placeholder": "Wpisz adres e-mail"
+        "placeholder": "Wprowadź adres e-mail"
       },
       "message": {
         "label": "Wiadomość",
-        "placeholder": "Wpisz wiadomość"
+        "placeholder": "Wprowadź wiadomość"
       },
       "cta": "Wyślij wiadomość"
     }
   },
   "apply_now": {
-    "title": "rozpocznij swoją podróż już dziś",
-    "sub_title": "zrób pierwszy krok w kierunku rewolucyjnego leczenia raka bez kosztów początkowych. aplikuj teraz, aby sprawdzić, czy się kwalifikujesz.",
+    "title": "Rozpocznij swoją podróż już dziś",
+    "sub_title": "Zrób pierwszy krok w stronę rewolucyjnego leczenia raka bez kosztów początkowych. Złóż wniosek teraz, aby sprawdzić, czy się kwalifikujesz.",
     "application_process": {
-      "title": "proces aplikacyjny",
+      "title": "Proces aplikacji",
       "process": [
         {
-          "title": "złóż wniosek",
+          "title": "Złóż wniosek",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "złóż wniosek",
+          "title": "Złóż wniosek",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "złóż wniosek",
+          "title": "Złóż wniosek",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "złóż wniosek",
+          "title": "Złóż wniosek",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         }
       ]
@@ -209,47 +242,47 @@
     "form": {
       "first_name": {
         "label": "Imię",
-        "placeholder": "Wpisz imię"
+        "placeholder": "Wprowadź imię"
       },
       "last_name": {
         "label": "Nazwisko",
-        "placeholder": "Wpisz nazwisko"
+        "placeholder": "Wprowadź nazwisko"
       },
       "email": {
         "label": "Adres e-mail",
-        "placeholder": "Wpisz adres e-mail"
+        "placeholder": "Wprowadź adres e-mail"
       },
       "cancer_type": {
-        "label": "Typ nowotworu",
-        "placeholder": "Wybierz typ nowotworu",
+        "label": "Rodzaj raka",
+        "placeholder": "Wybierz rodzaj raka",
         "options": [
-          { "name": "chemioterapia", "value": "chemotherapy" },
-          { "name": "radioterapia", "value": "radiation" },
-          { "name": "chirurgia", "value": "surgery" },
-          { "name": "immunoterapia", "value": "immunotherapy" }
+          { "name": "Chemioterapia", "value": "chemotherapy" },
+          { "name": "Radioterapia", "value": "radiation" },
+          { "name": "Chirurgia", "value": "surgery" },
+          { "name": "Immunoterapia", "value": "immunotherapy" }
         ]
       },
       "cancer_stage": {
-        "label": "Stadium nowotworu",
-        "placeholder": "Wybierz stadium nowotworu",
+        "label": "Stadium raka",
+        "placeholder": "Wybierz stadium raka",
         "options": [
-          { "name": "chemioterapia", "value": "chemotherapy" },
-          { "name": "radioterapia", "value": "radiation" },
-          { "name": "chirurgia", "value": "surgery" },
-          { "name": "immunoterapia", "value": "immunotherapy" }
+          { "name": "Chemioterapia", "value": "chemotherapy" },
+          { "name": "Radioterapia", "value": "radiation" },
+          { "name": "Chirurgia", "value": "surgery" },
+          { "name": "Immunoterapia", "value": "immunotherapy" }
         ]
       },
       "previous_treatments": {
-        "label": "poprzednie leczenie",
+        "label": "Wcześniejsze leczenie",
         "options": [
-          { "name": "chemioterapia", "value": "chemotherapy" },
-          { "name": "radioterapia", "value": "radiation" },
-          { "name": "chirurgia", "value": "surgery" },
-          { "name": "immunoterapia", "value": "immunotherapy" }
+          { "name": "Chemioterapia", "value": "chemotherapy" },
+          { "name": "Radioterapia", "value": "radiation" },
+          { "name": "Chirurgia", "value": "surgery" },
+          { "name": "Immunoterapia", "value": "immunotherapy" }
         ]
       }
     },
-    "cta": "aplikuj teraz - bez kosztów początkowych",
-    "back_cta": "wróć do strony głównej"
+    "cta": "Złóż wniosek teraz - bez kosztów początkowych",
+    "back_cta": "Powrót do strony głównej"
   }
 }
