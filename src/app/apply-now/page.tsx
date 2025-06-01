@@ -6,7 +6,7 @@ import Select from "@/components/Select";
 import { useTranslate } from "@/store/translateStore";
 import { translate } from "@/utilities/translate";
 import Image from "next/image";
-import ApplyNowImage from "../../../public/apply_now_image.webp";
+import ApplyNowImage from "../../../public/about_image.webp";
 import Link from "next/link";
 
 export default function ApplyNow() {
@@ -16,6 +16,7 @@ export default function ApplyNow() {
     translate("apply_now", lang);
   return (
     <section className="relative flex h-dvh w-full flex-col overflow-hidden pb-10">
+      <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-black/30 to-transparent"></div>
       <Image
         src={ApplyNowImage}
         alt="about image"

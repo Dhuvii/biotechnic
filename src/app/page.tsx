@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 grid w-full grid-cols-1 gap-5 lg:grid-cols-3">
-            <div className="flex h-full w-full flex-col items-center justify-start rounded-xl border border-white/20 bg-black/20 p-10">
+            <div className="flex h-full w-full flex-col items-center justify-between rounded-xl border border-white/20 bg-black/20 p-10">
               <div className="flex aspect-square items-center justify-center rounded-full border border-[#00FF80]/70 bg-radial from-black/10 from-5% to-[#00FF80]/20 p-5 text-[#00FF80]">
                 <svg
                   width={33}
@@ -78,7 +78,7 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div className="flex flex-1 flex-col items-center justify-start">
+              <div className="flex flex-col items-center justify-start">
                 <h2 className="mt-5 text-center text-xl font-medium text-white uppercase">
                   {feat_1.title}
                 </h2>
@@ -99,7 +99,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex aspect-square h-full w-full flex-col items-center rounded-xl border border-white/20 bg-black/20 p-10">
+            <div className="flex h-full w-full flex-col items-center justify-between rounded-xl border border-white/20 bg-black/20 p-10">
               <div className="rounded-full border border-[#00FF80]/70 bg-radial from-black/10 from-5% to-[#00FF80]/20 p-5 text-[#00FF80]">
                 <svg
                   width={48}
@@ -118,7 +118,7 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div className="flex flex-1 flex-col items-center justify-start">
+              <div className="flex flex-col items-center justify-start">
                 <h2 className="mt-5 text-center text-xl font-medium text-white uppercase">
                   {feat_2.title}
                 </h2>
@@ -143,7 +143,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex h-full w-full flex-col items-center justify-start rounded-xl border border-white/20 bg-black/20 p-10">
+            <div className="flex h-full w-full flex-col items-center justify-between rounded-xl border border-white/20 bg-black/20 p-10">
               <div className="flex aspect-square items-center justify-center rounded-full border border-[#00FF80]/70 bg-radial from-black/10 from-5% to-[#00FF80]/20 p-5 text-[#00FF80]">
                 <svg
                   width={40}
@@ -162,7 +162,7 @@ export default function Home() {
                 </svg>
               </div>
 
-              <div className="flex flex-1 flex-col items-center justify-start">
+              <div className="flex flex-col items-center justify-start">
                 <h2 className="mt-5 text-center text-xl font-medium text-white uppercase">
                   {feat_3.title}
                 </h2>
