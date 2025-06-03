@@ -17,15 +17,15 @@
       "cta": "Mehr erfahren"
     },
     "feat_2": {
-      "title": "keine vorabkosten",
-      "description": "keine ergebnisse = keine zahlung",
-      "tag": "konzentrieren sie sich einfach auf ihre behandlung, nicht auf geld",
+      "title": "null vorabkosten",
+      "description": "kein ergebnis = keine zahlung",
+      "tag": "konzentriere dich nur auf deine behandlung, nicht auf das geld",
       "cta": "Jetzt bewerben"
     },
     "feat_3": {
-      "title": "kein warten, kein antragsverfahren, keine beschränkungen",
-      "description": "vollständige 1-jahres-lieferung hier kaufen",
-      "address": "2550 Innovation Blvd. San Francisco, CA",
+      "title": "keine wartezeit, kein antragsprozess, keine einschränkungen",
+      "description": "vollständige versorgung für 1 jahr hier kaufen",
+      "address": "2550 Innovation Blvd., San Francisco, CA",
       "cta": "Jetzt kaufen"
     },
     "orderForm": {
@@ -34,8 +34,8 @@
         "placeholder": "Vollständigen Namen eingeben"
       },
       "street_address": {
-        "label": "Straße",
-        "placeholder": "Straße eingeben"
+        "label": "Straßenadresse",
+        "placeholder": "Straßenadresse eingeben"
       },
       "region": {
         "label": "Region",
@@ -63,7 +63,7 @@
       },
       "terms_and_conditions": {
         "label": "Allgemeine Geschäftsbedingungen",
-        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
       },
       "price": {
         "label": "Preis",
@@ -79,7 +79,7 @@
           "required": "Vollständiger Name ist erforderlich."
         },
         "streetAddress": {
-          "required": "Straße ist erforderlich."
+          "required": "Straßenadresse ist erforderlich."
         },
         "city": {
           "required": "Stadt ist erforderlich."
@@ -101,7 +101,7 @@
           "required": "Sie müssen die AGB akzeptieren."
         },
         "price": {
-          "positive": "Preis muss positiv sein."
+          "positive": "Der Preis muss positiv sein."
         },
         "paymentOption": {
           "required": "Zahlungsoption ist erforderlich."
@@ -110,7 +110,7 @@
     },
     "orderConfirmation": {
       "title": "Bestellbestätigung",
-      "sub_title": "Danke für Ihre Bestellung",
+      "sub_title": "Vielen Dank für Ihre Bestellung",
       "order_number": "Bestellnummer",
       "confirmation_email": {
         "title": "Bestätigungs-E-Mail",
@@ -127,8 +127,8 @@
           "value": "BIOTECHNICS LIMITED"
         },
         "benificiary_address": {
-          "tile": "Adresse des Empfängers",
-          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, HONGKONG, 999077"
+          "tile": "Adresse des Zahlungsempfängers",
+          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, HONGKONG, HONGKONG, 999077"
         },
         "iban": {
           "tile": "IBAN",
@@ -153,24 +153,24 @@
       },
       "note": {
         "title": "Hinweis",
-        "content": "Ihre Bestellung wird erst nach Zahlungseingang bearbeitet. Bitte rechnen Sie mit 1–5 Werktagen für internationale Überweisungen. Vergessen Sie nicht, den Verwendungszweck anzugeben."
+        "content": "Ihre Bestellung wird erst nach vollständigem Zahlungseingang bearbeitet. Bitte rechnen Sie mit 1–5 Werktagen für internationale Überweisungen. Vergessen Sie nicht, den Verwendungszweck beim Bezahlen anzugeben."
       }
     }
   },
   "about-us": {
     "title": "über unsere technologie",
-    "sub_title": "ki und immuntherapie zur bekämpfung resistenter krebserkrankungen",
-    "description_one": "unser revolutionärer ansatz kombiniert künstliche intelligenz mit fortschrittlicher immuntherapie, um personalisierte behandlungsprotokolle für krebspatienten im endstadium zu entwickeln, die auf traditionelle chemotherapie nicht angesprochen haben.",
-    "description_two": "durch die analyse tausender datenpunkte aus ihrem spezifischen krebsprofil identifiziert unser ki-system die optimale kombination von immuntherapie-agenten zur bekämpfung ihrer einzigartigen krebszellen.",
+    "sub_title": "verbindung von KI und immuntherapie zur bekämpfung resistenter krebserkrankungen",
+    "description_one": "unser revolutionärer ansatz kombiniert künstliche intelligenz mit fortschrittlicher immuntherapie, um personalisierte behandlungsprotokolle für krebspatienten im endstadium zu entwickeln, die nicht auf herkömmliche chemotherapien angesprochen haben",
+    "description_two": "durch die analyse tausender datenpunkte aus ihrem spezifischen krebsprofil identifiziert unser KI-system die optimale kombination von immuntherapie-wirkstoffen zur bekämpfung ihrer individuellen krebszellen",
     "success_rate": {
-      "success_one": "70% tumorreduktion in studien",
-      "success_two": "85% erfolg bei patienten im stadium 3",
-      "success_three": "60% erfolg bei patienten im stadium 4"
+      "success_one": "70 % tumorreduzierung in studien",
+      "success_two": "85 % erfolg bei patienten im stadium 3",
+      "success_three": "60 % erfolg bei patienten im stadium 4"
     },
     "features": [
-      "moderne reinraumeinrichtungen mit fi-überwachungssystemen",
-      "eigener herstellungsprozess für immuntherapie",
-      "echtzeit-optimierung der behandlung durch ki-feedback"
+      "moderne reinraumtechnologie mit fi-überwachungssystemen",
+      "proprietäres verfahren zur herstellung von immuntherapien",
+      "echtzeit-optimierung der behandlung durch KI-feedback"
     ]
   },
   "faq": {
@@ -188,8 +188,8 @@
     ]
   },
   "contact": {
-    "title": "kontaktieren sie biotechnics",
-    "sub_title": "kontaktieren sie unser spezialisiertes onkologie-team",
+    "title": "kontakt zu biotechnics",
+    "sub_title": "kontaktieren sie unser spezialisiertes onkologenteam",
     "email_us": {
       "title": "schreiben sie uns",
       "description": "senden sie uns jederzeit eine nachricht",
@@ -212,12 +212,27 @@
         "label": "Nachricht",
         "placeholder": "Nachricht eingeben"
       },
-      "cta": "Nachricht senden"
+      "cta": "Nachricht senden",
+      "errors": {
+        "firstName": {
+          "required": "Vorname ist erforderlich."
+        },
+        "lastName": {
+          "required": "Nachname ist erforderlich."
+        },
+        "email": {
+          "required": "E-Mail ist erforderlich.",
+          "invalid": "Ungültige E-Mail-Adresse."
+        },
+        "message": {
+          "required": "Nachricht ist erforderlich."
+        }
+      }
     }
   },
   "apply_now": {
-    "title": "starten sie ihre reise noch heute",
-    "sub_title": "machen sie den ersten schritt zu einer revolutionären krebsbehandlung ohne vorabkosten. bewerben sie sich jetzt, um zu sehen, ob sie qualifiziert sind.",
+    "title": "beginnen sie ihre reise noch heute",
+    "sub_title": "machen sie den ersten schritt zu einer revolutionären krebsbehandlung ohne vorabkosten. bewerben sie sich jetzt, um herauszufinden, ob sie geeignet sind.",
     "application_process": {
       "title": "bewerbungsprozess",
       "process": [
@@ -253,8 +268,8 @@
         "placeholder": "E-Mail eingeben"
       },
       "cancer_type": {
-        "label": "Krebsart",
-        "placeholder": "Krebsart auswählen",
+        "label": "Cancer Type",
+        "placeholder": "Select cancer type",
         "options": [
           { "name": "chemotherapy", "value": "chemotherapy" },
           { "name": "Radiation", "value": "radiation" },
@@ -263,8 +278,8 @@
         ]
       },
       "cancer_stage": {
-        "label": "Krebsstadium",
-        "placeholder": "Krebsstadium auswählen",
+        "label": "Cancer Stage",
+        "placeholder": "Select cancer stage",
         "options": [
           { "name": "chemotherapy", "value": "chemotherapy" },
           { "name": "Radiation", "value": "radiation" },
@@ -273,16 +288,34 @@
         ]
       },
       "previous_treatments": {
-        "label": "Bisherige Behandlungen",
+        "label": "previous treatment",
         "options": [
           { "name": "chemotherapy", "value": "chemotherapy" },
           { "name": "Radiation", "value": "radiation" },
           { "name": "Surgery", "value": "surgery" },
           { "name": "Immunotherapy", "value": "immunotherapy" }
         ]
+      },
+      "errors": {
+        "firstName": {
+          "required": "Vorname ist erforderlich."
+        },
+        "lastName": {
+          "required": "Nachname ist erforderlich."
+        },
+        "email": {
+          "required": "E-Mail ist erforderlich.",
+          "invalid": "Ungültige E-Mail-Adresse."
+        },
+        "cancerType": {
+          "required": "Cancer Type is required."
+        },
+        "cancerStage": {
+          "required": "Cancer Stage is required."
+        }
       }
     },
-    "cta": "Jetzt bewerben – keine vorabkosten",
-    "back_cta": "Zurück zur Startseite"
+    "cta": "jetzt bewerben – keine vorabkosten",
+    "back_cta": "zurück zur startseite"
   }
 }

@@ -1,31 +1,31 @@
 {
   "navbar": {
     "links": {
-      "about": "من نحن",
+      "about": "معلومات عنا",
       "faq": "الأسئلة الشائعة",
       "contact": "اتصل بنا"
     }
   },
   "homepage": {
-    "title": "مرحبًا بكم في Biotechnics",
+    "title": "مرحبًا بكم في بيوتكنيكس",
     "sub_title_1": "العلاج المناعي لـ",
-    "sub_title_highlight": "السرطان في مراحله المتأخرة والرعاية التلطيفية",
-    "sub_title_2": "مرضى السرطان",
+    "sub_title_highlight": "المراحل المتأخرة والعناية التلطيفية",
+    "sub_title_2": "لمرضى السرطان",
     "feat_1": {
-      "title": "السرطان يقاتل بشراسة؟ قاتل بشراسة أكبر!!!",
-      "description": "المزيد عن تقنيتنا لمحاربة السرطان",
-      "cta": "اعرف المزيد"
+      "title": "السرطان يقاتل بقوة؟ قاتل بقوة أكبر!",
+      "description": "المزيد عن تقنيتنا لمكافحة السرطان",
+      "cta": "تعرف على المزيد"
     },
     "feat_2": {
-      "title": "لا تكاليف مسبقة",
+      "title": "لا توجد تكاليف مقدمة",
       "description": "لا نتائج = لا دفع",
-      "tag": "ركز فقط على علاجك، وليس على المال",
-      "cta": "قدِّم الآن"
+      "tag": "ركز على علاجك، وليس على المال",
+      "cta": "قدم الآن"
     },
     "feat_3": {
       "title": "لا انتظار، لا عملية تقديم، لا قيود",
-      "description": "إمداد كامل لمدة عام - اشترِ الآن",
-      "address": "2550 شارع الابتكار، سان فرانسيسكو، كاليفورنيا",
+      "description": "اشترِ إمدادات لمدة عام هنا",
+      "address": "2550 Innovation Blvd. San Francisco, CA",
       "cta": "اشترِ الآن"
     },
     "orderForm": {
@@ -50,28 +50,28 @@
         "placeholder": "أدخل الرمز البريدي"
       },
       "country": {
-        "label": "البلد",
-        "placeholder": "أدخل البلد"
+        "label": "الدولة",
+        "placeholder": "أدخل الدولة"
       },
       "phone_number": {
         "label": "رقم الهاتف",
         "placeholder": "أدخل رقم الهاتف"
       },
       "email": {
-        "label": "عنوان البريد الإلكتروني",
+        "label": "البريد الإلكتروني",
         "placeholder": "أدخل البريد الإلكتروني"
       },
       "terms_and_conditions": {
         "label": "الشروط والأحكام",
-        "content": "لوريم إيبسوم، دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت. نون كوام إمبيديت توتام أركيتيكتو دولور. كومكي إيفينيت بارياتور فوجيات ألياس كيوبيديتاتي."
+        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
       },
       "price": {
         "label": "السعر",
         "value": "49.999 يورو"
       },
       "payment_option": {
-        "label": "طريقة الدفع",
-        "value": "تحويل مصرفي [SWIFT]"
+        "label": "خيار الدفع",
+        "value": "تحويل بنكي [SWIFT]"
       },
       "cta": "اطلب الآن",
       "errors": {
@@ -88,11 +88,11 @@
           "required": "الرمز البريدي مطلوب."
         },
         "country": {
-          "required": "البلد مطلوب."
+          "required": "الدولة مطلوبة."
         },
         "email": {
           "required": "البريد الإلكتروني مطلوب.",
-          "invalid": "عنوان البريد الإلكتروني غير صالح."
+          "invalid": "عنوان بريد إلكتروني غير صالح."
         },
         "phoneNumber": {
           "required": "رقم الهاتف مطلوب."
@@ -104,42 +104,42 @@
           "positive": "يجب أن يكون السعر رقمًا موجبًا."
         },
         "paymentOption": {
-          "required": "طريقة الدفع مطلوبة."
+          "required": "خيار الدفع مطلوب."
         }
       }
     },
     "orderConfirmation": {
       "title": "تأكيد الطلب",
-      "sub_title": "شكرًا لطلبك",
+      "sub_title": "شكرًا على طلبك",
       "order_number": "رقم الطلب",
       "confirmation_email": {
-        "title": "البريد الإلكتروني لتأكيد الطلب",
+        "title": "بريد التأكيد",
         "content": "تم إرسال نسخة من طلبك، بما في ذلك تعليمات الدفع، إلى بريدك الإلكتروني."
       },
       "bank": {
-        "title": "تعليمات الدفع عن طريق التحويل البنكي (SWIFT)",
+        "title": "تعليمات الدفع بالتحويل البنكي (SWIFT)",
         "bank_name": {
           "tile": "اسم البنك",
           "value": "Standard Chartered Bank (Hong Kong) Ltd"
         },
         "account_holder": {
-          "tile": "اسم صاحب الحساب",
+          "tile": "صاحب الحساب",
           "value": "BIOTECHNICS LIMITED"
         },
         "benificiary_address": {
           "tile": "عنوان المستفيد",
-          "value": "الطابق 8، برج الصين هونغ كونغ، 8-12 طريق هينيسي، وان تشاي، هونغ كونغ، 999077"
+          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, HONG KONG, HONG KONG, 999077"
         },
         "iban": {
           "tile": "IBAN",
-          "value": "47412548280 (لتحويلات العملة باليورو فقط)"
+          "value": "47412548280 (للتحويلات بعملة اليورو فقط)"
         },
         "bank_code": {
-          "tile": "رمز البنك",
+          "tile": "كود البنك",
           "value": "003"
         },
         "branch_code": {
-          "tile": "رمز الفرع",
+          "tile": "كود الفرع",
           "value": "474"
         },
         "swift": {
@@ -153,45 +153,45 @@
       },
       "note": {
         "title": "ملاحظة",
-        "content": "سيتم معالجة طلبك فقط بعد استلام الدفع الكامل. يُرجى السماح من 1 إلى 5 أيام عمل للتحويلات البنكية الدولية. لا تنسَ تضمين المرجع عند إرسال الدفع."
+        "content": "سيتم معالجة طلبك بعد استلام الدفعة الكاملة. يرجى تخصيص 1-5 أيام عمل للتحويلات البنكية الدولية. لا تنسَ إدراج المرجع عند إرسال الدفع."
       }
     }
   },
   "about-us": {
-    "title": "حول تقنيتنا",
-    "sub_title": "دمج الذكاء الاصطناعي مع العلاج المناعي لاستهداف السرطانات المقاومة",
-    "description_one": "نهجنا الثوري يجمع بين الذكاء الاصطناعي والعلاج المناعي المتقدم لإنشاء بروتوكولات علاج مخصصة لمرضى السرطان في المراحل المتأخرة الذين لم يستجيبوا للعلاج الكيميائي التقليدي.",
-    "description_two": "من خلال تحليل آلاف النقاط من ملف السرطان الخاص بك، يحدد نظام الذكاء الاصطناعي لدينا التركيبة المثالية من عوامل العلاج المناعي لاستهداف خلايا السرطان الفريدة لديك.",
+    "title": "عن تقنيتنا",
+    "sub_title": "دمج الذكاء الاصطناعي والعلاج المناعي لاستهداف السرطانات المقاومة",
+    "description_one": "نهجنا الثوري يجمع بين الذكاء الاصطناعي والعلاج المناعي المتقدم لإنشاء بروتوكولات علاجية مخصصة لمرضى السرطان في المراحل المتأخرة الذين لم يستجيبوا للعلاج الكيميائي التقليدي.",
+    "description_two": "من خلال تحليل آلاف النقاط البيانية من ملف السرطان الخاص بك، يحدد نظامنا الذكي الاصطناعي التركيبة المثلى من العوامل المناعية لاستهداف خلايا السرطان الفريدة الخاصة بك.",
     "success_rate": {
-      "success_one": "تقليل الورم بنسبة 70% في التجارب",
-      "success_two": "نسبة نجاح 85% لمرضى المرحلة الثالثة",
-      "success_three": "نسبة نجاح 60% لمرضى المرحلة الرابعة"
+      "success_one": "70% تقليص الورم في التجارب",
+      "success_two": "85% نجاح مع مرضى المرحلة الثالثة",
+      "success_three": "60% نجاح مع مرضى المرحلة الرابعة"
     },
     "features": [
-      "منشآت غرف نظيفة متقدمة بأنظمة مراقبة FI",
-      "عملية تصنيع علاج مناعي خاصة",
-      "تحسين العلاج في الوقت الحقيقي عبر الذكاء الاصطناعي"
+      "مرافق غرف نظيفة متقدمة مع أنظمة مراقبة FI",
+      "عملية تصنيع العلاج المناعي الحصرية",
+      "تحسين العلاج في الوقت الحقيقي من خلال ردود فعل الذكاء الاصطناعي"
     ]
   },
   "faq": {
     "title": "الأسئلة الشائعة",
-    "sub_title": "كل ما تحتاج لمعرفته حول علاجنا الثوري",
+    "sub_title": "كل ما تحتاج لمعرفته عن علاجنا الثوري",
     "faqs": [
       {
-        "question": "كيف تعمل سياسة عدم الدفع؟",
-        "answer": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت. إكسبليتابو كويز كواس أتاك إيوس إست أسبيريوريس كوام دولور، إنسيدنت، كوازي تمبوريبوس مولستياي نيكي سيت كومودي فولوبتاتيم ديكتا إيتاكوي؟"
+        "question": "كيف يعمل الدفع بدون تكلفة؟",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       },
       {
-        "question": "كيف تعمل سياسة عدم الدفع؟",
-        "answer": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت. إكسبليتابو كويز كواس أتاك إيوس إست أسبيريوريس كوام دولور، إنسيدنت، كوازي تمبوريبوس مولستياي نيكي سيت كومودي فولوبتاتيم ديكتا إيتاكوي؟"
+        "question": "كيف يعمل الدفع بدون تكلفة؟",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       }
     ]
   },
   "contact": {
-    "title": "اتصل بـ Biotechnics",
-    "sub_title": "تواصل مع فريقنا المتخصص في الأورام",
+    "title": "اتصل ببيوتكنيكس",
+    "sub_title": "تواصل مع فريقنا المتخصص من أخصائيي الأورام",
     "email_us": {
-      "title": "أرسل لنا بريدًا إلكترونيًا",
+      "title": "راسلنا",
       "description": "أرسل لنا رسالة في أي وقت",
       "email": "info@biotechnics.com"
     },
@@ -205,37 +205,52 @@
         "placeholder": "أدخل اسم العائلة"
       },
       "email": {
-        "label": "عنوان البريد الإلكتروني",
+        "label": "البريد الإلكتروني",
         "placeholder": "أدخل البريد الإلكتروني"
       },
       "message": {
         "label": "الرسالة",
         "placeholder": "أدخل الرسالة"
       },
-      "cta": "أرسل الرسالة"
+      "cta": "إرسال الرسالة",
+      "errors": {
+        "firstName": {
+          "required": "الاسم الأول مطلوب."
+        },
+        "lastName": {
+          "required": "اسم العائلة مطلوب."
+        },
+        "email": {
+          "required": "البريد الإلكتروني مطلوب.",
+          "invalid": "عنوان بريد إلكتروني غير صالح."
+        },
+        "message": {
+          "required": "الرسالة مطلوبة."
+        }
+      }
     }
   },
   "apply_now": {
     "title": "ابدأ رحلتك اليوم",
-    "sub_title": "اتخذ الخطوة الأولى نحو علاج ثوري للسرطان بدون تكاليف مسبقة. قدِّم الآن لترى إن كنت مؤهلاً.",
+    "sub_title": "اتخذ الخطوة الأولى نحو علاج ثوري للسرطان بدون تكاليف مقدمة. قدم الآن لمعرفة ما إذا كنت مؤهلاً.",
     "application_process": {
       "title": "عملية التقديم",
       "process": [
         {
           "title": "تقديم الطلب",
-          "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت. كواد، كونسيكتيتور سيكي كومودي هيك إيبسام فوجيات."
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
           "title": "تقديم الطلب",
-          "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت. كواد، كونسيكتيتور سيكي كومودي هيك إيبسام فوجيات."
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
           "title": "تقديم الطلب",
-          "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت. كواد، كونسيكتيتور سيكي كومودي هيك إيبسام فوجيات."
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
           "title": "تقديم الطلب",
-          "description": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت. كواد، كونسيكتيتور سيكي كومودي هيك إيبسام فوجيات."
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         }
       ]
     },
@@ -249,40 +264,58 @@
         "placeholder": "أدخل اسم العائلة"
       },
       "email": {
-        "label": "عنوان البريد الإلكتروني",
+        "label": "البريد الإلكتروني",
         "placeholder": "أدخل البريد الإلكتروني"
       },
       "cancer_type": {
         "label": "نوع السرطان",
         "placeholder": "اختر نوع السرطان",
         "options": [
-          { "name": "chemotherapy", "value": "chemotherapy" },
-          { "name": "Radiation", "value": "radiation" },
-          { "name": "Surgery", "value": "surgery" },
-          { "name": "Immunotherapy", "value": "immunotherapy" }
+          { "name": "العلاج الكيميائي", "value": "chemotherapy" },
+          { "name": "العلاج الإشعاعي", "value": "radiation" },
+          { "name": "الجراحة", "value": "surgery" },
+          { "name": "العلاج المناعي", "value": "immunotherapy" }
         ]
       },
       "cancer_stage": {
         "label": "مرحلة السرطان",
         "placeholder": "اختر مرحلة السرطان",
         "options": [
-          { "name": "chemotherapy", "value": "chemotherapy" },
-          { "name": "Radiation", "value": "radiation" },
-          { "name": "Surgery", "value": "surgery" },
-          { "name": "Immunotherapy", "value": "immunotherapy" }
+          { "name": "العلاج الكيميائي", "value": "chemotherapy" },
+          { "name": "العلاج الإشعاعي", "value": "radiation" },
+          { "name": "الجراحة", "value": "surgery" },
+          { "name": "العلاج المناعي", "value": "immunotherapy" }
         ]
       },
       "previous_treatments": {
         "label": "العلاجات السابقة",
         "options": [
-          { "name": "chemotherapy", "value": "chemotherapy" },
-          { "name": "Radiation", "value": "radiation" },
-          { "name": "Surgery", "value": "surgery" },
-          { "name": "Immunotherapy", "value": "immunotherapy" }
+          { "name": "العلاج الكيميائي", "value": "chemotherapy" },
+          { "name": "العلاج الإشعاعي", "value": "radiation" },
+          { "name": "الجراحة", "value": "surgery" },
+          { "name": "العلاج المناعي", "value": "immunotherapy" }
         ]
+      },
+      "errors": {
+        "firstName": {
+          "required": "الاسم الأول مطلوب."
+        },
+        "lastName": {
+          "required": "اسم العائلة مطلوب."
+        },
+        "email": {
+          "required": "البريد الإلكتروني مطلوب.",
+          "invalid": "عنوان بريد إلكتروني غير صالح."
+        },
+        "cancerType": {
+          "required": "نوع السرطان مطلوب."
+        },
+        "cancerStage": {
+          "required": "مرحلة السرطان مطلوبة."
+        }
       }
     },
-    "cta": "قدِّم الآن - بدون تكاليف مسبقة",
+    "cta": "قدم الآن - بدون تكاليف مقدمة",
     "back_cta": "العودة إلى الصفحة الرئيسية"
   }
 }

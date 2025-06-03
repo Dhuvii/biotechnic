@@ -5,11 +5,26 @@ import { useTranslate } from "@/store/translateStore";
 import { translate } from "@/utilities/translate";
 import Image from "next/image";
 import ContactImage from "../../../public/about_image.webp";
+import { ContactUsInput, ContactUsSchema } from "@/schema/ContactUsSchema";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { handleContactUs } from "../actions";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   const { lang } = useTranslate();
 
   const { title, sub_title, email_us, form } = translate("contact", lang);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<ContactUsInput>({
+    resolver: zodResolver(ContactUsSchema),
+  });
   return (
     <section className="relative flex h-dvh w-full flex-col pb-10">
       <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-black/30 to-transparent"></div>
@@ -76,7 +91,11 @@ export default function Home() {
             </div>
 
             <form
-              action=""
+              onSubmit={handleSubmit((values) => {
+                handleContactUs(values);
+                reset();
+                router.push("/");
+              })}
               className="col-span-2 flex w-full flex-col rounded-xl border border-white/30 bg-black/10 p-5"
             >
               <div className="mb-5 grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -92,7 +111,13 @@ export default function Home() {
                     type="text"
                     placeholder={form.first_name.placeholder}
                     className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                    {...register("firstName")}
                   />
+                  {errors.firstName && (
+                    <p className="mt-1 text-xs font-medium text-red-700">
+                      {form.errors.firstName.required}
+                    </p>
+                  )}
                 </div>
 
                 <div className="w-full">
@@ -107,7 +132,13 @@ export default function Home() {
                     type="text"
                     placeholder={form.last_name.placeholder}
                     className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                    {...register("lastName")}
                   />
+                  {errors.lastName && (
+                    <p className="mt-1 text-xs font-medium text-red-700">
+                      {form.errors.lastName.required}
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -123,7 +154,15 @@ export default function Home() {
                   type="email"
                   placeholder={form.email.placeholder}
                   className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                  {...register("email")}
                 />
+                {errors.email && (
+                  <p className="mt-1 text-xs font-medium text-red-700">
+                    {errors.email.message === "invalid"
+                      ? form.errors.email.invalid
+                      : form.errors.email.required}
+                  </p>
+                )}
               </div>
 
               <div className="w-full">
@@ -138,12 +177,21 @@ export default function Home() {
                   rows={3}
                   placeholder={form.message.placeholder}
                   className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                  {...register("message")}
                 />
+                {errors.message && (
+                  <p className="mt-1 text-xs font-medium text-red-700">
+                    {form.errors.message.required}
+                  </p>
+                )}
               </div>
 
               <div className="group relative mt-5 flex items-center justify-center">
                 <div className="absolute -inset-1 bg-[#03FF81]/50 blur-lg group-hover:bg-[#03FF81]/10"></div>
-                <button className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold tracking-widest text-white uppercase hover:from-transparent">
+                <button
+                  type="submit"
+                  className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold tracking-widest text-white uppercase hover:from-transparent"
+                >
                   {form.cta}
                 </button>
               </div>

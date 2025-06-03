@@ -7,13 +7,13 @@
     }
   },
   "homepage": {
-    "title": "Vítejte v Biotechnics",
+    "title": "Vítejte u Biotechnics",
     "sub_title_1": "Imunoterapie pro",
     "sub_title_highlight": "pokročilé a paliativní",
     "sub_title_2": "pacienty s rakovinou",
     "feat_1": {
-      "title": "Rakovina bojuje tvrdě? Bojujte ještě tvrději!!!",
-      "description": "Více o naší technologii boje proti rakovině",
+      "title": "Rakovina bojuje tvrdě? Bojujte ještě tvrději!",
+      "description": "Více o naší technologii proti rakovině",
       "cta": "Zjistit více"
     },
     "feat_2": {
@@ -23,8 +23,8 @@
       "cta": "Přihlásit se nyní"
     },
     "feat_3": {
-      "title": "Žádné čekání, žádný proces žádosti, žádné omezení",
-      "description": "Zakupte si roční zásobu zde",
+      "title": "Žádné čekání, žádný proces přihlášení, žádné omezení",
+      "description": "Koupit roční zásobu zde",
       "address": "2550 Innovation Blvd. San Francisco, CA",
       "cta": "Koupit nyní"
     },
@@ -34,7 +34,7 @@
         "placeholder": "Zadejte celé jméno"
       },
       "street_address": {
-        "label": "Ulice",
+        "label": "Ulice a číslo popisné",
         "placeholder": "Zadejte adresu ulice"
       },
       "region": {
@@ -98,7 +98,7 @@
           "required": "Telefonní číslo je povinné."
         },
         "termsAccepted": {
-          "required": "Musíte přijmout obchodní podmínky."
+          "required": "Musíte souhlasit s obchodními podmínkami."
         },
         "price": {
           "positive": "Cena musí být kladné číslo."
@@ -114,7 +114,7 @@
       "order_number": "Číslo objednávky",
       "confirmation_email": {
         "title": "Potvrzovací e-mail",
-        "content": "Kopie vaší objednávky, včetně platebních instrukcí, byla odeslána na váš e-mail."
+        "content": "Kopie vaší objednávky, včetně platebních pokynů, byla odeslána na váš e-mail."
       },
       "bank": {
         "title": "Pokyny pro bankovní převod (SWIFT)",
@@ -153,23 +153,23 @@
       },
       "note": {
         "title": "Poznámka",
-        "content": "Vaše objednávka bude zpracována až po přijetí plné platby. U mezinárodních bankovních převodů prosím počítejte s 1–5 pracovními dny. Nezapomeňte při odesílání platby uvést referenci."
+        "content": "Vaše objednávka bude zpracována až po přijetí plné platby. U mezinárodních bankovních převodů prosím počítejte s 1–5 pracovními dny. Nezapomeňte při platbě uvést referenci."
       }
     }
   },
   "about-us": {
     "title": "O naší technologii",
-    "sub_title": "Kombinace AI a imunoterapie k cílení na odolné rakoviny",
+    "sub_title": "Kombinace umělé inteligence a imunoterapie pro cílení na odolné rakoviny",
     "description_one": "Náš revoluční přístup kombinuje umělou inteligenci s pokročilou imunoterapií k vytvoření personalizovaných léčebných protokolů pro pacienty s pokročilou rakovinou, kteří nereagovali na tradiční chemoterapii.",
-    "description_two": "Analýzou tisíců datových bodů z vašeho specifického profilu rakoviny náš systém AI identifikuje optimální kombinaci imunoterapeutických látek k cílení na vaše jedinečné rakovinné buňky.",
+    "description_two": "Analýzou tisíců datových bodů z vašeho specifického profilu rakoviny náš systém umělé inteligence identifikuje optimální kombinaci imunoterapeutických látek pro cílení na vaše jedinečné rakovinné buňky.",
     "success_rate": {
       "success_one": "70% redukce nádoru v klinických testech",
-      "success_two": "85% úspěšnost u pacientů s rakovinou 3. stadia",
-      "success_three": "60% úspěšnost u pacientů s rakovinou 4. stadia"
+      "success_two": "85% úspěšnost u pacientů ve stadiu 3",
+      "success_three": "60% úspěšnost u pacientů ve stadiu 4"
     },
     "features": [
-      "Pokročilá zařízení čistých prostor s fi-monitorovacími systémy",
-      "Vlastní proces syntézy imunoterapie",
+      "Pokročilé čisté prostory s monitorovacími systémy FI",
+      "Proprietární proces syntézy imunoterapie",
       "Optimalizace léčby v reálném čase prostřednictvím zpětné vazby AI"
     ]
   },
@@ -178,11 +178,11 @@
     "sub_title": "Vše, co potřebujete vědět o naší revoluční léčbě",
     "faqs": [
       {
-        "question": "Jak funguje žádná platba?",
+        "question": "Jak funguje bezplatná platba?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       },
       {
-        "question": "Jak funguje žádná platba?",
+        "question": "Jak funguje bezplatná platba?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       }
     ]
@@ -212,29 +212,44 @@
         "label": "Zpráva",
         "placeholder": "Zadejte zprávu"
       },
-      "cta": "Odeslat zprávu"
+      "cta": "Odeslat zprávu",
+      "errors": {
+        "firstName": {
+          "required": "Jméno je povinné."
+        },
+        "lastName": {
+          "required": "Příjmení je povinné."
+        },
+        "email": {
+          "required": "E-mail je povinný.",
+          "invalid": "Neplatná e-mailová adresa."
+        },
+        "message": {
+          "required": "Zpráva je povinná."
+        }
+      }
     }
   },
   "apply_now": {
-    "title": "Začněte svou cestu ještě dnes",
+    "title": "Začněte svou cestu dnes",
     "sub_title": "Udělejte první krok k revoluční léčbě rakoviny bez počátečních nákladů. Přihlaste se nyní a zjistěte, zda splňujete podmínky.",
     "application_process": {
-      "title": "Proces žádosti",
+      "title": "Proces přihlášení",
       "process": [
         {
-          "title": "Odeslat žádost",
+          "title": "Odeslat přihlášku",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "Odeslat žádost",
+          "title": "Odeslat přihlášku",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "Odeslat žádost",
+          "title": "Odeslat přihlášku",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "Odeslat žádost",
+          "title": "Odeslat přihlášku",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         }
       ]
@@ -257,7 +272,7 @@
         "placeholder": "Vyberte typ rakoviny",
         "options": [
           { "name": "Chemoterapie", "value": "chemotherapy" },
-          { "name": "Radiace", "value": "radiation" },
+          { "name": "Radioterapie", "value": "radiation" },
           { "name": "Chirurgie", "value": "surgery" },
           { "name": "Imunoterapie", "value": "immunotherapy" }
         ]
@@ -267,7 +282,7 @@
         "placeholder": "Vyberte stadium rakoviny",
         "options": [
           { "name": "Chemoterapie", "value": "chemotherapy" },
-          { "name": "Radiace", "value": "radiation" },
+          { "name": "Radioterapie", "value": "radiation" },
           { "name": "Chirurgie", "value": "surgery" },
           { "name": "Imunoterapie", "value": "immunotherapy" }
         ]
@@ -276,13 +291,31 @@
         "label": "Předchozí léčba",
         "options": [
           { "name": "Chemoterapie", "value": "chemotherapy" },
-          { "name": "Radiace", "value": "radiation" },
+          { "name": "Radioterapie", "value": "radiation" },
           { "name": "Chirurgie", "value": "surgery" },
           { "name": "Imunoterapie", "value": "immunotherapy" }
         ]
+      },
+      "errors": {
+        "firstName": {
+          "required": "Jméno je povinné."
+        },
+        "lastName": {
+          "required": "Příjmení je povinné."
+        },
+        "email": {
+          "required": "E-mail je povinný.",
+          "invalid": "Neplatná e-mailová adresa."
+        },
+        "cancerType": {
+          "required": "Typ rakoviny je povinný."
+        },
+        "cancerStage": {
+          "required": "Stadium rakoviny je povinné."
+        }
       }
     },
     "cta": "Přihlásit se nyní - bez počátečních nákladů",
-    "back_cta": "Zpět domů"
+    "back_cta": "Zpět na domovskou stránku"
   }
 }

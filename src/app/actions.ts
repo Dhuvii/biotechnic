@@ -2,6 +2,8 @@
 
 import { sendMail } from "@/lib/nodemailer.config";
 import prisma from "@/lib/prisma";
+import { ApplyNowSchema } from "@/schema/ApplyNowSchema";
+import { ContactUsSchema } from "@/schema/ContactUsSchema";
 import { OrderSchema } from "@/schema/OrderSchema";
 
 export const createOrder = async (order: typeof OrderSchema._output) => {
@@ -68,4 +70,48 @@ export const createOrder = async (order: typeof OrderSchema._output) => {
   });
 
   return createdOrder;
+};
+
+type FormattedData = {
+  previousTreatments: string[];
+  email: string;
+  firstName: string;
+  lastName: string;
+  cancerType: string;
+  cancerStage: string;
+};
+
+export const handleApplyNow = async (applyNow: FormattedData) => {
+  sendMail({
+    to: "info@biotechnics.com",
+    subject: `Biotechnic: New apply now`,
+    template: "apply-now",
+    context: {
+      firstName: applyNow.firstName,
+      lastName: applyNow.lastName,
+      email: applyNow.email,
+      cancerType: applyNow.cancerType,
+      cancerStage: applyNow.cancerStage,
+      previousTreatments:
+        applyNow.previousTreatments.length > 0
+          ? applyNow.previousTreatments.join(",")
+          : "none",
+    },
+  });
+};
+
+export const handleContactUs = async (
+  contact: typeof ContactUsSchema._output,
+) => {
+  sendMail({
+    to: "info@biotechnics.com",
+    subject: `Biotechnic: New contact`,
+    template: "contact",
+    context: {
+      firstName: contact.firstName,
+      lastName: contact.lastName,
+      email: contact.email,
+      message: contact.message,
+    },
+  });
 };

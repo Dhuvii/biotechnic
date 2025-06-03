@@ -2,30 +2,30 @@
   "navbar": {
     "links": {
       "about": "О нас",
-      "faq": "Вопросы и ответы",
+      "faq": "Часто задаваемые вопросы",
       "contact": "Контакты"
     }
   },
   "homepage": {
-    "title": "добро пожаловать в Biotechnics",
+    "title": "добро пожаловать в biotechnics",
     "sub_title_1": "иммунотерапия для",
-    "sub_title_highlight": "пациентов с поздними стадиями и паллиативной помощью",
-    "sub_title_2": "онкологических заболеваний",
+    "sub_title_highlight": "поздних стадий и паллиативного ухода",
+    "sub_title_2": "пациентов с раком",
     "feat_1": {
-      "title": "рак сражается жестко? сражайся ещё сильнее!!!",
-      "description": "подробнее о наших технологиях борьбы с раком",
+      "title": "рак борется упорно? боритесь еще сильнее!!!",
+      "description": "узнайте больше о нашей технологии борьбы с раком",
       "cta": "Узнать больше"
     },
     "feat_2": {
-      "title": "ноль авансовых платежей",
-      "description": "нет результата — нет оплаты",
-      "tag": "просто сосредоточьтесь на лечении, а не на деньгах",
-      "cta": "Подать заявку"
+      "title": "нулевые первоначальные затраты",
+      "description": "нет результатов = нет оплаты",
+      "tag": "сосредоточьтесь на лечении, а не на деньгах",
+      "cta": "Подать заявку сейчас"
     },
     "feat_3": {
-      "title": "без ожидания, без заявок, без ограничений",
-      "description": "полный годовой запас — покупайте здесь",
-      "address": "2550 Innovation Blvd., Сан-Франциско, Калифорния",
+      "title": "без ожидания, без процесса подачи заявки, без ограничений",
+      "description": "купите годовой запас здесь",
+      "address": "2550 Innovation Blvd. San Francisco, CA",
       "cta": "Купить сейчас"
     },
     "orderForm": {
@@ -34,8 +34,8 @@
         "placeholder": "Введите полное имя"
       },
       "street_address": {
-        "label": "Улица",
-        "placeholder": "Введите адрес улицы"
+        "label": "Адрес",
+        "placeholder": "Введите адрес"
       },
       "region": {
         "label": "Регион",
@@ -58,12 +58,12 @@
         "placeholder": "Введите номер телефона"
       },
       "email": {
-        "label": "Электронная почта",
+        "label": "Адрес электронной почты",
         "placeholder": "Введите email"
       },
       "terms_and_conditions": {
         "label": "Условия и положения",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
+        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
       },
       "price": {
         "label": "Цена",
@@ -76,26 +76,26 @@
       "cta": "Заказать сейчас",
       "errors": {
         "fullName": {
-          "required": "Полное имя обязательно для заполнения."
+          "required": "Полное имя обязательно."
         },
         "streetAddress": {
-          "required": "Улица обязательна для заполнения."
+          "required": "Адрес обязателен."
         },
         "city": {
-          "required": "Город обязателен для заполнения."
+          "required": "Город обязателен."
         },
         "zipCode": {
-          "required": "Почтовый индекс обязателен для заполнения."
+          "required": "Почтовый индекс обязателен."
         },
         "country": {
-          "required": "Страна обязательна для заполнения."
+          "required": "Страна обязательна."
         },
         "email": {
-          "required": "Email обязателен для заполнения.",
-          "invalid": "Неверный адрес электронной почты."
+          "required": "Электронная почта обязательна.",
+          "invalid": "Недействительный адрес электронной почты."
         },
         "phoneNumber": {
-          "required": "Номер телефона обязателен для заполнения."
+          "required": "Номер телефона обязателен."
         },
         "termsAccepted": {
           "required": "Вы должны принять условия и положения."
@@ -104,7 +104,7 @@
           "positive": "Цена должна быть положительным числом."
         },
         "paymentOption": {
-          "required": "Необходимо выбрать способ оплаты."
+          "required": "Способ оплаты обязателен."
         }
       }
     },
@@ -114,10 +114,10 @@
       "order_number": "номер заказа",
       "confirmation_email": {
         "title": "письмо с подтверждением",
-        "content": "копия вашего заказа с инструкциями по оплате была отправлена на ваш email."
+        "content": "копия вашего заказа, включая инструкции по оплате, была отправлена на ваш email."
       },
       "bank": {
-        "title": "Инструкции по банковскому переводу (SWIFT)",
+        "title": "Инструкции по оплате банковским переводом (SWIFT)",
         "bank_name": {
           "tile": "название банка",
           "value": "Standard Chartered Bank (Hong Kong) Ltd"
@@ -127,19 +127,19 @@
           "value": "BIOTECHNICS LIMITED"
         },
         "benificiary_address": {
-          "tile": "адрес получателя",
-          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, ГОНКОНГ, 999077"
+          "tile": "адрес бенефициара",
+          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, HONG KONG, HONG KONG, 999077"
         },
         "iban": {
           "tile": "IBAN",
-          "value": "47412548280 (только переводы в EUR)"
+          "value": "47412548280 (только переводы в валюте EUR)"
         },
         "bank_code": {
-          "tile": "банковский код",
+          "tile": "код банка",
           "value": "003"
         },
         "branch_code": {
-          "tile": "код отделения",
+          "tile": "код филиала",
           "value": "474"
         },
         "swift": {
@@ -153,46 +153,46 @@
       },
       "note": {
         "title": "Примечание",
-        "content": "ваш заказ будет обработан только после поступления полной оплаты. Пожалуйста, подождите 1–5 рабочих дней для международных переводов. Не забудьте указать ссылку при оплате."
+        "content": "ваш заказ будет обработан только после получения полной оплаты. Пожалуйста, учтите 1–5 рабочих дней для международных банковских переводов. Не забудьте указать ссылку при отправке платежа."
       }
     }
   },
   "about-us": {
     "title": "о нашей технологии",
-    "sub_title": "объединяя ИИ и иммунотерапию для борьбы с устойчивыми раковыми клетками",
-    "description_one": "наш революционный подход сочетает искусственный интеллект и передовую иммунотерапию для создания персонализированных протоколов лечения для пациентов с поздними стадиями рака, которые не отреагировали на традиционную химиотерапию",
-    "description_two": "анализируя тысячи данных из вашего ракового профиля, наша ИИ-система определяет оптимальную комбинацию иммунотерапевтических агентов для нацеливания на уникальные раковые клетки",
+    "sub_title": "объединение искусственного интеллекта и иммунотерапии для борьбы с устойчивыми раковыми заболеваниями",
+    "description_one": "наш революционный подход сочетает искусственный интеллект с передовой иммунотерапией для создания персонализированных протоколов лечения для пациентов с раком на поздних стадиях, которые не ответили на традиционную химиотерапию.",
+    "description_two": "анализируя тысячи точек данных из вашего конкретного профиля рака, наша система искусственного интеллекта определяет оптимальную комбинацию иммунотерапевтических агентов для воздействия на ваши уникальные раковые клетки",
     "success_rate": {
       "success_one": "70% уменьшение опухоли в испытаниях",
-      "success_two": "85% успех у пациентов со стадией 3",
-      "success_three": "60% успех у пациентов со стадией 4"
+      "success_two": "85% успеха у пациентов на 3-й стадии",
+      "success_three": "60% успеха у пациентов на 4-й стадии"
     },
     "features": [
-      "современные чистые помещения с системами мониторинга",
-      "собственный процесс синтеза иммунотерапии",
-      "оптимизация лечения в реальном времени с помощью ИИ"
+      "передовые чистые помещения с системами мониторинга fi",
+      "запатентованный процесс синтеза иммунотерапии",
+      "оптимизация лечения в реальном времени благодаря обратной связи ИИ"
     ]
   },
   "faq": {
     "title": "часто задаваемые вопросы",
-    "sub_title": "всё, что нужно знать о нашем революционном лечении",
+    "sub_title": "все, что вам нужно знать о нашем революционном лечении",
     "faqs": [
       {
-        "question": "Как работает система без оплаты",
+        "question": "Как работает отсутствие оплаты?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       },
       {
-        "question": "Как работает система без оплаты",
+        "question": "Как работает отсутствие оплаты?",
         "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       }
     ]
   },
   "contact": {
-    "title": "связаться с Biotechnics",
-    "sub_title": "обратитесь к нашей команде онкологических специалистов",
+    "title": "свяжитесь с biotechnics",
+    "sub_title": "обратитесь к нашей преданной команде онкологов",
     "email_us": {
-      "title": "написать нам",
-      "description": "отправьте сообщение в любое время",
+      "title": "напишите нам",
+      "description": "отправьте нам сообщение в любое время",
       "email": "info@biotechnics.com"
     },
     "form": {
@@ -205,36 +205,51 @@
         "placeholder": "Введите фамилию"
       },
       "email": {
-        "label": "Электронная почта",
+        "label": "Адрес электронной почты",
         "placeholder": "Введите email"
       },
       "message": {
         "label": "Сообщение",
         "placeholder": "Введите сообщение"
       },
-      "cta": "Отправить сообщение"
+      "cta": "Отправить сообщение",
+      "errors": {
+        "firstName": {
+          "required": "Имя обязательно."
+        },
+        "lastName": {
+          "required": "Фамилия обязательна."
+        },
+        "email": {
+          "required": "Электронная почта обязательна.",
+          "invalid": "Недействительный адрес электронной почты."
+        },
+        "message": {
+          "required": "Сообщение обязательно."
+        }
+      }
     }
   },
   "apply_now": {
-    "title": "начните путь уже сегодня",
-    "sub_title": "сделайте первый шаг к революционному лечению рака без авансовых платежей — подайте заявку и узнайте, подходите ли вы",
+    "title": "начните свое путешествие сегодня",
+    "sub_title": "сделайте первый шаг к революционному лечению рака без первоначальных затрат, подайте заявку сейчас, чтобы узнать, подходите ли вы.",
     "application_process": {
       "title": "процесс подачи заявки",
       "process": [
         {
-          "title": "отправка заявки",
+          "title": "подать заявку",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "отправка заявки",
+          "title": "подать заявку",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "отправка заявки",
+          "title": "подать заявку",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
-          "title": "отправка заявки",
+          "title": "подать заявку",
           "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
         }
       ]
@@ -249,40 +264,58 @@
         "placeholder": "Введите фамилию"
       },
       "email": {
-        "label": "Электронная почта",
+        "label": "Адрес электронной почты",
         "placeholder": "Введите email"
       },
       "cancer_type": {
         "label": "Тип рака",
         "placeholder": "Выберите тип рака",
         "options": [
-          { "name": "chemotherapy", "value": "chemotherapy" },
-          { "name": "Radiation", "value": "radiation" },
-          { "name": "Surgery", "value": "surgery" },
-          { "name": "Immunotherapy", "value": "immunotherapy" }
+          { "name": "Химиотерапия", "value": "chemotherapy" },
+          { "name": "Радиационная терапия", "value": "radiation" },
+          { "name": "Хирургия", "value": "surgery" },
+          { "name": "Иммунотерапия", "value": "immunotherapy" }
         ]
       },
       "cancer_stage": {
         "label": "Стадия рака",
         "placeholder": "Выберите стадию рака",
         "options": [
-          { "name": "chemotherapy", "value": "chemotherapy" },
-          { "name": "Radiation", "value": "radiation" },
-          { "name": "Surgery", "value": "surgery" },
-          { "name": "Immunotherapy", "value": "immunotherapy" }
+          { "name": "Химиотерапия", "value": "chemotherapy" },
+          { "name": "Радиационная терапия", "value": "radiation" },
+          { "name": "Хирургия", "value": "surgery" },
+          { "name": "Иммунотерапия", "value": "immunotherapy" }
         ]
       },
       "previous_treatments": {
-        "label": "предыдущее лечение",
+        "label": "Предыдущее лечение",
         "options": [
-          { "name": "chemotherapy", "value": "chemotherapy" },
-          { "name": "Radiation", "value": "radiation" },
-          { "name": "Surgery", "value": "surgery" },
-          { "name": "Immunotherapy", "value": "immunotherapy" }
+          { "name": "Химиотерапия", "value": "chemotherapy" },
+          { "name": "Радиационная терапия", "value": "radiation" },
+          { "name": "Хирургия", "value": "surgery" },
+          { "name": "Иммунотерапия", "value": "immunotherapy" }
         ]
+      },
+      "errors": {
+        "firstName": {
+          "required": "Имя обязательно."
+        },
+        "lastName": {
+          "required": "Фамилия обязательна."
+        },
+        "email": {
+          "required": "Электронная почта обязательна.",
+          "invalid": "Недействительный адрес электронной почты."
+        },
+        "cancerType": {
+          "required": "Тип рака обязателен."
+        },
+        "cancerStage": {
+          "required": "Стадия рака обязательна."
+        }
       }
     },
-    "cta": "подать заявку — без авансового платежа",
-    "back_cta": "назад на главную"
+    "cta": "подать заявку сейчас - без первоначальных затрат",
+    "back_cta": "вернуться на главную"
   }
 }

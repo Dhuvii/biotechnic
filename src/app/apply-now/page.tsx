@@ -8,12 +8,31 @@ import { translate } from "@/utilities/translate";
 import Image from "next/image";
 import ApplyNowImage from "../../../public/about_image.webp";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
+import { ApplyNowInput, ApplyNowSchema } from "@/schema/ApplyNowSchema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { handleApplyNow } from "../actions";
+import { useRouter } from "next/navigation";
 
 export default function ApplyNow() {
+  const router = useRouter();
   const { lang } = useTranslate();
 
   const { title, sub_title, application_process, form, cta, back_cta } =
     translate("apply_now", lang);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    watch,
+    setValue,
+    trigger,
+    formState: { errors, isSubmitting },
+  } = useForm<ApplyNowInput>({
+    resolver: zodResolver(ApplyNowSchema),
+  });
+
   return (
     <section className="relative flex h-dvh w-full flex-col overflow-hidden pb-10">
       <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-black/30 to-transparent"></div>
@@ -109,7 +128,28 @@ export default function ApplyNow() {
             </div>
           </div>
 
-          <div className="rounded-x flex w-full flex-col p-5 md:col-span-2 lg:col-span-3">
+          <form
+            onSubmit={handleSubmit((values) => {
+              const formattedTreatments = values?.previousTreatments
+                ? Object.keys(values.previousTreatments).filter(
+                    (key) => values.previousTreatments![key],
+                  )
+                : [];
+
+              const formattedData = {
+                ...values,
+                previousTreatments: formattedTreatments,
+              };
+
+              handleApplyNow(formattedData);
+              reset();
+              setValue("cancerStage", "");
+              setValue("cancerType", "");
+              setValue("previousTreatments", {});
+              router.push("/");
+            })}
+            className="rounded-x flex w-full flex-col p-5 md:col-span-2 lg:col-span-3"
+          >
             <div className="mb-5 grid grid-cols-1 gap-5 md:grid-cols-2">
               <div className="w-full">
                 <label
@@ -122,8 +162,14 @@ export default function ApplyNow() {
                   id="first-name"
                   type="text"
                   placeholder={form.first_name.placeholder}
-                  className="mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                  className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                  {...register("firstName")}
                 />
+                {errors.firstName && (
+                  <p className="mt-1 text-xs font-medium text-red-700">
+                    {form.errors.firstName.required}
+                  </p>
+                )}
               </div>
 
               <div className="w-full">
@@ -137,8 +183,14 @@ export default function ApplyNow() {
                   id="last-name"
                   type="text"
                   placeholder={form.last_name.placeholder}
-                  className="mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                  className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+                  {...register("lastName")}
                 />
+                {errors.lastName && (
+                  <p className="mt-1 text-xs font-medium text-red-700">
+                    {form.errors.lastName.required}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -152,28 +204,65 @@ export default function ApplyNow() {
               id="email"
               type="email"
               placeholder={form.email.placeholder}
-              className="mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+              className="font-game mt-2 w-full rounded-xl border border-white/30 bg-black/30 px-3 py-3 text-sm text-white placeholder:text-gray-300 focus:border-white focus:outline-0"
+              {...register("email")}
             />
+            {errors.email && (
+              <p className="mt-1 text-xs font-medium text-red-700">
+                {errors.email.message === "invalid"
+                  ? form.errors.email.invalid
+                  : form.errors.email.required}
+              </p>
+            )}
 
             <div className="mt-5 grid w-full grid-cols-1 gap-5 md:grid-cols-2">
-              <Select
-                placeholder={form.cancer_type.placeholder}
-                Label={form.cancer_type.label}
-              >
-                {form.cancer_type.options.map((option, idx) => (
-                  <Select.Option key={idx} value={option.value}>
-                    {option.name}
-                  </Select.Option>
-                ))}
-              </Select>
+              <div className="flex w-full flex-col">
+                <Select
+                  placeholder={form.cancer_type.placeholder}
+                  Label={form.cancer_type.label}
+                  value={watch("cancerType")}
+                  onValueChange={(val) => {
+                    setValue("cancerType", val);
+                    trigger("cancerType");
+                  }}
+                  hideError
+                >
+                  {form.cancer_type.options.map((option, idx) => (
+                    <Select.Option key={idx} value={option.value}>
+                      {option.name}
+                    </Select.Option>
+                  ))}
+                </Select>
+                {errors.cancerType && (
+                  <p className="mt-1 text-xs font-medium text-red-700">
+                    {form.errors.cancerType.required}
+                  </p>
+                )}
+              </div>
 
-              <Select placeholder="Cancer Stage" Label={"Cancer Stage"}>
-                {form.cancer_stage.options.map((option, idx) => (
-                  <Select.Option key={idx} value={option.value}>
-                    {option.name}
-                  </Select.Option>
-                ))}
-              </Select>
+              <div className="w-full">
+                <Select
+                  value={watch("cancerStage")}
+                  onValueChange={(val) => {
+                    setValue("cancerStage", val);
+                    trigger("cancerStage");
+                  }}
+                  placeholder="Cancer Stage"
+                  Label={"Cancer Stage"}
+                  hideError
+                >
+                  {form.cancer_stage.options.map((option, idx) => (
+                    <Select.Option key={idx} value={option.value}>
+                      {option.name}
+                    </Select.Option>
+                  ))}
+                </Select>
+                {errors.cancerStage && (
+                  <p className="mt-1 text-xs font-medium text-red-700">
+                    {form.errors.cancerStage.required}
+                  </p>
+                )}
+              </div>
             </div>
 
             <div className="mt-5 w-full">
@@ -185,9 +274,18 @@ export default function ApplyNow() {
                 {form.previous_treatments.options.map((option, idx) => (
                   <Checkbox
                     key={idx}
-                    defaultChecked={true}
-                    value={"show-original"}
+                    value={
+                      watch("previousTreatments")?.[option.name]
+                        ? option.name
+                        : ""
+                    }
                     label={option.name}
+                    onChange={(value) => {
+                      setValue("previousTreatments", {
+                        ...watch("previousTreatments"),
+                        [option.name]: value,
+                      });
+                    }}
                   />
                 ))}
               </div>
@@ -195,11 +293,14 @@ export default function ApplyNow() {
 
             <div className="group relative mt-10 flex items-center justify-center">
               <div className="absolute -inset-1 bg-[#03FF81]/50 blur-lg group-hover:bg-[#03FF81]/10"></div>
-              <button className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold text-white uppercase hover:from-red-700/60">
+              <button
+                type="submit"
+                className="relative w-full border border-white bg-radial from-[#03FF81]/60 from-10% to-[#03FF81]/60 px-5 py-2 text-xl font-bold text-white uppercase hover:from-red-700/60"
+              >
                 {cta}
               </button>
             </div>
-          </div>
+          </form>
         </div>
 
         <div className="mt-10 flex w-full items-center justify-center gap-5">

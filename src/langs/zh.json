@@ -3,63 +3,63 @@
     "links": {
       "about": "关于我们",
       "faq": "常见问题",
-      "contact": "联系我们"
+      "contact": "联系方式"
     }
   },
   "homepage": {
     "title": "欢迎体验Biotechnics",
-    "sub_title_1": "为",
-    "sub_title_highlight": "晚期和姑息治疗",
-    "sub_title_2": "癌症患者提供免疫疗法",
+    "sub_title_1": "针对",
+    "sub_title_highlight": "晚期和姑息治疗的",
+    "sub_title_2": "癌症患者的免疫疗法",
     "feat_1": {
-      "title": "癌症顽强战斗？更顽强反击！",
+      "title": "癌症顽强抗争？更顽强还击！！！",
       "description": "了解更多关于我们抗癌技术的信息",
-      "cta": "了解更多"
+      "cta": "了解详情"
     },
     "feat_2": {
       "title": "零前期费用",
       "description": "无效果 = 无需支付",
-      "tag": "专注于治疗，而不是金钱",
+      "tag": "专注于治疗，而非金钱",
       "cta": "立即申请"
     },
     "feat_3": {
       "title": "无需等待，无需申请流程，无限制",
-      "description": "在此购买一整年供应",
-      "address": "2550 Innovation Blvd. San Francisco, CA",
+      "description": "在此购买一整年的供应",
+      "address": "加利福尼亚州旧金山创新大道2550号",
       "cta": "立即购买"
     },
     "orderForm": {
       "full_name": {
         "label": "全名",
-        "placeholder": "输入全名"
+        "placeholder": "请输入全名"
       },
       "street_address": {
         "label": "街道地址",
-        "placeholder": "输入街道地址"
+        "placeholder": "请输入街道地址"
       },
       "region": {
         "label": "地区",
-        "placeholder": "输入地区"
+        "placeholder": "请输入地区"
       },
       "city": {
         "label": "城市",
-        "placeholder": "输入城市"
+        "placeholder": "请输入城市"
       },
       "zip_code": {
         "label": "邮政编码",
-        "placeholder": "输入邮政编码"
+        "placeholder": "请输入邮政编码"
       },
       "country": {
         "label": "国家",
-        "placeholder": "输入国家"
+        "placeholder": "请输入国家"
       },
       "phone_number": {
         "label": "电话号码",
-        "placeholder": "输入电话号码"
+        "placeholder": "请输入电话号码"
       },
       "email": {
-        "label": "电子邮箱",
-        "placeholder": "输入电子邮箱"
+        "label": "电子邮件地址",
+        "placeholder": "请输入电子邮件"
       },
       "terms_and_conditions": {
         "label": "条款和条件",
@@ -67,7 +67,7 @@
       },
       "price": {
         "label": "价格",
-        "value": "49.999 EUR"
+        "value": "49,999 EUR"
       },
       "payment_option": {
         "label": "支付方式",
@@ -91,8 +91,8 @@
           "required": "国家是必填项。"
         },
         "email": {
-          "required": "电子邮箱是必填项。",
-          "invalid": "电子邮箱地址无效。"
+          "required": "电子邮件是必填项。",
+          "invalid": "电子邮件地址无效。"
         },
         "phoneNumber": {
           "required": "电话号码是必填项。"
@@ -111,27 +111,27 @@
     "orderConfirmation": {
       "title": "订单确认",
       "sub_title": "感谢您的订单",
-      "order_number": "订单号",
+      "order_number": "订单编号",
       "confirmation_email": {
-        "title": "确认电子邮件",
-        "content": "您的订单副本（包括支付说明）已发送至您的电子邮箱。"
+        "title": "确认邮件",
+        "content": "您的订单副本（包括支付说明）已发送至您的电子邮件。"
       },
       "bank": {
         "title": "银行转账（SWIFT）支付说明",
         "bank_name": {
           "tile": "银行名称",
-          "value": "Standard Chartered Bank (Hong Kong) Ltd"
+          "value": "香港标准渣打银行有限公司"
         },
         "account_holder": {
           "tile": "账户持有人",
           "value": "BIOTECHNICS LIMITED"
         },
         "benificiary_address": {
-          "tile": "收款人地址",
-          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, HONG KONG, HONG KONG, 999077"
+          "tile": "受益人地址",
+          "value": "香港湾仔轩尼诗道8-12号中国香港大厦8楼，香港，999077"
         },
         "iban": {
-          "tile": "IBAN",
+          "tile": "国际银行账户号码",
           "value": "47412548280（仅限欧元转账）"
         },
         "bank_code": {
@@ -152,30 +152,30 @@
         }
       },
       "note": {
-        "title": "注意",
-        "content": "您的订单将在收到全额付款后进行处理。国际银行转账可能需要1-5个工作日。请在付款时不要忘记包含参考信息。"
+        "title": "备注",
+        "content": "您的订单将在收到全额付款后处理。请预留1-5个工作日用于国际银行转账。发送付款时请勿忘记包含参考编号。"
       }
     }
   },
   "about-us": {
     "title": "关于我们的技术",
-    "sub_title": "融合人工智能与免疫疗法针对抗药性癌症",
-    "description_one": "我们的革命性方法结合人工智能与高级免疫疗法，为未对传统化疗产生反应的晚期癌症患者创建个性化治疗方案。",
-    "description_two": "通过分析您特定癌症档案中的数千个数据点，我们的人工智能系统识别出针对您独特癌细胞的最佳免疫疗法组合。",
+    "sub_title": "融合人工智能与免疫疗法针对耐药性癌症",
+    "description_one": "我们革命性的方法结合人工智能与先进免疫疗法，为未对传统化疗产生反应的晚期癌症患者创建个性化治疗方案。",
+    "description_two": "通过分析您特定癌症档案的数千个数据点，我们的人工智能系统识别出针对您独特癌细胞的最佳免疫疗法组合",
     "success_rate": {
-      "success_one": "试验中肿瘤减少70%",
-      "success_two": "3期患者成功率85%",
-      "success_three": "4期患者成功率60%"
+      "success_one": "试验中70%的肿瘤缩小",
+      "success_two": "3期患者85%的成功率",
+      "success_three": "4期患者60%的成功率"
     },
     "features": [
-      "配备fi监控系统的高级洁净室设施",
+      "配备fi监控系统的先进无尘室设施",
       "专有免疫疗法合成工艺",
       "通过人工智能反馈实时优化治疗"
     ]
   },
   "faq": {
     "title": "常见问题",
-    "sub_title": "关于我们革命性治疗的一切您需要了解的信息",
+    "sub_title": "关于我们革命性治疗的一切您需要知道的",
     "faqs": [
       {
         "question": "无支付是如何运作的？",
@@ -189,7 +189,7 @@
   },
   "contact": {
     "title": "联系Biotechnics",
-    "sub_title": "与我们的专业肿瘤学专家团队联系",
+    "sub_title": "联系我们专注的肿瘤学专家团队",
     "email_us": {
       "title": "给我们发邮件",
       "description": "随时给我们发送消息",
@@ -198,26 +198,41 @@
     "form": {
       "first_name": {
         "label": "名字",
-        "placeholder": "输入名字"
+        "placeholder": "请输入名字"
       },
       "last_name": {
         "label": "姓氏",
-        "placeholder": "输入姓氏"
+        "placeholder": "请输入姓氏"
       },
       "email": {
-        "label": "电子邮箱",
-        "placeholder": "输入电子邮箱"
+        "label": "电子邮件地址",
+        "placeholder": "请输入电子邮件"
       },
       "message": {
         "label": "消息",
-        "placeholder": "输入消息"
+        "placeholder": "请输入消息"
       },
-      "cta": "发送消息"
+      "cta": "发送消息",
+      "errors": {
+        "firstName": {
+          "required": "名字是必填项。"
+        },
+        "lastName": {
+          "required": "姓氏是必填项。"
+        },
+        "email": {
+          "required": "电子邮件是必填项。",
+          "invalid": "电子邮件地址无效。"
+        },
+        "message": {
+          "required": "消息是必填项。"
+        }
+      }
     }
   },
   "apply_now": {
     "title": "今天开始您的旅程",
-    "sub_title": "迈出革命性癌症治疗的第一步，无需前期费用。现在申请以查看您是否符合条件。",
+    "sub_title": "迈向革命性癌症治疗的第一步，无需前期费用，现在申请以查看您是否符合条件。",
     "application_process": {
       "title": "申请流程",
       "process": [
@@ -242,22 +257,22 @@
     "form": {
       "first_name": {
         "label": "名字",
-        "placeholder": "输入名字"
+        "placeholder": "请输入名字"
       },
       "last_name": {
         "label": "姓氏",
-        "placeholder": "输入姓氏"
+        "placeholder": "请输入姓氏"
       },
       "email": {
-        "label": "电子邮箱",
-        "placeholder": "输入电子邮箱"
+        "label": "电子邮件地址",
+        "placeholder": "请输入电子邮件"
       },
       "cancer_type": {
         "label": "癌症类型",
         "placeholder": "选择癌症类型",
         "options": [
           { "name": "化疗", "value": "chemotherapy" },
-          { "name": "放射治疗", "value": "radiation" },
+          { "name": "放疗", "value": "radiation" },
           { "name": "手术", "value": "surgery" },
           { "name": "免疫疗法", "value": "immunotherapy" }
         ]
@@ -267,7 +282,7 @@
         "placeholder": "选择癌症阶段",
         "options": [
           { "name": "化疗", "value": "chemotherapy" },
-          { "name": "放射治疗", "value": "radiation" },
+          { "name": "放疗", "value": "radiation" },
           { "name": "手术", "value": "surgery" },
           { "name": "免疫疗法", "value": "immunotherapy" }
         ]
@@ -276,13 +291,31 @@
         "label": "既往治疗",
         "options": [
           { "name": "化疗", "value": "chemotherapy" },
-          { "name": "放射治疗", "value": "radiation" },
+          { "name": "放疗", "value": "radiation" },
           { "name": "手术", "value": "surgery" },
           { "name": "免疫疗法", "value": "immunotherapy" }
         ]
+      },
+      "errors": {
+        "firstName": {
+          "required": "名字是必填项。"
+        },
+        "lastName": {
+          "required": "姓氏是必填项。"
+        },
+        "email": {
+          "required": "电子邮件是必填项。",
+          "invalid": "电子邮件地址无效。"
+        },
+        "cancerType": {
+          "required": "癌症类型是必填项。"
+        },
+        "cancerStage": {
+          "required": "癌症阶段是必填项。"
+        }
       }
     },
     "cta": "立即申请 - 无前期费用",
-    "back_cta": "返回主页"
+    "back_cta": "返回首页"
   }
 }

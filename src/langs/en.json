@@ -212,7 +212,22 @@
         "label": "Message",
         "placeholder": "Enter message"
       },
-      "cta": "Send message"
+      "cta": "Send message",
+      "errors": {
+        "firstName": {
+          "required": "First name is required."
+        },
+        "lastName": {
+          "required": "Last name is required."
+        },
+        "email": {
+          "required": "Email is required.",
+          "invalid": "Invalid email address."
+        },
+        "message": {
+          "required": "Message is required."
+        }
+      }
     }
   },
   "apply_now": {
@@ -280,6 +295,24 @@
           { "name": "Surgery", "value": "surgery" },
           { "name": "Immunotherapy", "value": "immunotherapy" }
         ]
+      },
+      "errors": {
+        "firstName": {
+          "required": "First name is required."
+        },
+        "lastName": {
+          "required": "Last name is required."
+        },
+        "email": {
+          "required": "Email is required.",
+          "invalid": "Invalid email address."
+        },
+        "cancerType": {
+          "required": "Cancer Type is required."
+        },
+        "cancerStage": {
+          "required": "Cancer Stage is required."
+        }
       }
     },
     "cta": "apply now - no upfront cost",
