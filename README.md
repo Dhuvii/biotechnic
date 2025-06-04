@@ -1,100 +1,99 @@
-# DeepModel Agent Website Starter Kit
+# Biotechnic Next.js 15 App
 
-This starter kit powers landing pages for DeepModel AI, built with Next.js, React, TailwindCSS, and Sanity for content management. It provides a pre-configured foundation to showcase AI-driven features and offerings, enabling users to quickly deploy sleek, customizable pages for product promotions or demos.
+This repository contains the Biotechnic web application built with Next.js 15. This guide will walk you through the steps required to set up, configure, and run the application locally.
 
-## Table of Contents
+## 🚀 Prerequisites
 
-- [Installation](#installation)
-- [Development](#development)
-- [Deployment](#deployment)
-- [Environment Variables](#environment-variables)
-- [Scripts](#scripts)
-- [Technologies Used](#technologies-used)
+Before you begin, ensure you have the following installed:
 
-## Installation
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- npm or yarn
+- Git
+- A [MongoDB Atlas](https://www.mongodb.com/) account
+- A [Sanity.io](https://www.sanity.io/) account
 
-1. Clone the repository:
+## 🔐 Environment Variables
 
-   ```bash
-   git clone <repository-url>
-   cd dm-website
-   ```
+Create a `.env.local` file in the root directory of the project and add the following variables:
 
-2. Install the dependencies:
+```env
+DATABASE_URL=<your-mongodb-url>
 
-   ```bash
-   npm install
-   ```
+NEXT_PUBLIC_SANITY_DATASET=<your-dataset>
+NEXT_PUBLIC_SANITY_PROJECT_ID=<your-project-id>
+NEXT_PUBLIC_SANITY_API_VERSION=2023-12-01
 
-## Development
+HUKOT_EMAIL=<your-email>
+HUKOT_PASSWORD=<your-email-password>
+HUKOT_SMTP_HOST=<your-smtp-host>
+HUKOT_SMTP_PORT=465
+```
 
-Start the development server:
+> Replace `<...>` placeholders with your actual values as outlined in the setup instructions below.
+
+---
+
+## 💠 Setup Instructions
+
+### Step 1: Configure MongoDB
+
+1. Sign up at [mongodb.com](https://www.mongodb.com/).
+2. Create a new project and then "Build a Database" using the free Shared tier.
+3. Once your cluster is ready:
+
+   - Add a new database user with username and password.
+   - Under **Network Access**, allow access from your IP (or allow from anywhere).
+   - Connect to the cluster using "Connect your application".
+   - Copy the provided connection string and replace `<USERNAME>`, `<PASSWORD>`, and `<DBNAME>` with your actual credentials.
+
+4. Set the resulting string as `DATABASE_URL` in your `.env.local`.
+
+### Step 2: Create a Sanity Project
+
+1. Go to [sanity.io](https://www.sanity.io/) and sign up or log in.
+2. Create a new project and a dataset (e.g., `production`).
+3. Copy the following for your `.env.local`:
+
+   - `NEXT_PUBLIC_SANITY_PROJECT_ID` from project settings.
+   - `NEXT_PUBLIC_SANITY_DATASET` from the dataset name.
+
+4. Use `2023-12-01` or another valid date as `NEXT_PUBLIC_SANITY_API_VERSION`.
+
+### Step 3: Email Configuration
+
+Set your email SMTP details in the environment variables:
+
+- `HUKOT_EMAIL`: your email address
+- `HUKOT_PASSWORD`: your email password
+- `HUKOT_SMTP_HOST`: your email provider’s SMTP server
+- `HUKOT_SMTP_PORT`: e.g., `465` (SSL) or `587` (TLS)
+
+---
+
+## 🧪 Running the App
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-The site will be available at [http://localhost:3000](http://localhost:3000).
+3. Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deployment
+---
 
-### Google Cloud Platform (GCP) Deployment
+## ✅ Need Help?
 
-The project includes custom pre-deploy and build scripts to manage file naming conventions that are incompatible with GCP:
+If you encounter any issues:
 
-- **Pre-deploy Script:** Renames files before deployment.
-- **Build Script:** Restores file names after deployment.
+- Double-check your `.env.local` variables.
+- Ensure your MongoDB cluster allows your IP.
+- Make sure all services (MongoDB, Sanity, email) are correctly configured.
 
-Run the following command for deployment:
-
-```bash
-npm run build
-```
-
-## Environment Variables
-
-Create a `.env` file in the project root and populate it with necessary environment variables.
-
-To automatically generate an environment file, use:
-
-```bash
-npm run create-env
-```
-
-## Scripts
-
-- `npm run dev`: Start the development server.
-- `npm run build`: Build the project for production.
-- `npm run start`: Start the production server.
-- `npm run lint`: Run the linter.
-- `npm run test`: Run unit tests using Vitest.
-- `npm run test:ui`: Launch Vitest UI for test visualization.
-- `npm run gcp-predeploy`: Prepare files for GCP deployment.
-- `npm run gcp-build`: Restore file names after deployment.
-- `npm run create-env`: Generate a `.env` file with current environment variables.
-- `npm run create-diff`: Generate a diff file for changes excluding specified directories.
-
-## Technologies Used
-
-### Frontend
-
-- **Framework:** Next.js
-- **UI Components:** React, TailwindCSS
-- **State Management:** Zustand
-- **Forms:** React Hook Form, Zod for validation
-- **Charts:** Recharts
-- **Animations:** Framer Motion
-
-### Backend
-
-- **Content Management:** Sanity CMS
-
-### Testing
-
-- **Unit Testing:** Vitest
-
-### Utilities
-
-- **HTTP Requests:** Axios
-- **Date Manipulation:** date-fns
-- **Cookie Management:** js-cookie
+Happy coding! ✨
