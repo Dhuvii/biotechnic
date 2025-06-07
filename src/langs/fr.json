@@ -73,6 +73,9 @@
         "label": "Option de paiement",
         "value": "Virement bancaire [SWIFT]"
       },
+      "accept_invite": {
+        "label": "accepter"
+      },
       "cta": "Commander maintenant",
       "errors": {
         "fullName": {

@@ -73,6 +73,9 @@
         "label": "支付方式",
         "value": "银行转账 [SWIFT]"
       },
+      "accept_invite": {
+        "label": "接受"
+      },
       "cta": "立即订购",
       "errors": {
         "fullName": {

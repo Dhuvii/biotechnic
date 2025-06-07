@@ -73,6 +73,9 @@
         "label": "Opción de pago",
         "value": "Transferencia bancaria [SWIFT]"
       },
+      "accept_invite": {
+        "label": "aceptar"
+      },
       "cta": "Ordenar ahora",
       "errors": {
         "fullName": {

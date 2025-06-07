@@ -282,7 +282,7 @@ const BuyNowButton = () => {
 
                   <div className="border border-white/10 px-5 py-3">
                     <Checkbox
-                      label="Accept invite"
+                      label={orderForm.accept_invite.label}
                       value={acceptInvite ? "accept" : ""}
                       onChange={() => setAcceptInvite((pv) => !pv)}
                     />
@@ -309,7 +309,7 @@ const BuyNowButton = () => {
                   {orderForm.payment_option.label}
                 </label>
 
-                <p className="text-2xl text-white">
+                <p className="text-2xl tracking-widest text-white">
                   {orderForm.payment_option.value}
                 </p>
               </div>

@@ -73,6 +73,9 @@
         "label": "Možnost platby",
         "value": "Bankovní převod [SWIFT]"
       },
+      "accept_invite": {
+        "label": "přijmout"
+      },
       "cta": "Objednat nyní",
       "errors": {
         "fullName": {

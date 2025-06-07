@@ -73,6 +73,9 @@
         "label": "Zahlungsoption",
         "value": "Banküberweisung [SWIFT]"
       },
+      "accept_invite": {
+        "label": "akzeptieren"
+      },
       "cta": "Jetzt bestellen",
       "errors": {
         "fullName": {

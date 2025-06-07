@@ -73,6 +73,9 @@
         "label": "Opcja płatności",
         "value": "Przelew bankowy [SWIFT]"
       },
+      "accept_invite": {
+        "label": "przyjąć"
+      },
       "cta": "Zamów teraz",
       "errors": {
         "fullName": {

@@ -73,6 +73,9 @@
         "label": "خيار الدفع",
         "value": "تحويل بنكي [SWIFT]"
       },
+      "accept_invite": {
+        "label": "قبول"
+      },
       "cta": "اطلب الآن",
       "errors": {
         "fullName": {

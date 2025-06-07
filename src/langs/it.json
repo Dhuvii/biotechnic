@@ -73,6 +73,9 @@
         "label": "Opzione di pagamento",
         "value": "Bonifico bancario [SWIFT]"
       },
+      "accept_invite": {
+        "label": "accettare"
+      },
       "cta": "Ordina ora",
       "errors": {
         "fullName": {

@@ -1,9 +1,9 @@
 {
   "navbar": {
     "links": {
-      "about": "About us",
-      "faq": "FAQ",
-      "contact": "Contact"
+      "about": "about us",
+      "faq": "faq",
+      "contact": "contact"
     }
   },
   "homepage": {
@@ -14,97 +14,100 @@
     "feat_1": {
       "title": "cancer fights hard ? fight harder ! ! !",
       "description": "more about our cancer-fighting technology",
-      "cta": "Learn more"
+      "cta": "learn more"
     },
     "feat_2": {
       "title": "zero upfront costs",
       "description": "no results = no payment",
       "tag": "just focus on your treatment. not on money",
-      "cta": "Apply Now"
+      "cta": "apply now"
     },
     "feat_3": {
       "title": "no waiting, no apply process, no restrictions",
       "description": "full 1 year supply buy here",
       "address": "2550 innovation blvd. san francisco, ca",
-      "cta": "Buy now"
+      "cta": "buy now"
     },
     "orderForm": {
       "full_name": {
-        "label": "Full name",
-        "placeholder": "Enter full name"
+        "label": "full name",
+        "placeholder": "enter full name"
       },
       "street_address": {
-        "label": "Street Address",
-        "placeholder": "Enter street address"
+        "label": "street address",
+        "placeholder": "enter street address"
       },
       "region": {
-        "label": "Region",
-        "placeholder": "Enter region"
+        "label": "region",
+        "placeholder": "enter region"
       },
       "city": {
-        "label": "City",
-        "placeholder": "Enter city"
+        "label": "city",
+        "placeholder": "enter city"
       },
       "zip_code": {
-        "label": "Zip code",
-        "placeholder": "Enter zip code"
+        "label": "zip code",
+        "placeholder": "enter zip code"
       },
       "country": {
-        "label": "Country",
-        "placeholder": "Enter country"
+        "label": "country",
+        "placeholder": "enter country"
       },
       "phone_number": {
-        "label": "Phone number",
-        "placeholder": "Enter phone number"
+        "label": "phone number",
+        "placeholder": "enter phone number"
       },
       "email": {
-        "label": "Email address",
-        "placeholder": "Enter email"
+        "label": "email address",
+        "placeholder": "enter email"
       },
       "terms_and_conditions": {
-        "label": "Terms and conditions",
-        "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quam impedit totam architecto dolor. Cumque eveniet pariatur fugiat alias cupiditate."
+        "label": "terms and conditions",
+        "content": "lorem ipsum, dolor sit amet consectetur adipisicing elit. non quam impedit totam architecto dolor. cumque eveniet pariatur fugiat alias cupiditate."
       },
       "price": {
-        "label": "Price",
-        "value": "49.999 EUR"
+        "label": "price",
+        "value": "49.999 eur"
       },
       "payment_option": {
-        "label": "Payment Option",
-        "value": "Bank Transfer [swift]"
+        "label": "payment option",
+        "value": "bank transfer [swift]"
       },
-      "cta": "Order Now",
+      "accept_invite": {
+        "label": "accept"
+      },
+      "cta": "order now",
       "errors": {
         "fullName": {
-          "required": "Full name is required."
+          "required": "full name is required."
         },
         "streetAddress": {
-          "required": "Street address is required."
+          "required": "street address is required."
         },
         "city": {
-          "required": "City is required."
+          "required": "city is required."
         },
         "zipCode": {
-          "required": "Zip code is required."
+          "required": "zip code is required."
         },
         "country": {
-          "required": "Country is required."
+          "required": "country is required."
         },
         "email": {
-          "required": "Email is required.",
-          "invalid": "Invalid email address."
+          "required": "email is required.",
+          "invalid": "invalid email address."
         },
         "phoneNumber": {
-          "required": "Phone number is required."
+          "required": "phone number is required."
         },
         "termsAccepted": {
-          "required": "You must accept the terms and conditions."
+          "required": "you must accept the terms and conditions."
         },
         "price": {
-          "positive": "Price must be a positive number."
+          "positive": "price must be a positive number."
         },
         "paymentOption": {
-          "required": "Payment option is required."
+          "required": "payment option is required."
         }
       }
     },
@@ -117,22 +120,22 @@
         "content": "a copy of your order, including payment instructions, has been sent to your email."
       },
       "bank": {
-        "title": "Bank Transfer (SWIFT) Payment Instructions",
+        "title": "bank transfer (swift) payment instructions",
         "bank_name": {
           "tile": "bank name",
-          "value": "Standard Chartered Bank (Hong Kong) Ltd"
+          "value": "standard chartered bank (hong kong) ltd"
         },
         "account_holder": {
           "tile": "account holder",
-          "value": "BIOTECHNICS LIMITED"
+          "value": "biotechnics limited"
         },
         "benificiary_address": {
-          "tile": "Beneficiary's adress",
-          "value": "8/F., CHINA HONG KONG TOWER, 8-12 HENNESSY ROAD, WAN CHAI, HONG KONG, HONG KONG, 999077"
+          "tile": "beneficiary's adress",
+          "value": "8/f., china hong kong tower, 8-12 hennessy road, wan chai, hong kong, hong kong, 999077"
         },
         "iban": {
           "tile": "iban",
-          "value": "47412548280 (EUR currency transfers only)"
+          "value": "47412548280 (eur currency transfers only)"
         },
         "bank_code": {
           "tile": "bank code",
@@ -144,15 +147,15 @@
         },
         "swift": {
           "tile": "swift",
-          "value": "SCBLHKHH"
+          "value": "scblhkhh"
         },
         "amount": {
           "tile": "amount",
-          "value": "Amount"
+          "value": "amount"
         }
       },
       "note": {
-        "title": "Note",
+        "title": "note",
         "content": "your order will only be processed after the full payment is received. please allow 1–5 business days for international bank transfers. don’t forget to include the reference when sending the payment."
       }
     }
@@ -178,12 +181,12 @@
     "sub_title": "everything you need to know about our revolutionary treatment",
     "faqs": [
       {
-        "question": "How does no payment work",
-        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
+        "question": "how does no payment work",
+        "answer": "lorem ipsum dolor sit, amet consectetur adipisicing elit. explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       },
       {
-        "question": "How does no payment work",
-        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
+        "question": "how does no payment work",
+        "answer": "lorem ipsum dolor sit, amet consectetur adipisicing elit. explicabo quis quos atque eos est asperiores quam dolor, incidunt, quasi temporibus molestiae neque eum sit commodi voluptatem dicta itaque?"
       }
     ]
   },
@@ -197,35 +200,35 @@
     },
     "form": {
       "first_name": {
-        "label": "First name",
-        "placeholder": "Enter first name"
+        "label": "first name",
+        "placeholder": "enter first name"
       },
       "last_name": {
-        "label": "Last name",
-        "placeholder": "Enter last name"
+        "label": "last name",
+        "placeholder": "enter last name"
       },
       "email": {
-        "label": "Email address",
-        "placeholder": "Enter email"
+        "label": "email address",
+        "placeholder": "enter email"
       },
       "message": {
-        "label": "Message",
-        "placeholder": "Enter message"
+        "label": "message",
+        "placeholder": "enter message"
       },
-      "cta": "Send message",
+      "cta": "send message",
       "errors": {
         "firstName": {
-          "required": "First name is required."
+          "required": "first name is required."
         },
         "lastName": {
-          "required": "Last name is required."
+          "required": "last name is required."
         },
         "email": {
-          "required": "Email is required.",
-          "invalid": "Invalid email address."
+          "required": "email is required.",
+          "invalid": "invalid email address."
         },
         "message": {
-          "required": "Message is required."
+          "required": "message is required."
         }
       }
     }
@@ -238,80 +241,80 @@
       "process": [
         {
           "title": "submit application",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+          "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
           "title": "submit application",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+          "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
           "title": "submit application",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+          "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. quod, consectetur sequi commodi hic ipsam fugiat."
         },
         {
           "title": "submit application",
-          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, consectetur sequi commodi hic ipsam fugiat."
+          "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. quod, consectetur sequi commodi hic ipsam fugiat."
         }
       ]
     },
     "form": {
       "first_name": {
-        "label": "First name",
-        "placeholder": "Enter first name"
+        "label": "first name",
+        "placeholder": "enter first name"
       },
       "last_name": {
-        "label": "Last name",
-        "placeholder": "Enter last name"
+        "label": "last name",
+        "placeholder": "enter last name"
       },
       "email": {
-        "label": "Email address",
-        "placeholder": "Enter email"
+        "label": "email address",
+        "placeholder": "enter email"
       },
       "cancer_type": {
-        "label": "Cancer Type",
-        "placeholder": "Select cancer type",
+        "label": "cancer type",
+        "placeholder": "select cancer type",
         "options": [
           { "name": "chemotherapy", "value": "chemotherapy" },
-          { "name": "Radiation", "value": "radiation" },
-          { "name": "Surgery", "value": "surgery" },
-          { "name": "Immunotherapy", "value": "immunotherapy" }
+          { "name": "radiation", "value": "radiation" },
+          { "name": "surgery", "value": "surgery" },
+          { "name": "immunotherapy", "value": "immunotherapy" }
         ]
       },
       "cancer_stage": {
-        "label": "Cancer Stage",
-        "placeholder": "Select cancer stage",
+        "label": "cancer stage",
+        "placeholder": "select cancer stage",
         "options": [
           { "name": "chemotherapy", "value": "chemotherapy" },
-          { "name": "Radiation", "value": "radiation" },
-          { "name": "Surgery", "value": "surgery" },
-          { "name": "Immunotherapy", "value": "immunotherapy" }
+          { "name": "radiation", "value": "radiation" },
+          { "name": "surgery", "value": "surgery" },
+          { "name": "immunotherapy", "value": "immunotherapy" }
         ]
       },
       "previous_treatments": {
         "label": "previous treatment",
         "options": [
           { "name": "chemotherapy", "value": "chemotherapy" },
-          { "name": "Radiation", "value": "radiation" },
-          { "name": "Surgery", "value": "surgery" },
-          { "name": "Immunotherapy", "value": "immunotherapy" }
+          { "name": "radiation", "value": "radiation" },
+          { "name": "surgery", "value": "surgery" },
+          { "name": "immunotherapy", "value": "immunotherapy" }
         ]
       },
       "errors": {
         "firstName": {
-          "required": "First name is required."
+          "required": "first name is required."
         },
         "lastName": {
-          "required": "Last name is required."
+          "required": "last name is required."
         },
         "email": {
-          "required": "Email is required.",
-          "invalid": "Invalid email address."
+          "required": "email is required.",
+          "invalid": "invalid email address."
         },
         "cancerType": {
-          "required": "Cancer Type is required."
+          "required": "cancer type is required."
         },
         "cancerStage": {
-          "required": "Cancer Stage is required."
+          "required": "cancer stage is required."
         }
       }
     },

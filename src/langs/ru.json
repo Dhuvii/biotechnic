@@ -73,6 +73,9 @@
         "label": "Способ оплаты",
         "value": "Банковский перевод [SWIFT]"
       },
+      "accept_invite": {
+        "label": "принять"
+      },
       "cta": "Заказать сейчас",
       "errors": {
         "fullName": {
